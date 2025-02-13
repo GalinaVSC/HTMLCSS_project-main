@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sova {
+    background-color: #6e073c;
+    width: 800px;
+    height: auto;
+    text-align: center;
+    display: flex;
+}
+.sova figure {
+    display: flex;
+    align-items: left;
+    max-width: 200px; 
+    flex-flow: column;
+    margin-top: 10px;
+    padding: 5px;
+}
+.sova figcaption {
+    color: rgb(111, 7, 51);
+    width: 180px;
+    background-color: white;
+    padding-top: 10px;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+}
+img {
+    border: #460505;
+    max-width: 180px;
+    max-height: 300px;
+}
+body {
+    background-color: rgb(214, 232, 123);
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    color: rgb(223, 192, 211);
+    text-align: justify;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+}
+.content{
+    text-indent: 20px;
+}

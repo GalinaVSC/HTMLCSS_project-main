@@ -1,0 +1,15 @@
+h1 {
+    color: #f5f5dc; /*цвет заголовка*/
+    background-color:  #546449; /*цвет фона*/
+    width: 400px; /*ширина фона */
+    margin: -10px;/*отступы между фоном и страницей*/
+    padding: 20px;
+}
+body {
+    background-color: aquamarine;
+}
+h1.header {
+    color: unset;
+    background-color:  #1674ee;
+
+}

@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0; /*1rem - это верхний и нижний отступы (padding-top и padding-bottom)? 0 - это левый и правый отступы (padding-left и padding-right)*/
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+}
+nav ul {
+    list-style: none; /*убираем точки*/
+    padding: 0; /*подравниваем расстояние*/
+}
+nav ul li {
+    display: inline; /* вытягивание в одну строчку*/
+    margin: 1rem 0;
+}
+nav ul li a {
+    color: #fff;
+    padding: 30px;
+}
+section {
+    padding: 2rem;
+    margin: 2rem auto;
+    background: #fff;
+    max-width: 800px;
+    border-radius: 10px; /*округление блока*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*1. 0: горизонтальное смещение тени (offset-x). Значение 0 означает, что тень будет располагаться прямо под элементом.
+    2. 0: вертикальное смещение тени (offset-y). Значение 0 означает, что тень будет располагаться прямо под элементом.
+    3. 10px: радиус размытия тени (blur-radius). Значение 10px означает, что тень будет размыта на расстоянии 10 пикселей от элемента.
+    4. rgba(0, 0, 0, 0.1): цвет тени. Значение rgba(0, 0, 0, 0.1) означает, что тень будет иметь цвет черный (rgb(0, 0, 0)) с прозрачностью 10% (0.1).*/
+}
+section h2 {
+    color: #333;
+}
+section#bio p, section#contact p {
+    margin: 1rem 0;
+}
+section#works ul {
+    list-style: none;
+    padding: 0;
+}
+section#works ul li a {
+    color: #007BFF;
+    text-decoration: none;
+}
+section#works ul li a:hover {
+    text-decoration: underline;
+}
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative; /* нижний блок не закреплён к странице, а при fiхed он прикреплён к нижней части границы всей страницы*/
+    width: 100%;
+    bottom: 0;
+}
+footer p {
+    margin: 0;
+}
+@media (max-width: 600px) { /*означает, что стили, определенные внутри этого блока, будут применены только тогда, когда ширина экрана не превышает 600 пикселей.*/
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    section {
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+}

@@ -1,0 +1,43 @@
+body {
+    background-color: black;
+}
+body {
+    background-image: url(../img/blackKat.jpg);
+}
+body{ /*шрифты*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+body { /*расстояния*/
+    text-align: center;
+}
+body { /*центровка текста*/
+    margin: 0;
+    padding: 0;
+}
+body { /*позиции (не понятно какие и где)*/
+    position: relative;
+    top: 0;
+    bottom: 0;
+}
+body { /*рамка */
+    border: 1px solid #ccc;
+    outline: none;
+}
+/* body {  (!--линейный градиент-->
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+body { (--радиальный градиент-->
+    background: radial-gradient(circle, #ff7e5f, #feb47b);
+}
+body { (--диагонально-линейный-->/
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+}
+body { (--повторяющийся линейный-->
+    background: repeating-linear-gradient(to right, #ff7e5f, #ff7e5f 10px, #feb47b 10px, #feb47b 20px)
+}
+body { (--конический градиент не сработал код-->
+    background: conic-gradient (from 90deg, #ff7e5f, #feb47b);
+}*/

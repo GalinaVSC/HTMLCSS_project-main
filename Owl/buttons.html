@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRO.Сова</title>
+    <meta name="description" content="Совы - ночные стражы природы"> 
+    <meta name="keywords" content="сова, милота, фауна">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    </head>
+<body> 
+    <button onclick="myFunction()">Нажми тут</button>
+    <p id="demo"></p>
+    <p> Функция запускается при нажатии кнопки. Функция выводит некоторый текст в элементе p с  id="demo".</p>
+    <br>
+    <img id="image">
+    <br>
+    <button onclick="showImage()">Показать картинку</button>
+    <button onclick="hideImage()">Скрыть картинку</button>
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Привет Сова!";
+        }
+        function showImage() {
+            document.getElementById("image").src = "images/sych.jpg";
+        }
+        function hideImage() { 
+            document.getElementById("image").src = "";
+        }
+    </script>
+</body>

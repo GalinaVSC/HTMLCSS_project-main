@@ -1,0 +1,54 @@
+img {
+    border-radius: 3%;
+    border: #460505;
+    max-width: 500px;
+    max-height: 300px;
+}
+body {
+    background-color: rgb(132, 232, 123);
+}
+h1 {
+    color: #f5f5dc; /*цвет заголовка*/
+    background-color:   #910c0ccb; /*цвет фона*/
+    width: 400px; /*ширина фона */
+    margin-bottom: 40px;/*отступы между фоном и страницей*/
+    margin-inline: 35%;
+    padding: 20px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+p {
+    width: 400px;
+    min-height: auto;
+    background-color: unset;
+    color: burlywood;
+    padding: 20px;
+    text-align: justify;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container figure {
+    display: flex;
+    background-color: #460505;
+    align-items: center;
+    max-width: 500px; /*фон выравнен по ширине картинки*/
+    flex-flow: column;
+    margin-top: 10px;
+    padding: 5px;
+    border: thick #c0c0c0 solid; /*оформление рамки вокруг рисунка с надписью*/
+}
+.container figcaption {
+    width: 400px;
+    background-color: unset;
+    color: burlywood;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+}

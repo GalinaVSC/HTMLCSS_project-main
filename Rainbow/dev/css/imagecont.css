@@ -1,0 +1,33 @@
+img {
+    max-width: 100px;
+    max-height: 250px;
+    border-radius: 3%;
+    border: 2px solid white; /*можно использовать любой цвет*/
+    box-shadow: 4px 8px rgba(0, 0, 0, 0.1); /*по желанию можно добавить лёгкую тень*/
+}
+h1 {
+    font-family: 'Plaifair Display', serif; /*Элегантный шрифт с засечками (или используем другой шрифт)*/
+    font-size: 3em; /*регулировка размера фона и надписи*/
+    font-weight: 600; /*ширина фона*/
+    color: #333; /*dark gray text color*/
+    text-align: center; /* Центрирование заголовка*/
+    margin-top: 20px; /*добавление верхнего поля*/
+    margin-bottom: 20px; /*добавление нижнего поля*/
+    line-height: 1.2; /*улучшить высоту строки для удобства чтения*/
+    letter-spacing: 0.02em; /*межбуквенный интервал*/
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /*Текстовая тень*/
+}
+.container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container figure {
+   display: flex;
+   flex-direction: column; /*размещает изображение и подпись вертикально*/
+   align-items: center; /*центрирует подписи под изображением*/
+}
+.container figcaption {
+   padding-top: 10px; /*верхнее поле*/
+}

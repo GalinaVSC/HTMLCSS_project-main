@@ -1,0 +1,45 @@
+.conteainer div {
+    display: inline-flex;
+    flex-wrap: wrap;
+    color: white;
+}    
+.square {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Центрируем элементы по горизонтали */
+    align-items: center;
+    font-size: 20px;
+    vertical-align: middle;
+    text-align: center;
+
+    background-color: grey;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.conteainer:hover {
+     background-color: transparent;
+}
+.red:hover {
+     background-color: red; 
+}
+.orange:hover {
+     background-color: orange;
+}
+.yellow:hover {
+     background-color: yellow;
+}
+.green:hover {
+     background-color: green;
+}
+.blue:hover {
+     background-color: blue;
+}
+.indigo:hover {
+     background-color: indigo;
+}
+.violet:hover {
+     background-color: violet;
+}

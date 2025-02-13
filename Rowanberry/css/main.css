@@ -1,0 +1,20 @@
+img { /*описание стиля для элемента img*/
+    max-width: 220px;
+    max-height: 150px;
+    border-radius: 3% /*округление углов у картинки*/
+}
+figcaption {
+    background-color:darkred; /*цвет фона на котором надпись*/
+    color: white; /* цвет самой надписи*/
+    font-size: 20px; /*размер высоты фона и надписи*/
+    padding: 3px; /*отступы от границ фона до надписи*/
+    text-align: center; /*расположение надписи в фоне (центрировали)*/
+}
+figure {
+    max-width: 220px; /*фон выравнен по ширине картинки*/
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    padding: 5px;
+    border: thick #c0c0c0 dashed; /*оформление рамки вокруг рисунка с надписью*/
+}
