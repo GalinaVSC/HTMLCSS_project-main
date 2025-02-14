@@ -4,7 +4,10 @@
 header {
     padding:15px;
     text-align:center;
-    background: radial-gradient(circle, #eef6f2, #7bfec5);
+    background-color:#0b0a54;
+}
+header a {
+    color: #b3b3b2;
 }
 .menu {
     float: left;
@@ -12,12 +15,12 @@ header {
     text-align: center;
 }
 .menu a {
-    background-color: #b0efe1;
+    background-color: #b3b3b2;
     padding: 8px;
     margin-top: 7px;
     display: block;
     width: 100%;
-    color: black;
+    color: #0b0a54;
 }
 .main {
     float: left;
@@ -39,18 +42,19 @@ header {
     float: left;
 }
 .right {
-    background-color: #b0efe1;
+    background-color: #b3b3b2;
     float: left;
     width: 20%;
     padding: 15px;
     margin-top: 7px;
     text-align: justify;
+    color: #0b0a54;
 }
 .right h2 {
     text-align: center;
 }
 footer {
-    background-color:#bcf1d1;
+    background-color:#0b0a54;
     text-align:center;
     padding:10px;
     margin-top:7px;

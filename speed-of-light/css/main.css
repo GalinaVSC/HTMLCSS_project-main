@@ -1,9 +1,8 @@
 * {
     box-sizing: border-box;
-    background-image: url(../img/svet.jpg)
 }
 header {
-    background-color:#f71616;
+    background-color:#0b0a54;
     padding:15px;
     text-align:center;
 }
@@ -13,12 +12,12 @@ header {
     text-align: center;
 }
 .menu a {
-    background-color: #e5e5e5;
+    background-color: #b3b3b2;
     padding: 8px;
     margin-top: 7px;
     display: block;
     width: 100%;
-    color: rgb(255, 1, 1);
+    color: #0b0a54;
 }
 .main {
     float: left;
@@ -26,16 +25,30 @@ header {
     padding: 0 20px;
     text-align: center;
 }
+.main p {
+    text-align: justify;
+    padding: top 10px;
+    line-height: 1.3;
+}
+.main figure {
+    width: 350px;
+    height: 200px;
+    display: flex;
+    margin: 5px;
+    float: left;
+    border-radius: 10px;
+}
 .right {
-    background-color: #f8f2bb;
+    background-color: #b3b3b2;
     float: left;
     width: 20%;
     padding: 15px;
     margin-top: 7px;
     text-align: center;
+    color: #0b0a54;
 }
 footer {
-    background-color:#f71616;
+    background-color:#0b0a54;
     text-align:center;
     padding:10px;
     margin-top:7px;

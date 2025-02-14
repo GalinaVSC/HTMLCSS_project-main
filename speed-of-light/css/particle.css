@@ -2,9 +2,12 @@
     box-sizing: border-box;
 }
 header {
-    background-color:#bcf1d1;
+    background-color:#0b0a54;
     padding:15px;
     text-align:center;
+}
+header a {
+    color: #b3b3b2;
 }
 .menu {
     float: left;
@@ -12,17 +15,20 @@ header {
     text-align: center;
 }
 .menu a {
-    background-color: #f6e298;
+    background-color: #b3b3b2;
     padding: 8px;
     margin-top: 7px;
     display: block;
     width: 100%;
-    color: black;
+    color: #0b0a54;
 }
 .main {
     float: left;
     width: 60%;
     padding: 0 10px;
+}
+header a {
+    color: #b3b3b2;
 }
 .main h2 {
     text-align: center;
@@ -36,17 +42,19 @@ header {
     display: flex;
     margin: 5px;
     float: left;
+    border-radius: 10px;
 }
 .right {
-    background-color: #f4c0ed;
+    background-color: #b3b3b2;
     float: left;
     width: 20%;
     padding: 15px;
     margin-top: 7px;
     text-align: justify;
+    color: #0b0a54;
 }
 footer {
-    background-color:#bcf1d1;
+    background-color:#0b0a54;
     text-align:center;
     padding:10px;
     margin-top:7px;
