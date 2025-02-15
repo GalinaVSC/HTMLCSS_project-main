@@ -29,14 +29,13 @@ header a {
 }
 .main h2 {
     text-align: center;
-    color: #ff6400;
 }
 .main p {
     text-align: justify;
     padding: top 10px;
     line-height: 1.5;
 }
-.main figure {
+img {
     display: flex;
     margin: 5px;
     float: left;

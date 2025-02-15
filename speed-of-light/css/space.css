@@ -26,6 +26,10 @@ header a {
     float: left;
     width: 60%;
     padding: 0 10px;
+    padding-top: 5px;
+}
+header a {
+    color: #b3b3b2;
 }
 .main h2 {
     text-align: center;
@@ -35,13 +39,10 @@ header a {
     padding: top 10px;
     line-height: 1.3;
 }
-.main figure {
-    width: 400px;
-    height: 430px;
-    display: flex;
+.img {
     margin: 5px;
     float: left;
-    border-radius: 20px;
+    margin: 5px;
 }
 .right {
     background-color: #b3b3b2;
