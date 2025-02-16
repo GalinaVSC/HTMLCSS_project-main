@@ -1,0 +1,25 @@
+.ocean {
+    float: left; /*объект прикреплён слева, другие элементы его обтекать*/
+    margin: 0 1rem 1rem 0; /*верх, справа, низ, слева (по часовой стрелке)*/
+    max-width: 100%; /*чтобы картинка не вылезала за пределы экрана*/
+    height: auto; /*чтобы сохранить соотношение сторон*/
+}
+.text-wrap {
+    overflow: hidden; /*Очистить float, чтобы убедиться, что контейнер охватывает плавающие элементы.*/
+    color: blue;
+}
+img {
+    border-radius: 10px;
+}
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+    .ocean {
+        float: none; /* Remove the float, making the image block-level */
+        display: block; /* Ensure the image is displayed as a block element */
+        margin: 0 auto 1rem auto; /* Center the image horizontally with auto margins, add 1rem bottom margin */
+    }
+
+    .text-wrap {
+        text-align: center; /* Center-align the text */
+    }
+}
