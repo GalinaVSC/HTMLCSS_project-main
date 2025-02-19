@@ -23,21 +23,7 @@ main {
     color: #333;
 }
 
-.logo img {
-    display: flex;
-    align-items: center; 
-    height: 50px;
-    border-radius: 50%;
-    float: left;
-    margin-bottom: 20px;
-}
-
-.author {
-    margin-left: 10px;
-    align-items: center; 
-}
-
-section {
+article {
     padding: 2rem;
     margin: 2rem auto;
     background: #fff;
@@ -46,12 +32,36 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
-section h2 {
+article h2 {
     color: #031e80;
 }
 
-section#post p {
+article#post p {
     margin: 1rem 0;
+}
+
+.blog-meta { /*Стиль метаданных блога*/
+    display: flex; /*Использование макета fiexbox */
+    align-items: center; /* выравнивание элементов по вертикали */
+    margin-bottom: 20px; /* добавление нижнего поля */
+}
+
+.logotip {
+    width: 50px; /*установка ширины*/
+    height: 50px; /*установка высоты*/
+    border-radius: 50%; /*делаем его круглым*/
+    margin-right: 10px;/*добавление правого поля*/
+}
+
+/* Стили абзацев метаданных блога */
+.blog-meta p {
+    margin: 0 10px; /* Установка горизонтального поля */
+    color: #777; /* Установка цвета текста */
+}
+
+/* Стили абзацев контента блога */
+.blog-content p {
+    line-height: 1.6; /* Установка высоты строки */
 }
 
 footer {
@@ -68,7 +78,7 @@ footer p {
     margin: 0;
 }
 
-/*responsive design*/
+/*responsive design Адаптивный дизайн*/
 @media (max-widht: 768px) {
     header {
         flex-direction: column;

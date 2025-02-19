@@ -1,0 +1,18 @@
+span {
+    font-size: 18px; /*размер шрифта*/
+    padding-left: 10px; /*установить отступ слева*/
+    color: black; /*цвет шрифта*/
+}
+
+input[type=checkbox]:checked + span {
+    text-decoration: line-through; /*добавляет линию зачеркивающую текст, когда отмечено галочкой о выполнении*/
+}
+
+/*окрашивание в два цвета через строчку*/
+dt:nth-child(1n+1) {
+    background-color: rgba(173, 216, 230);
+}
+
+dt:nth-child(2n+1) {
+    background-color: rgba(165, 204, 218);
+}
