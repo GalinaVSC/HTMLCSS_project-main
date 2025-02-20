@@ -5,7 +5,13 @@ span {
 }
 
 input[type=checkbox]:checked + span {
-    text-decoration: line-through; /*добавляет линию зачеркивающую текст, когда отмечено галочкой о выполнении*/
+    /*visibility: hidden; видимость: ее можно спрятать*/
+    /* display: none; отображение поставит на нет*/
+   /* color: transparent; цвет сделать прозрачным*/
+   /* opacity: 0; непрозрачность сделать нулевой*/
+   text-decoration: line-through;
+    
+     /*добавляет линию зачеркивающую текст, когда отмечено галочкой о выполнении*/
 }
 
 /*окрашивание в два цвета через строчку*/
@@ -15,4 +21,12 @@ dt:nth-child(1n+1) {
 
 dt:nth-child(2n+1) {
     background-color: rgba(165, 204, 218);
+}
+
+header {
+    font-size: 40px;
+}
+
+fieldset {
+    width: 40%;
 }

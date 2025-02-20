@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box; 
+}
+
+header {
+    background-color: #292952; /* Устанавливает фоновый цвет заголовка */
+    padding: 5px; /* Добавляет верхний и нижний отступы в 5 пикселей */
+    text-align: center; /* Выравнивает текст по центру */
+}
+
+.gallery-container {
+    max-width: 800px; /* Ограничивает ширину контейнера до 800 пикселей */
+    margin: 0 auto; /* Центрирует контейнер */
+    text-align: center; /* Выравнивает текст по центру */
+}
+
+.gallery-images {
+    display: flex; /* Переводит родительский элемент в режим Flexbox */
+    flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+    justify-content: space-between; /* Распределяет элементы с равными промежутками между ними */
+    align-items: center; /* Выравнивает элементы по горизонтали и вертикали */
+}
+  .gallery-images img {
+    max-width: 200px; /*максимальную ширину изображения в 200 пикселей*/
+    height: auto; /*Автоматически регулирует высоту изображения */
+    margin-bottom: 10px; /*нижний отступ в 10 пикселей для каждого изображения*/
+    cursor: pointer; /* меняет курсор со стрелки на указательный палец*/
+}
+  
+  .gallery-images img:hover {
+    transform: scale(1.1); /*трансформация, увеличивает размеры изображения на 10% при наведении курсора мыши.*/
+}
+
+footer {
+    background-color:#292952;
+    text-align:center;
+    padding:10px;
+    margin-top:7px;
+}
+@media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    .menu, .main, .right {
+      width: 100%;
+    }
+}
