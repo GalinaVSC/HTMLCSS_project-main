@@ -8,29 +8,28 @@ header {
     text-align: center; /* Выравнивает текст по центру */
 }
 
-.gallery-container {
-    max-width: 800px; /* Ограничивает ширину контейнера до 800 пикселей */
-    margin: 0 auto; /* Центрирует контейнер */
-    text-align: center; /* Выравнивает текст по центру */
+.galereya-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.gallery-images {
+.images {
     display: flex; /* Переводит родительский элемент в режим Flexbox */
     flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
     justify-content: space-between; /* Распределяет элементы с равными промежутками между ними */
     align-items: center; /* Выравнивает элементы по горизонтали и вертикали */
 }
-  .gallery-images img {
-    max-width: 200px; /*максимальную ширину изображения в 200 пикселей*/
+
+.images img {
+    border-radius: 3%;
+    max-width: 300px; /*максимальную ширину изображения в 200 пикселей*/
     height: auto; /*Автоматически регулирует высоту изображения */
     margin-bottom: 10px; /*нижний отступ в 10 пикселей для каждого изображения*/
     cursor: pointer; /* меняет курсор со стрелки на указательный палец*/
 }
   
-  .gallery-images img:hover {
-    transform: scale(1.1); /*трансформация, увеличивает размеры изображения на 10% при наведении курсора мыши.*/
-}
-
 footer {
     background-color:#292952;
     text-align:center;
