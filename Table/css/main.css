@@ -1,73 +1,78 @@
+/* Устанавливаем шрифт Poppins для всего документа */
 body {
     font-family: 'Poppins', sans-serif;
 }
+
+/* Стилизация заголовка */
 header {
-    background: #649425;
-    color: #fff;
-    padding: 1rem 0;
-    border-radius: 10px;
+    background: #649425;   /* Фоновый цвет зелёный */
+    color: #fff;           /* Цвет текста белый */
+    padding: 1rem 0;       /* Внутренние отступы сверху и снизу */
+    border-radius: 10px;   /* Закругление углов блока */
 }
 
+/* Заголовок внутри шапки */
 header h1 {
-    margin: 0px; 
-    padding-left: 20px;
-    text-align: left;
+    margin: 0px;           /* Убираем внешние отступы */
+    padding-left: 20px;    /* Левый внутренний отступ */
+    text-align: left;      /* Выравнивание текста по левому краю */
 }
 
+/* Общие стили для заголовков второго уровня и параграфов */
 h2, p {
-    margin: 20px;
+    margin: 20px;          /* Внешний отступ со всех сторон */
 }
 
+/* Таблица */
 table {
-    border-collapse: separate; /* Collapse the borders */
-    border-spacing: 5px;
-    width: 100%;
+    border-collapse: separate; /* Разделяем рамки ячеек */
+    border-spacing: 5px;       /* Расстояние между ячейками */
+    width: 100%;               /* Ширина таблицы занимает всю ширину контейнера */
 }
 
+/* Ячейки таблицы (заголовочные и обычные) */
 th, td {
-    
-    background-color: #649425; 
-    padding: 10px;
-    text-align: center;
-    border: 1px solid black;
-    border-radius: 10px;
-    background: linear-gradient(45deg, #98b671, #649425);
-    color: #fff;
+    background-color: #649425; /* Фоновый цвет ячейки */
+    padding: 10px;             /* Внутренние отступы */
+    text-align: center;        /* Выравнивание содержимого по центру */
+    border: 1px solid black;   /* Рамка вокруг ячейки */
+    border-radius: 10px;       /* Скруглённые углы */
+    background: linear-gradient(45deg, #98b671, #649425); /* Градиентный фон */
+    color: #fff;                /* Цвет текста */
 }
 
+/* Первая колонка таблицы (для заголовочных и обычных ячеек) */
 th:first-child, td:first-child {
-    width: 25%;
+    width: 25%;                 /* Ширина первой колонки — 25% от ширины таблицы */
 }
 
+/* Третья колонка таблицы (для заголовочных и обычных ячеек) */
 th:nth-child(3), td:nth-child(3) {
-    width: 50%;
+    width: 50%;                  /* Ширина третьей колонки — 50% от ширины таблицы */
 }
 
-
+/* Нижний колонтитул */
 footer {
-    background: #649425;
-    color: #fff;
-    text-align: left;
-    padding: 1rem 0;
-    position: relative; /* нижний блок не закреплён к странице, а при fiхed он прикреплён к нижней части границы всей страницы*/
-    width: 100%;
-    bottom: 0;
-    border-radius: 10px;
+    background: #649425;     /* Фоновый цвет */
+    color: #fff;             /* Цвет текста*/
+    text-align: left;        /* Выравнивание текста по левому краю */
+    padding: 1rem 0;         /* Внутренние отступы сверху и снизу */
+    position: relative;      /* Позиционирование относительно родительского элемента */
+    width: 100%;             /* Ширина блока — 100% от ширины контейнера */
+    bottom: 0;               /* Блок прижатый к низу окна */
+    border-radius: 10px;     /* Закругленные углы */
 }
 
+/* Параграфы внутри футера */
 footer p {
-    margin: 0px;
-    padding-left: 20px;
+    margin: 0px;            /* Убираем внешние отступы */
+    padding-left: 20px;     /* Левый внутренний отступ */
 }
 
-/*responsive design Адаптивный дизайн*/
-@media (max-widht: 768px) {
+/* Медиа-запросы для адаптивного дизайна */
+@media (max-width: 768px) { /* Для экранов шириной до 768 пикселей */
     header {
-        flex-direction: column;
-        text-align: center;
-    }
-    .logo {
-        margin-bottom: 10px;
+        flex-direction: column; /* Изменение направления гибкого контейнера на вертикальное */
+        text-align: center;     /* Центрирование текста */
     }
 }
-@import url('https://fonts.googltapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
