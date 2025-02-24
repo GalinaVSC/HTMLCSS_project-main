@@ -23,7 +23,7 @@ main { /*контейнер для галереи*/
     height: auto;
     border-radius: 3%; /* Добавляем закругленные углы к изображениям */
     cursor: pointer; /* Меняем форму курсора на указатель при наведении на изображение */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* прибавляет эффект тени картинкам */
 }
 
 .small-images { /* контейнер для маленьких картинок*/
@@ -35,12 +35,12 @@ main { /*контейнер для галереи*/
     width: calc(50% - 5px); /*просчитывает 50% от ширины контейнера в котором находится*/
 }
 
-/*Ситль подписи*/
-.image-lable {
+/*Стиль подписи*/
+.image-label {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background-color: rgba(,0 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 5px;
     border-radius: 3px;
