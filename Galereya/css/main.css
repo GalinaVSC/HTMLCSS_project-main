@@ -10,32 +10,48 @@ header {
     text-align: center; /* Центрируем текст заголовка */
 }
 
-/* Контейнер для галереи */
-.gallery-container {
-    display: flex; /* Преобразует контейнер в flex-контейнер, позволяющий легко управлять размещением дочерних элементов */
-    width: 100%; /* Делаем ширину контейнера равной 100% ширины родителя */
-    flex-wrap: wrap; /* Разрешается перенос элементов на следующую строку, если они не помещаются в одну строку */
-    justify-content: center; /* Центрируем элементы по горизонтали */
+h2 {
+    padding: 20px;
 }
 
-/* Контейнер для изображений */
-.images {
-    display: flex; /* Преобразуем в flex-контейнер */
-    flex-wrap: wrap; /* Разрешаем перенос изображений на следующую строку */
-    justify-content: space-between; /* Располагаем изображения равномерно с промежутками между ними */
-    align-items: center; /* Выравниваем изображения по вертикали */
+main { /*контейнер для галереи*/
+    padding: 20px;
 }
 
-/* Стили для изображений */
-.images img {
+.large-image, .small-image {
+    width: 100%;
+    height: auto;
     border-radius: 3%; /* Добавляем закругленные углы к изображениям */
-    max-width: 250px; /* Ограничиваем максимальную ширину изображений */
-    height: auto; /* Высота автоматически регулируется, чтобы сохранить пропорции изображения */
     cursor: pointer; /* Меняем форму курсора на указатель при наведении на изображение */
-    margin-right: 5px; /* Добавляем отступ справа между изображениями */
-    margin-bottom: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
 }
 
+.small-images { /* контейнер для маленьких картинок*/
+    display: flex;
+    gap: 10px; /*расстояние между маленькими картинками*/
+}
+
+.small-image {
+    width: calc(50% - 5px); /*просчитывает 50% от ширины контейнера в котором находится*/
+}
+
+/*Ситль подписи*/
+.image-lable {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(,0 0, 0, 0.5);
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 18px;
+}
+
+/*Стиль для конейнера картинок*/
+.image-container {
+    position: relative;
+    display: inline-block;
+}
 /* Стилизуем нижний колонтитул (footer) */
 footer {
     background-color: #292952; /* Устанавливаем  фоновый цвет */
