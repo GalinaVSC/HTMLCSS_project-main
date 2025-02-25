@@ -21,6 +21,7 @@ main { /*контейнер для галереи*/
 .large-image-container {
     position: relative;
     display: inline-block;
+    padding-bottom: 5px;
 }
 
 .large-image {
@@ -29,7 +30,6 @@ main { /*контейнер для галереи*/
     border-radius: 3%; /* Добавляем закругленные углы к изображениям */
     cursor: pointer; /* Меняем форму курсора на указатель при наведении на изображение */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* прибавляет эффект тени картинкам */
-    padding-bottom: 5px;
 }
 
 .image-label {
@@ -89,12 +89,19 @@ footer {
     margin-top: 7px; /* Добавляем небольшой отступ сверху */
 }
 
-/* Медиазапросы для адаптации к мобильным устройствам */
-@media only screen and (max-width: 800px) {
-    /* Для экранов шириной до 800 пикселей */
+/* Медиазапросы для адаптации к мобильным устройствам с экраном 600 пикселей */
+@media (max-width: 600px) {
+    /* Для экранов шириной до 600 пикселей */
     
-    /* Ограничиваем максимальную ширину всех изображений до 150 пикселей */
-    .images img {
-        max-width: 150px;
-    }   
+    .small-images {
+       flex-direction: column; /*Stack small images vertically*/
+    }  
+
+    .small-image {
+        width: 100%; /*Set widht to 100% of container*/
+    }
+
+    .small-image-container {
+        width: 100%; /*Set widht to 100% of container*/
+    }
 }
