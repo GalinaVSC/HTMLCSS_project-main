@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box; /* Устанавливает модель разбиения границ, включающую внутренние отступы и рамки в расчет общей ширины и высоты элемента */
+}
+
+/* Стилизуем заголовок сайта */
+header {
+    background-color: #292952; /* Устанавливаем фоновый цвет */
+    padding: 5px; /* Добавляем внутреннюю область заполнения (padding) сверху и снизу */
+    text-align: center; /* Центрируем текст заголовка */
+}
+
+h2 {
+    padding: 20px;
+    color: black;
+}
+
+main { /*контейнер для галереи*/
+    padding: 20px;
+}
+
+.large-image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.large-image {
+    width: 100%;
+    height: auto;
+    border-radius: 3%; /* Добавляем закругленные углы к изображениям */
+    cursor: pointer; /* Меняем форму курсора на указатель при наведении на изображение */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* прибавляет эффект тени картинкам */
+    padding-bottom: 5px;
+}
+
+.image-label {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 18px;
+}
+
+.small-image-label {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.small-image-container {
+    height: auto;
+    cursor: pointer; /* Меняем форму курсора на указатель при наведении на изображение */
+    position: relative;
+    display: inline-block;
+    width: calc(50% - 5px); /*просчитывает 50% от ширины контейнера в котором находится*/
+    padding: 5px;
+}
+
+.small-image {
+    width: 100%;
+    border-radius: 3%; /* Добавляем закругленные углы к изображениям */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* прибавляет эффект тени картинкам */
+}
+
+/*Стиль подписи*/
+.small-image-label {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 18px;
+}
+
+/* Стилизуем нижний колонтитул (footer) */
+footer {
+    background-color: #292952; /* Устанавливаем  фоновый цвет */
+    text-align: center; /* Центрируем текст в футере */
+    padding: 10px; /* Добавляем внутреннюю область заполнения (padding) сверху и снизу */
+    margin-top: 7px; /* Добавляем небольшой отступ сверху */
+}
+
+/* Медиазапросы для адаптации к мобильным устройствам */
+@media only screen and (max-width: 800px) {
+    /* Для экранов шириной до 800 пикселей */
+    
+    /* Ограничиваем максимальную ширину всех изображений до 150 пикселей */
+    .images img {
+        max-width: 150px;
+    }   
+}
