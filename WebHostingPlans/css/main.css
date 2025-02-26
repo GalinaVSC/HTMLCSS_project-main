@@ -3,8 +3,8 @@
 }
 
 header {
-    margin: 20px; 
-    width: 400px;
+    margin: 20px auto; 
+    width: 100%;
     height: 100px;
     padding: 1rem 0;
     background-color: rgb(196, 195, 192);
@@ -21,6 +21,9 @@ h1 {
     text-align: center;
 }
 
+body {
+    background-color: rgb(153, 157, 161);
+}
 main {
     padding: 20px;
 }
@@ -34,15 +37,14 @@ main {
     transition: transform 0.3s ease; /* Добавляем плавный переход */
 }
 
-.Block:hover {
-    transform: scale(1.05); /* Масштабируем блок на 105% при наведении */
-}
+
 
 .E, .P, .S, .B {
     border-radius: 3%; /* Добавляем закругленные углы к изображениям */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* прибавляет эффект тени картинкам */
-    width: calc(23% - 5px); /*просчитывает 50% от ширины контейнера в котором находится*/
+    width: 250px;
     padding: 5px;
+    background-color: lightslategray;
     margin-left: 20px; /* или любое другое значение отступа */
 }
 
@@ -64,40 +66,54 @@ input[type="button"] {
 .E {
     /* Стилизация hr */
     hr {
-        background-color: red; /* Цвет линии */
+        background-color: rgb(185, 60, 60); /* Цвет линии */
     }
     input[type="button"] {
-        background-color: red;   /* Цвет фона */
+        background-color: rgb(185, 60, 60);   /* Цвет фона */
     }
+}
+
+.E:hover {
+    transform: scale(1.05);
 }
 
 .P {
     /* Стилизация hr */
     hr {
-        background-color: rgb(255, 0, 255); /* Цвет линии */
+        background-color: rgb(129, 43, 129); /* Цвет линии */
     }
     input[type="button"] {
-        background-color: rgb(255, 0, 255);   /* Цвет фона */
+        background-color: rgb(129, 43, 129);   /* Цвет фона */
     }
+}
+.P:hover {
+    transform: scale(1.05);
 }
 
 .S {
     /* Стилизация hr */
     hr {
-        background-color: rgb(216, 213, 36); /* Цвет линии */
+        background-color: rgb(173, 171, 56); /* Цвет линии */
     }
     input[type="button"] {
-        background-color: rgb(216, 213, 36);   /* Цвет фона */
+        background-color: rgba(173, 171, 56);   /* Цвет фона */
     }
+}
+
+.S:hover {
+    transform: scale(1.05);
 }
 
 .B {
     /* Стилизация hr */
     hr {
-        background-color: rgb(0, 255, 21); /* Цвет линии */
+        background-color: rgb(45, 167, 55); /* Цвет линии */
     }
     input[type="button"] {
-        background-color: rgb(0, 255, 21);  /* Цвет фона */
+        background-color: rgb(45, 167, 55);  /* Цвет фона */
     }
+}
+.B:hover {
+    transform: scale(1.05);
 }
 
