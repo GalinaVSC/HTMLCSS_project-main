@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box; /* Устанавливает модель разбиения границ, включающую внутренние отступы и рамки в расчет общей ширины и высоты элемента */
+}
+
+header {
+    margin: 20px; 
+    width: 400px;
+    height: 100px;
+    padding: 1rem 0;
+    background-color: rgb(196, 195, 192);
+    border-radius: 5%; /* Закругленные углы */
+    display: flex; /* Используем Flexbox для вертикального центрирования текста */
+    justify-content: center; /* Горизонтальное центрирование */
+    align-items: center; /* Вертикальное центрирование */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.Block {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    font-weight: bold;
+    transition: transform 0.3s ease; /* Добавляем плавный переход */
+}
+
+.Block:hover {
+    transform: scale(1.05); /* Масштабируем блок на 105% при наведении */
+}
+
+.E, .P, .S, .B {
+    border-radius: 3%; /* Добавляем закругленные углы к изображениям */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* прибавляет эффект тени картинкам */
+    width: calc(23% - 5px); /*просчитывает 50% от ширины контейнера в котором находится*/
+    padding: 5px;
+    margin-left: 20px; /* или любое другое значение отступа */
+}
+
+hr {
+    border: none;          /* Убираем стандартную рамку */
+    height: 4px;           /* Устанавливаем высоту линии (толщину) */
+}
+
+input[type="button"] {
+    font-size: 20px;       /* Увеличение размера шрифта */
+    color: white;           /* Цвет текста */
+    padding: 10px 20px;     /* Добавляем отступы внутри кнопки */
+    border-radius: 5px;     /* Скругленные углы */
+    border: none;           /* Убираем стандартную рамку */
+    cursor: pointer;        /* Курсор в виде руки при наведении */
+    font-weight: bold;      /* Жирный шрифт */
+}
+
+.E {
+    /* Стилизация hr */
+    hr {
+        background-color: red; /* Цвет линии */
+    }
+    input[type="button"] {
+        background-color: red;   /* Цвет фона */
+    }
+}
+
+.P {
+    /* Стилизация hr */
+    hr {
+        background-color: rgb(255, 0, 255); /* Цвет линии */
+    }
+    input[type="button"] {
+        background-color: rgb(255, 0, 255);   /* Цвет фона */
+    }
+}
+
+.S {
+    /* Стилизация hr */
+    hr {
+        background-color: rgb(216, 213, 36); /* Цвет линии */
+    }
+    input[type="button"] {
+        background-color: rgb(216, 213, 36);   /* Цвет фона */
+    }
+}
+
+.B {
+    /* Стилизация hr */
+    hr {
+        background-color: rgb(0, 255, 21); /* Цвет линии */
+    }
+    input[type="button"] {
+        background-color: rgb(0, 255, 21);  /* Цвет фона */
+    }
+}
+
