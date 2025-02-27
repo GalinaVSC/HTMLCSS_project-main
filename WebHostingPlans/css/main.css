@@ -48,7 +48,7 @@ main {
 }
 
 hr {
-    border: none;          /* Убираем стандартную рамку */
+    border-top: 4px solid;
     height: 4px;           /* Устанавливаем высоту линии (толщину) */
 }
 
@@ -65,7 +65,7 @@ input[type="button"] {
 .E {
     /* Стилизация hr */
     hr {
-        background-color: rgb(185, 60, 60); /* Цвет линии */
+        color: rgb(185, 60, 60); /* Цвет линии */
     }
     input[type="button"] {
         background-color: rgb(185, 60, 60);   /* Цвет фона */
@@ -79,7 +79,7 @@ input[type="button"] {
 .P {
     /* Стилизация hr */
     hr {
-        background-color: rgb(129, 43, 129); /* Цвет линии */
+        color: rgb(129, 43, 129); /* Цвет линии */
     }
     input[type="button"] {
         background-color: rgb(129, 43, 129);   /* Цвет фона */
@@ -92,7 +92,7 @@ input[type="button"] {
 .S {
     /* Стилизация hr */
     hr {
-        background-color: rgb(173, 171, 56); /* Цвет линии */
+        color: rgb(173, 171, 56); /* Цвет линии */
     }
     input[type="button"] {
         background-color: rgba(173, 171, 56);   /* Цвет фона */
@@ -106,7 +106,7 @@ input[type="button"] {
 .B {
     /* Стилизация hr */
     hr {
-        background-color: rgb(45, 167, 55); /* Цвет линии */
+        color: rgb(45, 167, 55); /* Цвет линии */
     }
     input[type="button"] {
         background-color: rgb(45, 167, 55);  /* Цвет фона */
