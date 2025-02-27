@@ -8,7 +8,7 @@ header {
     height: 100px;
     padding: 1rem 0;
     background-color: rgb(196, 195, 192);
-    border-radius: 5%; /* Закругленные углы */
+    border-radius: 10px; /* Закругленные углы */
     display: flex; /* Используем Flexbox для вертикального центрирования текста */
     justify-content: center; /* Горизонтальное центрирование */
     align-items: center; /* Вертикальное центрирование */
@@ -37,8 +37,6 @@ main {
     transition: transform 0.3s ease; /* Добавляем плавный переход */
 }
 
-
-
 .E, .P, .S, .B {
     border-radius: 3%; /* Добавляем закругленные углы к изображениям */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* прибавляет эффект тени картинкам */
@@ -46,6 +44,7 @@ main {
     padding: 5px;
     background-color: lightslategray;
     margin-left: 20px; /* или любое другое значение отступа */
+    margin-bottom: 15px;
 }
 
 hr {
@@ -115,5 +114,17 @@ input[type="button"] {
 }
 .B:hover {
     transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    /* Для экранов шириной до 600 пикселей */
+    
+    .Block {
+       flex-direction: column; /
+    }  
+
+    .E, .P, .S, .B {
+        width: 100%; 
+    }
 }
 
