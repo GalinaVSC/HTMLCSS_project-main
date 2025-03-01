@@ -1,4 +1,4 @@
-body,header,ul,li,a {
+body,header,ul,li,a,footer {
     background: linear-gradient(to bottom, #a8e063, #56ab2f); /*задаём линейный градиент*/
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
@@ -19,6 +19,23 @@ header {
     position: sticky; /* Make the header sticky */
     top: 0; /* Stick the header to the top of the viewport */
     z-index: 1000; /* Ensure the header stays above other content */
+}
+
+.logo {
+    font-size: 1.5em; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+}
+
+.icons {
+    display: flex; /* Use flexbox for layout */
+    gap: 10px; /* Add space between icons */
+}
+
+.icon {
+    width: 24px; /* Set width of icons */
+    height: 24px; /* Set height of icons */
+    background-color: white; /* Set background color to white */
+    border-radius: 50%; /* Make icons circular */
 }
 
 ul {
@@ -57,8 +74,17 @@ li a:hover:not(.active) {
 }
 .text p {
     text-align: justify;
-   
+    text-indent: 20px; /*красная строка*/
     line-height: 1.3;
-    text-indent: 1.5em; /* Отступ первой строки */
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+footer {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px; /* Add padding: 10px top/bottom, 20px left/right */
+    color: white; /* Set text color to white */
+    position: sticky; /* Make the header sticky */
+    top: 0; /* Stick the header to the top of the viewport */
 }
