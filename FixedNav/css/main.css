@@ -36,11 +36,12 @@ li a.active {
     color: white;
 }
 
-.Text {
+.text {
     padding-top: 5px;
     text-align: center;
+    margin-left: 25%;
 }
-.Text p {
+.text p {
     text-align: justify;
     font-size: 20px;
     line-height: 1.3;
