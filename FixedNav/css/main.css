@@ -1,4 +1,4 @@
-body,ul,li,a {
+body,header,ul,li,a {
     background: linear-gradient(to bottom, #a8e063, #56ab2f); /*задаём линейный градиент*/
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
@@ -8,7 +8,17 @@ body,ul,li,a {
 
 body {
     margin: 0;
-    
+}
+
+header {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out items evenly */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px; /* Add padding: 10px top/bottom, 20px left/right */
+    color: white; /* Set text color to white */
+    position: sticky; /* Make the header sticky */
+    top: 0; /* Stick the header to the top of the viewport */
+    z-index: 1000; /* Ensure the header stays above other content */
 }
 
 ul {
