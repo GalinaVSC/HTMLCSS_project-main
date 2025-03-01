@@ -8,7 +8,7 @@ body,ul,li,a {
 
 body {
     margin: 0;
-    display: flex;
+    
 }
 
 ul {
@@ -36,6 +36,10 @@ li a.active {
     color: white;
 }
 
+li a:hover:not(.active) {
+    color: white;
+}
+
 .text {
     padding-top: 5px;
     text-align: center;
@@ -43,7 +47,7 @@ li a.active {
 }
 .text p {
     text-align: justify;
-    font-size: 20px;
+   
     line-height: 1.3;
     text-indent: 1.5em; /* Отступ первой строки */
     padding: 20px;
