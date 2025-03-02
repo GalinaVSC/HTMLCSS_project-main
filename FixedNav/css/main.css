@@ -104,7 +104,6 @@ iframe {
     padding: 5px;
     margin: 5px;
     border: 2px solid #000;
-    
 }
 
 footer {
@@ -115,3 +114,5 @@ footer {
     position: sticky; /* Make the header sticky */
     background-image: url('../img/ftr.png');
 }
+
+
