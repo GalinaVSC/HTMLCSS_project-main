@@ -1,5 +1,5 @@
 body,header,ul,li,a,footer {
-    background: linear-gradient(to bottom, #a8e063, #56ab2f); /*задаём линейный градиент*/
+    background: linear-gradient(to right,  #9fd3c7, #022547); /*задаём линейный градиент*/
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -19,6 +19,7 @@ header {
     position: sticky; /* Make the header sticky */
     top: 0; /* Stick the header to the top of the viewport */
     z-index: 1000; /* Ensure the header stays above other content */
+    background-image: url('../img/star.png');
 }
 
 .logo {
@@ -50,16 +51,26 @@ ul {
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
 }
 
+li {
+    text-align: center;
+}
+
 li a {
     display: block;
     color: #000;
     padding: 8px 16px;
     text-decoration: none;
     transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    border: 2px solid #000;
+    border-radius: 5px;
+    max-width: 5rem;
+    margin: 8px; /* Add space around the border */
+    background: linear-gradient(to bottom,  #9fd3c7, #022547);
 }
 
 li a.active {
-    background-color: #04AA6D;
+    background: linear-gradient(to bottom,  #50646e, #022547);
     color: white;
 }
 
@@ -87,10 +98,20 @@ h3 {
     padding: 40px;
 }
 
+iframe {
+    width: 35%;
+    height: 100%;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid #000;
+    
+}
+
 footer {
     display: flex; /* Use flexbox for layout */
     align-items: center; /* Center items vertically */
     padding: 10px 20px; /* Add padding: 10px top/bottom, 20px left/right */
     color: white; /* Set text color to white */
     position: sticky; /* Make the header sticky */
+    background-image: url('../img/ftr.png');
 }
