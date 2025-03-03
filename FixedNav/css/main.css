@@ -136,4 +136,36 @@ footer {
     background-image: url('../img/ftr.png');
 }
 
+@media (max-width: 768px) {
+    ul {
+        width: 100%; /* Make the menu take full width on smaller screens */
+        position: relative; /* Change position to relative */
+        height: auto; /* Adjust height to auto */
+        box-shadow: none; /* Remove box shadow */
+    }
+
+    .text {
+        margin-left: 0; /* Reset margin for smaller screens */
+        padding: 10px; /* Add padding for better readability */
+    }
+
+    header {
+        flex-direction: column; /* Stack header elements vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .icons {
+        justify-content: flex-start; /* Align icons to the start */
+    }
+
+    .logo {
+        margin-bottom: 10px; /* Add margin below the logo */
+    }
+
+    footer {
+        position: relative; /* Ensure footer stays at the bottom */
+        width: 100%; /* Ensure footer spans the full width */
+    }
+}
+
 
