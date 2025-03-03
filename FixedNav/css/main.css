@@ -1,5 +1,5 @@
 body,header,ul,li,a,footer {
-    background: linear-gradient(to right,  #9fd3c7, #022547); /*задаём линейный градиент*/
+    background: linear-gradient(to right,  #9fd3c7, #697d96); /*задаём линейный градиент*/
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -8,6 +8,10 @@ body,header,ul,li,a,footer {
 
 body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 header {
@@ -18,7 +22,7 @@ header {
     color: white; /* Set text color to white */
     position: sticky; /* Make the header sticky */
     top: 0; /* Stick the header to the top of the viewport */
-    z-index: 1000; /* Ensure the header stays above other content */
+    z-index: 1001; /* Ensure the header stays above other content */
     background-image: url('../img/star.png');
 }
 
@@ -41,13 +45,14 @@ header {
 
 ul {
     list-style-type: none;
-    margin: 0;
+    margin-top: 3rem;
     padding: 0;
     width: 25%;
     background-color: rgba(241, 241, 241, 0.9); /* Slightly transparent background */
     position: fixed;
     height: 100%;
     overflow: auto;
+    z-index: 1000;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
 }
 
@@ -83,6 +88,7 @@ li a:hover:not(.active) {
     text-align: center;
     margin-left: 25%;
     margin-bottom: 20px;
+    flex: 1;
 }
 
 .text p {
@@ -106,12 +112,27 @@ iframe {
     border: 2px solid #000;
 }
 
+img {
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+.fnews {
+    width: 100%;
+    height: 100%;
+    max-width: 31.5rem;
+    max-height: 31.5rem;
+}
+
 footer {
     display: flex; /* Use flexbox for layout */
     align-items: center; /* Center items vertically */
     padding: 10px 20px; /* Add padding: 10px top/bottom, 20px left/right */
     color: white; /* Set text color to white */
-    position: sticky; /* Make the header sticky */
+    position: relative; /* remove sticky positioning */
+    z-index: 1000;
+    bottom: 0;
+    width: 100%;
     background-image: url('../img/ftr.png');
 }
 
