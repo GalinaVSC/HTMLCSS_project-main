@@ -1,0 +1,166 @@
+body,ul,li,footer {
+    background: linear-gradient(to right,  #9fd3c7, #697d96); /*задаём линейный градиент*/
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+header {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out items evenly */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px; /* Add padding: 10px top/bottom, 20px left/right */
+    color: white; /* Set text color to white */
+    position: sticky; /* Make the header sticky */
+    top: 0; /* Stick the header to the top of the viewport */
+    z-index: 1001; /* Ensure the header stays above other content */
+    background-image: url('../img/star.png');
+    font-family: "Roboto Slab", serif;
+    
+}
+
+.logo {
+    font-size: 1.5em; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+}
+
+.icons {
+    display: flex; /* Use flexbox for layout */
+    gap: 10px; /* Add space between icons */
+}
+
+.icon {
+    width: 24px; /* Set width of icons */
+    height: 24px; /* Set height of icons */
+    background-color: white; /* Set background color to white */
+    border-radius: 50%; /* Make icons circular */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background: transparent;
+}
+
+li {
+    float: left;
+    background: transparent;
+}
+
+li a {
+    display: block;
+    color: #94a79d;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+li a.active {
+    color: white
+}
+
+li a:hover:not(.active) {
+    color: white;
+}
+
+.text {
+    padding-top: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.text p {
+    text-align: justify;
+    text-indent: 20px; /*красная строка*/
+    line-height: 1.3;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h3 {
+    text-align: left;
+    padding: 40px;
+}
+
+iframe {
+    width: 35%;
+    height: 100%;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid #000;
+}
+
+img {
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+.fnews {
+    width: 100%;
+    height: 100%;
+    max-width: 31.5rem;
+    max-height: 31.5rem;
+}
+
+footer {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px; /* Add padding: 10px top/bottom, 20px left/right */
+    color: white; /* Set text color to white */
+    position: relative; /* remove sticky positioning */
+    z-index: 1000;
+    bottom: 0;
+    width: 100%;
+    background-image: url('../img/ftr.png');
+}
+
+/* Add media query for smaller screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack header elements vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+    .icons {
+        justify-content: flex-start; /* Align icons to the start */
+        margin-left: 20px;
+    }
+    .logo {
+        margin-bottom: 10px; /* Add margin below the logo */
+    }
+    ul {
+        margin-top: 86px;
+        position: relative;
+        background: transparent;
+        width: 120px;
+    }
+    li {
+        background: transparent;
+        text-align: center;
+        width: 120px;
+        
+    }
+    .fnews {
+        max-width: 250px;
+    }
+    img {
+        max-width: 250px;
+    }
+    textarea {
+        max-width: 250px;
+    }
+}
+
+
