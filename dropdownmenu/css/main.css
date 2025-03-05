@@ -1,0 +1,96 @@
+body {
+    background: linear-gradient(to bottom,  #f7d3b5, #dd7a5c); /* задаём линейный градиент от светло-коричневого к тёмному */
+    font-family: "Roboto Slab", serif; /* устанавливаем шрифт Roboto Slab, если его нет — используется serif */
+    margin: 0; /* убираем внешние отступы со всех сторон */
+    display: flex; /* делаем тело страницы гибким контейнером */
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex; /* Используем Flexbox для выравнивания элементов */
+    align-items: center; /* Центрирование элементов по вертикали */
+    padding: 10px 20px; /* Добавляем внутренние отступы: сверху/снизу 10 пикселей, слева/справа 20 пикселей */
+    top: 0; /* Прикрепляем заголовок к верхнему краю экрана */
+    text-align: center; /* Выравнивание текста по центру */
+    background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet); /* Градиентная заливка фона от красного до фиолетового */
+}
+
+h1 {    
+    color: white;
+    font-size: 40px; /* Размер шрифта */
+    line-height: 40px; /* Высота строки для равномерного распределения текста */
+    width: 100%;
+}
+
+.dropdown {
+    position: relative; /*Положение относительно родителя*/
+    display: inline-block; /*Отображение встроенного блока, позволяющего размещать выпадающую кнопку и содержимое в строке*/
+}
+
+.dropbtn {
+    width: 110%;
+    background-color: #e18669; /*Цвет фона */
+    color: white; /* Цвет те#6cd166кста */
+    padding: 16px; /* добавить отступ */
+    font-size: 16px; /* размер шрифта */
+    border: none; /*удаление границы*/
+    border-radius: 5px;
+    cursor: pointer; /*Изменение курсора на указатель при наведении*/
+}
+
+.dropdown-content {
+    display: none; /* Скрыть содержимое раскрывающегося списка по умолчанию */
+    position: absolute; /* Абсолютно разместить внутри контейнера раскрывающегося списка */
+    background-color: #f0cccc; /* Цвет фона */
+    min-width: 110%; /* минимальная ширина */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* добавление тени для глубины */
+    z-index: 1; /* Обеспечить, чтобы содержимое раскрывающегося списка находилось выше других элементов*/
+    font-weight: bold; 
+}
+
+.dropdown-content a {
+    color: black; /* цвет текста*/
+    padding: 12px 16px; /* Add padding */
+    text-decoration: none; /* Удалить подчеркивание из ссылок */
+    display: block; /* Отображение блока, чтобы ссылки занимали всю ширину */
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* Установить цвет фона при наведении */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /*  Отобразить содержимое раскрывающегося списка*/
+}
+
+.Green {
+    color: green; /* цвет текста*/
+}
+
+.Yellow {
+    color: rgb(230, 188, 3); /* цвет текста*/
+}
+
+.Red {
+    color: red; /* цвет текста*/
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+.image-container {
+    height: auto;
+    display: inline-block;;
+    width: 100%; 
+    padding-right: 20px;
+}
+
+.image {
+    width: 300px;
+    height: 300px;
+    margin-right: 10px; /* Отступ справа */
+    border-radius: 3%; /* Добавляем закругленные углы к изображениям */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* прибавляет эффект тени картинкам */
+}
