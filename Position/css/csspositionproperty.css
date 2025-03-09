@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+div {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #000;
+    background-color: #f0f0f0;
+}
+
+.static {
+    position: static;
+    background-color: lightblue;
+}
+
+.relative {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background-color: lightcoral;
+}
+
+.absolute-container {
+    position: relative;
+    height: 200px;
+    border: none;
+}
+
+.absolute {
+    position: absolute;
+    top: 0px; /*Отступ сверху от родительского контейнера*/
+    right: 20px;
+    background-color: lightgreen;
+}
+
+/* Таким образом можно расположить в центре*/
+/*.absolute {*/
+   /* position: absolute; /* Set the div to absolute positioning */
+   /* top: 50%; /* Position the top at 50% of the container's height */
+   /* left: 50%; /* Position the left at 50% of the container's width */
+   /* transform: translate(-50%, -50%); /* Offset the div by 50% of its own width and height */
+   /* background-color: lightgreen;
+    padding: 20px; /* Adjust padding as needed */ 
+
+
+.fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: lightgoldenrodyellow;
+}
+
+.sticky-container {
+    height: 300px;
+    overflow: auto;
+    border: none;
+}
+
+.sticky {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    background-color: lightsalmon;
+    border: 2px solid #000;
+}
