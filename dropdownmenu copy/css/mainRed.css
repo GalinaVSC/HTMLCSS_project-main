@@ -81,8 +81,6 @@ h1 {
     color: red; /* цвет текста*/
 }
 
-
-
 /* Область секции */
 section {
     padding: 20px; /* Внутренние отступы внутри секции */
@@ -109,7 +107,8 @@ section {
 
 p {
     padding-left: 10px;
-    padding-right: 20px;
+    width: 50%;
+    text-align: center
 }
 
 /* Нижний колонтитул (footer) */
@@ -130,9 +129,9 @@ table {
     border-spacing: 5px;       /* Расстояние между ячейками */
     justify-content: space-between;
     padding-left: 10px 10px;
-    width: 60%;
+    width: 100%;
     text-align: right;        /* Выравнивание содержимого по центру */
-    padding: 50px;
+    max-width: 700px;
 }
 
 td {
@@ -149,5 +148,5 @@ td a:hover:not(.active) {
 td a {
     color: #ffffff; /* Цвет ссылок — белый */
     text-decoration: none; /* Убираем подчеркивание у ссылок */
+    
 }
-
