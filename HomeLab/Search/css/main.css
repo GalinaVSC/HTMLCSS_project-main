@@ -1,0 +1,57 @@
+/* Импортируем Google Fonts: Roboto и Source Code Pro */
+@import url("https://fonts/googleapis.com/css2?family-Robotowght@100&family=Sourse+Code+Pro:wght@200&display=swap");
+body {
+    font-family: Roboto, sans-serif; /* Устанавливаем семейство шрифтов для тела документа */
+    font-optical-sizing: auto; /* Автооптимизация размеров шрифта */
+    font-weight: 600; /* Устанавливаем начальный вес шрифта */
+    font-style: normal; /* Устанавливаем обычный стиль шрифта */
+    font-variation-settings: "wdth" 100; /* Применяем вариацию ширины шрифта */
+}
+
+* {
+    box-sizing: border-box; /* Применяем модели коробочной модели ко всем элементам */
+}
+
+.row {
+    display: flex; /* Активируем Flexbox для контейнеров с классом row */
+}
+
+.left {
+    flex: 35%; /* Элемент занимает 35% доступной ширины */
+    padding: 15px 0; /* Внутренние отступы: 15px сверху и снизу, 0 слева и справа */
+    background-color: cadetblue; /* Задний фон цвета cadetblue */
+}
+
+.left h2 {
+    padding-left: 8px; /* Левый внутренний отступ заголовков h2 внутри .left */
+}
+
+.right {
+    flex: 65%; /* Элемент занимает 65% доступной ширины */
+    padding: 15px; /* Внутренние отступы по всем сторонам на 15px */
+    background-color: blanchedalmond; /* Задний фон цвета blanchedalmond */
+}
+
+#mySearch {
+    width: 100%; /* Ширина поля ввода составляет 100% родительского элемента */
+    font-size: 18px; /* Размер шрифта 18 пикселей */
+    padding: 11px; /* Внутренние отступы по всем сторонам на 11 пикселей */
+    border: 1px solid #ddd; /* Однопиксельная рамка светло-серого цвета */
+}
+
+#myMenu {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Отсутствуют внутренние отступы */
+    margin: 0; /* Отсутствуют внешние отступы */
+}
+
+#myMenu li a {
+    padding: 12px; /* Внутренние отступы по всем сторонам на 12 пикселей */
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    color: black; /* Цвет текста черный */
+    display: block; /* Преобразовываем ссылки в блочные элементы */
+}
+
+#myMenu li a:hover {
+    background-color: #c7b59d; /* Меняем задний фон ссылки при наведении */
+}
