@@ -1,0 +1,33 @@
+h1 {
+    margin: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    border-color: aquamarine;
+    text-align: left;
+    margin: 10px;
+}
+table td, table th {
+    padding: 10px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0.05 solid #AAAAAA;
+    cursor: pointer;
+}
+
+table th {
+    background-color:  green;
+    color: whitesmoke;
+    
+}
+table tr:nth-child(odd) {
+    background: #fff; 
+} 
+table tr:nth-child(even) {
+    background: #D0E4F5;
+}
+
+table tr:hover { 
+    background: #d7d8d6; /* Цвет фона */
+}
