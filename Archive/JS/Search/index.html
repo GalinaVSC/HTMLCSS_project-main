@@ -15,7 +15,7 @@
     <div class="row"> <!-- Начало контейнера с классом 'row' -->
         <div class="left"> <!-- Левый блок -->
             <h2>Menu</h2>
-            <input type="text" id="mySearch" onkeyup="search()" placeholder="Search.." title="Type in a category">
+            <input type="text" id="mySearch" onkeyup="Search()" placeholder="Search.." title="Type in a category">
             <ul id="myMenu"><!-- Список категорий -->
                 <li><a href="#">HTML</a></li> <!-- Элемент списка с ссылкой на категорию HTML -->
                 <li><a href="#">CSS</a></li>
@@ -41,23 +41,6 @@
             <!--Эффективный поиск не только экономит время, но и помогает находить идеи и решения, будь то для академических исследований, повседневных запросов или профессиональных задач.-->
         </div>
     </div>
-    <script>
-        function Search() { // Функция для фильтрации списка при вводе текста
-            var input, filter, ul, li, a, i; // Объявление переменных
-            input = document.getElementById("mySearch"); // Получение элемента поля ввода
-            filter = input.value.toUpperCase(); // Преобразование введенного текста в верхний регистр
-            ul = document.getElementById("myMenu"); // Получение списка категорий
-            li = ul.getElementsByTagName("li"); // Получение всех элементов списка
-            for (i = 0; i < li.length; i++) { // Цикл для проверки каждого элемента списка
-                a = li[i].getElementsByTagName("a")[0]; // Получение ссылки внутри элемента списка
-                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) { // Проверка наличия введенного текста в ссылке
-                    li[i].style.display = ""; // Показываем подходящие элементы
-                } 
-                    else {
-                        li[i].style.display = "none"; // Скрываем неподходящие элементы
-                    }
-            }
-        }
-    </script>
+    <script src="JS/search.js"></script>
 </body>
 </html>
