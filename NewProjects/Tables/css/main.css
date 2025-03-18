@@ -25,6 +25,7 @@ table th {
 table tr:nth-child(odd) {
     background: #fff; 
 } 
+
 table tr:nth-child(even) {
     background: #D0E4F5;
 }
