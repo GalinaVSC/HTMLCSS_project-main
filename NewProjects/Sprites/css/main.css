@@ -1,0 +1,33 @@
+#home {
+    width: 46px;
+    height: 44px;
+    background: url(../img/img_navsprites_hover.gif) 0 0;
+}
+
+#next {
+    width: 43px;
+    height: 44px;
+    background: url(../img/img_navsprites_hover.gif)  -91px 0;
+}
+
+#renext {
+    width: 43px;
+    height: 44px;
+    background: url(../img/img_navsprites_hover.gif)  -47px 0;
+}
+
+a {
+    padding: 10px;
+}
+
+#home:hover {
+    background: url(../img/img_navsprites_hover.gif) -0px -45px;
+}
+
+#next:hover {
+    background: url(../img/img_navsprites_hover.gif) -91px -45px;
+}
+
+#renext:hover {
+    background: url(../img/img_navsprites_hover.gif) -47px -45px;
+}
