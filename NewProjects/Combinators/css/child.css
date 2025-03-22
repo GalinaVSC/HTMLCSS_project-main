@@ -1,0 +1,4 @@
+/*Все <p> потомки элемента div*/
+div > p {
+    background-color: yellow;
+}

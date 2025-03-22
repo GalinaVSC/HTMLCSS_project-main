@@ -49,3 +49,8 @@ a {
     height: 24px;
     background: url(../img/img_massivicons.jpg)  -215px -360px;
 }
+
+div h4, p {
+    color: green;
+    font-weight: 600;
+}
