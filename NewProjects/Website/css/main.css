@@ -1,13 +1,16 @@
 body {
-    background: #e0dfdf;
+    background: #b6b5b5;
     margin: 0; 
     display: flex; 
     flex-direction: column; 
 }
+
 .header {
     background: #f4f4f4;
     color: #000000;
     padding: 1rem 0;
+    width: 100%;
+    margin: 0 10px 0 10px;
 }
 
 .header h1, p {
@@ -20,6 +23,7 @@ body {
     width: 100%;
     background-color: #272727;
     overflow: auto;
+    margin: 0 10px 0 10px;
 }
 
 .topnav a {
@@ -38,34 +42,35 @@ body {
 
 .row{
     width: 100%;
-    padding: 10px;
+    margin: 10px;
 }
 
 .leftcolumn {
-    width: 70%;
-    padding:10px;
+    width: 68%;
     float: left;
+    background-color: #c2bcbc;
 }
 
 .card {
-    background-color: #fbfdfd;
-    padding: 10px;
+    background: #eef0f0;
+    margin:  10px;
 }
 
 .fakeimg {
     background-color: #a8a7a7;
-    padding: 20px;
+    margin: 10px;
+    padding: 10px;
 }
 
-.card h2, h5 {
+.card h2, h3, h5, p {
     text-align: left;
+    padding: 10px;
 }
 
 .rightcolumn {
-    width: 25%;
+    width: 30%;
     float: right;
-    background-color: #fbfdfd;
-    padding: 10px;
+    background-color: #c2bcbc;
 }
 
 .footer {
@@ -73,7 +78,7 @@ body {
     color: #000; 
     margin: 0px;
     background: #e5e8e9;
-    position: relative; 
+    margin: 0 10px;
     width: 100%; 
     height: 100px;
     align-items: center; 

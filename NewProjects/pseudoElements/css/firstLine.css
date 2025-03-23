@@ -5,5 +5,5 @@ p::first-line {
 h2::first-letter {
     color: #ff0000;
     font-size: xx-large;
-    font-style: oblique;
+    font-style: oblique; /*Наклонное начертание буквы*/
 }
