@@ -1,0 +1,9 @@
+p::first-line {
+    color: #ff0000;
+    font-variant: small-caps;
+}
+h2::first-letter {
+    color: #ff0000;
+    font-size: xx-large;
+    font-style: oblique;
+}
