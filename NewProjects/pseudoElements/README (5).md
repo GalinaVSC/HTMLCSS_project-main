@@ -1,13 +1,13 @@
 ### What are Pseudo-Elements?
 
-A CSS pseudo-element is used to style specific parts of an element.
+Псевдоэлемент CSS используется для стилизации определенных частей элемента.
 
-For example, it can be used to:
+Например, его можно использовать для:
 
-- Style the first letter or line, of an element
-- Insert content before or after an element
-- Style the markers of list items
-- Style the viewbox behind a dialog box
+- Style the first letter or line, of an element (Стилизация первой буквы или строки элемента)
+- Insert content before or after an element (Вставка содержимого до или после элемента)
+- Style the markers of list items (Стилизация маркеров элементов списка)
+- Style the viewbox behind a dialog box (Стилизация области просмотра позади диалогового окна)
 
 ### Syntax
 selector::pseudo-element {
@@ -15,28 +15,29 @@ selector::pseudo-element {
 }
 
 ### The ::first-line Pseudo-element
-The `::first-line pseudo-element` is used to add a special style to the first line of a text.
+The `::first-line pseudo-element` is used to add a special style to the first line of a text. (используется для добавления специального стиля к первой строке текста)
 
-The following example formats the first line of the text in all  `<p>` elements:
+The following example formats the first line of the text in all  `<p>` elements: (В следующем примере форматируется первая строка текста во всех элементах `<p>`:)
 ### Example
 p::first-line {
   color: #ff0000;
   font-variant: small-caps;
 }
-Note: The ::first-line pseudo-element can only be applied to block-level elements.
+Note: The ::first-line pseudo-element can only be applied to block-level elements.(можно применять только к элементам блочного уровня.)
 
 The following properties apply to the ::first-line pseudo-element:
+К псевдоэлементу ::first-line применяются следующие свойства:
 
-- font properties
-- color properties
-- background properties
-- word-spacing
-- letter-spacing
-- text-decoration
-- vertical-align
-- text-transform
-- line-height
-- clear
+- font properties - свойства шрифта
+- color properties - свойства цвета
+- background properties - свойства фона
+- word-spacing - интервал между словами
+- letter-spacing - интервал между буквами
+- text-decoration - оформление текста
+- vertical-align - вертикальное выравнивание
+- text-transform - преобразование текста
+- line-height - высота строки
+- clear - очистить
 
 ### The ::first-letter Pseudo-element
 
