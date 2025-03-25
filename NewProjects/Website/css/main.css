@@ -1,84 +1,118 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 
+* /* Универсальное применение модели box-sizing ко всем элементам для учета границ и отступов внутри ширины и высоты элемента */
 * {
-    box-sizing: border-box; /* Add border box model to all elements */
+    box-sizing: border-box; /* Добавляем модель border-box ко всем элементам */
 }
+
+/* Стили для основного контейнера body */
 body {
-    font-family: "Crimson Text", serif;
-    font-weight: 400;
-    font-style: normal;
-    padding: 10px;
-    background: #f1f1f1; 
+    font-family: "Crimson Text", serif; /* Шрифт текста на странице */
+    font-weight: 400; /* Стандартная толщина шрифта */
+    font-style: normal; /* Обычный шрифт без курсива */
+    padding: 10px; /* Внутренние отступы по краям тела страницы */
+    background: #24587A; /* Фоновый цвет всего документа */
 }
 
+/* Стилизация заголовка */
 .header {
-    padding: 30px;
-    text-align: center;
-    background: white;
-  }
+    padding: 30px; /* Отступы вокруг содержимого заголовка */
+    text-align: center; /* Выравнивание текста по центру */
+    background-image: url('../img/nebobir.jpg');  /* Цвет фона заголовка */
+}
 
+/* Заголовок первого уровня в секции header */
 .header h1 {
-    font-size: 50px;
+    font-size: 50px; /* Размер шрифта заголовка */
+    color: #06266f; /* Цвет текста заголовка */
 }
 
+.header p {
+    color: #06266f;
+}
+
+/* Навигационное меню */
 .topnav {
-    overflow: hidden;
-    background-color: #333;
+    overflow: hidden; /* Скрываем любые элементы, выходящие за пределы блока */
+    background-color: #a1b1cb; /* Цвет фона навигационного меню */
 }
 
+/* Ссылки в навигационном меню */
 .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
+    float: left; /* Выстраиваем ссылки слева направо */
+    display: block; /* Делаем ссылку блочным элементом */
+    color: #06266F; /* Цвет текста ссылок */
+    text-align: center; /* Выравнивание текста по центру */
+    padding: 14px 16px; /* Внутренние отступы для ссылок */
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+}
 
+/* Поведение ссылок при наведении мышью */
 .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #FF7400; /* Меняем фоновый цвет ссылки при наведении */
+    color: black; /* Изменяем цвет текста на черный при наведении */
 }
 
-.row{
-    width: 100%;
-    margin: 10px;
-   background: #108fb9;
+/* Очистка плавающих элементов после столбцов */
+.row::after {
+    content: ""; /* Нет содержания */
+    display: table; /* Используем таблицу для очистки потока */
+    clear: both; /* Очищаем оба плавающих элемента */
 }
 
+/* Левая колонка контента */
 .leftcolumn {
-    width: 68%;
-    float: left;
-}
-
-.card {
-    background:white;
-    margin:  10px;
-    padding: 10px;
-}
-
-.fakeimg {
-    background-color: #d43939;
-    padding: 10px;
-}
-
-.card h2, h3, h5 {
-    text-align: left;
-    
+    float: left; /* Располагаем левую колонку слева */
+    width: 75%; /* Ширина левой колонки составляет 75% от родителя */
+    color: whitesmoke;
 }
 
 .rightcolumn {
-    width: 30%;
-    float: right;
+    float: left; /* Расположение колонки слева относительно родителя */
+    width: 25%; /* Ширина колонки составляет 25% от ширины родительского элемента */
+    background-color: #24587A; /* Заданный синий цвет фона для колонки */
+    padding-left: 20px; /* Внутренний отступ слева, чтобы отделить содержимое от границы */
+    color: #FFF; /* цвет текста внутри колонки */
 }
 
+/* Карточка с контентом */
+.card {
+    background-color: #06266F; /* Цвет фона карточки */
+    padding: 20px; /* Внутренний отступ вокруг содержимого карточки */
+    margin-top: 20px; /* Внешний отступ сверху для разделения карточек */
+}
+
+/* Изображение с фоном */
+.fakeimg {
+    background-color: #FF7400; /* Цвет фона изображения */
+    width: 100%; /* Ширина изображения равна ширине родительского элемента */
+    padding: 20px; /* Внутренний отступ изображения */
+}
+
+/* Подвал сайта */
 .footer {
-    display: flex; 
-    color: #000; 
-    margin: 0px;
-    background: #cacaca;
-    width: 100%; 
-    height: 100px;
-    align-items: center; 
-    justify-content: space-around; 
+    padding: 20px; /* Внутренние отступы подвала */
+    text-align: center; /* Центрирование текста в подвале */
+    background-image: url('../img/more.jpg'); /* Цвет фона подвала */
+    margin-top: 20px; /* Внешний отступ сверху для отделения от основного контента */
+}
+
+.footer h2 {
+    color: #06266f;
+}
+
+/* Медиа-запросы для адаптивности */
+@media screen and (max-width: 800px) {
+    .leftcolumn,
+    .rightcolumn { /* Применяется для обеих колонок */
+        width: 100%; /* Колонки занимают всю ширину экрана */
+        padding: 0; /* Убираются внутренние отступы */
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none; /* Убираем float для адаптации под мобильные устройства */
+        width: 100%; /* Элементы навигации занимают всю ширину */
+    }
 }
