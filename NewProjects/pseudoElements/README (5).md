@@ -41,22 +41,23 @@ The following properties apply to the ::first-line pseudo-element:
 
 ### The ::first-letter Pseudo-element
 
-The ::first-letter pseudo-element is used to add a special style to the first letter of a text.
+The ::first-letter pseudo-element is used to add a special style to the first letter of a text. (используется для добавления специального стиля к первой букве текста.)
 
-The following example formats the first letter of the text in all `<p>` elements: 
+The following example formats the first letter of the text in all `<p>` elements: (Следующий пример форматирует первую букву текста во всех элементах `<p>`:)
 
-- font properties
-- color properties 
-- background properties
-- margin properties
-- padding properties
-- border properties
-- text-decoration
-- vertical-align (only if "float" is "none")
-- text-transform
-- line-height
-- float
-- clear
+- font properties - свойства шрифта
+- color properties - свойства цвета
+- background properties - свойства фона
+- margin properties - свойства полей
+- padding properties - свойства отступов
+- border properties - свойства границ
+- text-decoration - оформление текста
+- vertical-align (only if "float" is "none") - вертикальное выравнивание (только если "float" равно "none")
+- text-transform - преобразование текста
+- line-height - высота строки
+- float - плавающий
+- clear - очистка
+
 ### HTML Classes
 p.intro::first-letter {
   color: #ff0000;
@@ -75,18 +76,18 @@ p::first-line {
 
 ### CSS - The ::after Pseudo-element
 
-The ::after pseudo-element can be used to insert some content after the content of an element.
+The ::after pseudo-element can be used to insert some content after the content of an element. (можно использовать для вставки некоторого содержимого после содержимого элемента.)
 
-The following example inserts an image after the content of each `<h1>` element:
+The following example inserts an image after the content of each `<h1>` element: (В следующем примере изображение вставляется после содержимого каждого элемента `<h1>`:)
 
 h1::after {
   content: url(smiley.gif);
 }
 ### CSS - The ::marker Pseudo-element
 
-The `::marker` pseudo-element selects the markers of list items.
+The `::marker` pseudo-element selects the markers of list items. (выбирает маркеры элементов списка.)
 
-The following example styles the markers of list items:\
+The following example styles the markers of list items: (В следующем примере маркеры элементов списка оформляются:)
 `::marker` {
   color: red;
   font-size: 23px;
@@ -94,11 +95,11 @@ The following example styles the markers of list items:\
 
 ### CSS - The ::selection Pseudo-element
 
-The `::selection` pseudo-element matches the portion of an element that is selected by a user.
+The `::selection` pseudo-element matches the portion of an element that is selected by a user. (Псевдоэлемент `::selection` соответствует части элемента, выбранной пользователем.)
 
-The following CSS properties can be applied to `::selection: color`, `background`, `cursor`, and `outline`.
+The following CSS properties can be applied to (Следующие свойства CSS можно применить к)`::selection: color`, `background`, `cursor`, and `outline`.
 
-The following example makes the selected text red on a yellow background:\
+The following example makes the selected text red on a yellow background:(Следующий пример делает выделенный текст красным на желтом фоне:)
 `::selection` {
   color: red;
   background: yellow;
