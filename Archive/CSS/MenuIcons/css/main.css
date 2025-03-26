@@ -1,34 +1,55 @@
-/*Style the navigator bar*/
+/* Style the navigator bar */
 .navbar {
-    width: 100%;
-    background-color: #555;
-    overflow: auto;
+    /* Устанавливаем ширину панели навигации на всю доступную ширину */
+    width: 100%;  
+    
+    /* Цвет фона панели навигации */
+    background-color: #555;  
+    
+    /* Обеспечиваем автоматическое управление элементами внутри контейнера, чтобы избежать переполнения */
+    overflow: auto;  
 }
 
-/*Navbar links*/
+/* Styles for navigation bar links */
 .navbar a {
-    float: left;
-    text-align: center;
-    padding: 12px;
-    color: white;
-    text-decoration: none;
-    font-size: 17px;
+    /* Размещаем ссылки слева направо */
+    float: left;  
+    
+    /* Выравнивание текста по центру */
+    text-align: center;  
+    
+    /* Добавляем отступы вокруг текста ссылок */
+    padding: 12px;  
+    
+    /* Цвет текста для ссылок */
+    color: white;  
+    
+    /* Убираем подчеркивание у ссылок */
+    text-decoration: none;  
+    
+    /* Размер шрифта для текста ссылок */
+    font-size: 17px;  
 }
 
-/*navbar links on mouse-over*/
+/* Изменение стиля ссылок при наведении мыши */
 .navbar a:hover {
-    background-color: #000;
+    /* Меняем фоновый цвет ссылки при наведении */
+    background-color: #000;  
 }
 
-/*current/active navbar link*/
+/* Стили для активной ссылки */
 .active {
-    background-color: #04aa6d;
+    /* Фоновый цвет для текущей активной ссылки */
+    background-color: #04AA6D;  
 }
 
-/*Add responsiveness - will automaticaly display the navbar verticaly instead of horizontally on screens less than 500 px*/
-@media screen and (max-width: 500px){
+/* Добавление адаптивности для маленьких экранов */
+@media screen and (max-width: 500px) {
+    /* Для экранов шириной до 500 пикселей убираем плавающее размещение ссылок */
     .navbar a {
-        float: none;
-        display: block;
+        float: none;  
+        
+        /* Делаем ссылки блочными элементами, чтобы они располагались вертикально */
+        display: block;  
     }
 }

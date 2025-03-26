@@ -1,7 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+* {
+    box-sizing: border-box; /* Добавляем модель border-box ко всем элементам */
+}
 div {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+}
+
+.forms {
+    width: 100%;
+    background-color: aqua;
+    text-align: center;
+}
+form {
+    /* Используем Flexbox для размещения элементов внутри формы */
+    display: flex;
+    /* Элементы располагаются сверху вниз (по столбцу) */
+    flex-direction: column;
+    /* Добавляет расстояние между каждым элементом формы */
+    gap: 16px;
+    align-items: center;
 }
 
 input[type=text], select {
@@ -12,11 +34,12 @@ input[type=text], select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+   
 }
 
 input[type=submit] {
-    width: 30%;
-    background-color: #4caf50;
+    width: 20%;
+    background-color: #2cccc4;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -26,5 +49,15 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #2f96af;
+}
+
+footer {
+    width: 100%;
+    padding: 20px;
+    background-color: aquamarine;
+    text-align: center;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
 }
