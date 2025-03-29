@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!--В этом абзаце элемент <span>span</span> окрашен в
+            зелено-желтый цвет. Ширина и высота не работают, значение padding
+            не отодвигает окружающий контент, а верхние/нижние
+            поля не работают.-->
+    <h2>Before display: inline-block</h2>
+        <p>
+            In this paragraph, the <span><img src="img/orange.jpg" alt="berry" width="100"></span> element is color in
+            green-yellow color. The width and height don't work, the padding
+            value doesn't push surrounding content away, and the top/bottom
+            margins don't work.
+        </p>
+
+        <!-- Adding display: inline-block the divs -->
+    <!--В этом абзаце элемент <span class="after">...</span>
+окрашен в зелено-желтый цвет. Ширина и высота работают, значение padding
+отталкивает окружающий контент, а верхние/нижние поля
+работают.-->
+        <h2>After display: inline-block</h2>
+        <p>
+            In this paragraph, the<span class="after"><img src="img/orange.jpg" alt="berry" width="100"></span> element is
+            color in green-yellow color. The width and height work, the padding
+            value push surrounding content away, and the top/bottom margins
+            work.
+        </p>
+</body>
+</html>

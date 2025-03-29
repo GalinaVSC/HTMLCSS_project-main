@@ -5,3 +5,16 @@ li {
 span {
     display: block;
 }
+
+.text {
+    background-color: rgb(233, 120, 243);
+    border: solid;
+    padding: 10px;
+    color: rgb(37, 7, 117);
+    display: contents;
+}
+
+.textTwo {
+    background-color: rgb(210, 245, 53);
+    padding: 10px;
+}

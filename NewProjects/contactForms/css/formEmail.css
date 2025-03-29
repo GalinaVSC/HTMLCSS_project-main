@@ -5,30 +5,32 @@
 
 body {
     background: #ac2cccb2;
-    padding: 100px;
-}
-div {
+    margin: 0;
     display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+div {
+    display: inline-flex;
     font-family: "Libre Baskerville", serif;
     font-weight: 400;
     font-style: normal;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    width: 100%;
-    border: #2f96af solid;
+    background-color: #f9f9f9;
+    width: 70%;
+    margin: auto;
 }
 
-h2 {
-    text-align: center;
-}
-
-.image {
+img {
     float: left;
-    width: 40%;
-    height: 500px
+    width: 50%;
+    height: 500px;
 }
 
+img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
 form {
     /* Используем Flexbox для размещения элементов внутри формы */
     display: flex;
@@ -41,20 +43,33 @@ form {
 
 .forms {
     float: left;
-    width: 40%;
+    width: 50%;
     height: 500px;
-    padding-top: 100px;
+    padding: 20px 100px;
 }
 
-input[type=text], select {
-    width: 70%;
+
+input[type=text] {
+    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display:inline-block;
     border: 1px solid #ccc;
     border-radius: 10px;
     box-sizing: border-box;
-   
+}
+
+.text {
+    height: 200px;
+    width: 100%;
+}
+
+#fname {
+    background-image: url('https://fontawesome.com/icons/user?f=classic&s=regular'); /* Путь к иконке */
+    background-repeat: no-repeat;             /* Чтобы иконка отображалась только один раз */
+    background-position: 10px center;          /* Позиция иконки: 10px от левого края, по центру по высоте */
+    background-size: 16px 16px;               /* Размер иконки */
+    padding-left: 40px;                       /* Дополнительный отступ слева для размещения иконки */
 }
 
 input[type=submit] {
