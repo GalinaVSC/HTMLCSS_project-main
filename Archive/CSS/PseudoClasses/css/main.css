@@ -1,0 +1,32 @@
+/*не посещенная ссылка*/
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+/*выбранная ссылка*/
+a:active {
+    color: blue;
+}
+
+a.higlight:hover {
+    color: #ff0000;
+    font-size: 22px;
+}
+
+h4 {
+    display: none;
+    background-color: rgb(219, 214, 138);
+    padding: 20px;
+}
+
+div:hover h4 {
+    display: block;
+}
