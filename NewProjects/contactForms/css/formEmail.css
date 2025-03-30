@@ -59,18 +59,25 @@ input[type=text] {
     box-sizing: border-box;
 }
 
+.symbol-input100 {
+    border: 2px solid rgb(6, 211, 68);
+}
+
+
+.focus-input100 {
+    border: 2px solid rgb(245, 5, 5);
+}
+
+.input100[type=text] {
+    border: 2px solid rgb(40, 7, 160);
+}
+
+
 .text {
     height: 200px;
     width: 100%;
 }
 
-#fname {
-    background-image: url('https://fontawesome.com/icons/user?f=classic&s=regular'); /* Путь к иконке */
-    background-repeat: no-repeat;             /* Чтобы иконка отображалась только один раз */
-    background-position: 10px center;          /* Позиция иконки: 10px от левого края, по центру по высоте */
-    background-size: 16px 16px;               /* Размер иконки */
-    padding-left: 40px;                       /* Дополнительный отступ слева для размещения иконки */
-}
 
 input[type=submit] {
     width: 70%;
