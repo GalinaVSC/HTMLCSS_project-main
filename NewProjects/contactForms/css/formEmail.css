@@ -4,14 +4,26 @@
 }
 
 body {
-    background: #ab58dbb2;
+    background-image: url(../img/bg-01.png) ;
     margin: 0;
     display: flex;
     flex-direction: column;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
     min-height: 100vh;
 }
 
-div {
+body::before {
+    content: '';
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(132, 106, 221, 0.9);
+    z-index: -1; /*помещаем фон за контентом*/
+}
+
+div, input {
     display: inline-flex;
     font-family: "Libre Baskerville", serif;
     font-weight: 400;
@@ -23,14 +35,15 @@ div {
 
 img {
     float: left;
-    width: 30%;
-    height: 30%;
-    margin: 100px;
+    width: 50%;
+    height: 50%;
+    margin: 120px;
 }
 
 img:hover{
-    transform: scale(1.05);
+    transform: scale(1.5);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: 1s;
 }
 form {
     /* Используем Flexbox для размещения элементов внутри формы */
@@ -46,14 +59,13 @@ form {
     float: left;
     width: 50%;
     height: 500px;
-    padding: 20px 100px;
+    padding: 20px 40px;
 }
-
 
 input[type=text] {
     width: 100%;
     padding: 12px 30px;
-    margin: 8px 0;
+    margin: 4px 0;
     display:inline-block;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -82,14 +94,20 @@ input[type=text] {
     font-size: 15px;
 }
 
-
-
-
 .text {
+    position: relative;
     height: 200px;
     width: 100%;
 }
 
+.text::before {
+    content: "Message";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 12px;
+    padding: 0 5px; /* Add padding to avoid overlap with the input border */
+}
 
 input[type=submit] {
     width: 70%;
