@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+* {
+    box-sizing: border-box; /* Добавляем модель border-box ко всем элементам */
+}
+
+body {
+    background-image: url(../img/bg-01.png) ;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(132, 106, 221, 0.9);
+    z-index: -1; /*помещаем фон за контентом*/
+}
+
+div, input {
+    display: inline-flex;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #f9f9f9;
+    width: 70%;
+    margin: auto;
+}
+
+img {
+    float: left;
+    width: 50%;
+    height: 50%;
+    margin: 120px;
+}
+
+img:hover{
+    transform: scale(1.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: 1s;
+}
+form {
+    /* Используем Flexbox для размещения элементов внутри формы */
+    display: flex;
+    /* Элементы располагаются сверху вниз (по столбцу) */
+    flex-direction: column;
+    /* Добавляет расстояние между каждым элементом формы */
+    gap: 16px;
+    align-items: center;
+}
+
+.forms {
+    float: left;
+    width: 50%;
+    height: 500px;
+    padding: 20px 40px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 30px;
+    margin: 4px 0;
+    display:inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.wrap-input100 {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    margin-bottom: 10px;
+}
+
+.symbol-input100 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    border-radius: 25 px;
+    bottom: 2px;
+    left: 5px;
+    width: 100%;
+    height: 100%;
+    padding-left: 5px;
+    pointer-events: none;
+    color: #aaaaaa;
+    font-size: 15px;
+}
+
+.text {
+    position: relative;
+    height: 200px;
+    width: 100%;
+}
+
+.text::before {
+    content: "Message";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 12px;
+    padding: 0 5px; /* Add padding to avoid overlap with the input border */
+}
+
+input[type=submit] {
+    width: 70%;
+    background-color: #856add;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #ab58dbb2;
+}
