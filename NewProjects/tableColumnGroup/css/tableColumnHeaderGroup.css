@@ -1,0 +1,34 @@
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+thead {
+    display: table-header-group;
+    background-color: #ddd;
+    font-weight: bold;
+}
+
+colgroup {
+    display: table-column-group;
+}
+
+.category-column {
+    background-color: #ffeeba;
+}
+
+.item-column {
+    background-color: #cce5ff;
+}
+.price-column {
+    background-color: #d4edda;
+}
+/*1 - table-header-group гарантирует, что <thead> останется видимым как отдельный заголовок, оформленный отдельно.
+2 - table-column-group внутри <colgroup> позволяет группировать столбцы таблицы, чтобы их можно было оформить совместно.
+3 - Каждому <col> внутри <colgroup> назначается класс для применения определенных фоновых цветов.*/
