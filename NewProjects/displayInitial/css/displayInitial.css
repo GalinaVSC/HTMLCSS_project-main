@@ -1,0 +1,25 @@
+.example {
+    display: block; /*Explicitly set as block*/
+    background-color: lightblue;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.reset {
+    display: initial;/*Resets to the default behavior*/
+    background-color: lightcoral;
+    padding: 1px;
+}
+
+.parent {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background-color: lightgray;
+}
+
+.child {
+    display: inherit;
+    background-color: lightcoral;
+    padding: 10px;
+}

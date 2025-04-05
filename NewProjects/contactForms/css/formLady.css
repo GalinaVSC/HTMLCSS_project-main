@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+}
+  
+div {
+    width: 200px;
+    height: 60px;
+    margin: 5px;
+    text-align: left;
+}
+ h2 {
+    font-family: Georgia,  serif;
+    padding-left: 10px;
+ }
+
+input[type="text"], input[type="email"], input[type="number"] {
+    height: 40px;
+    width: 100%;
+    padding: 12px 30px;
+    margin: 10px;
+    display:inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    height: 60px;
+    padding: 12px 40px;
+    margin: 10px;
+}
+
+button {
+    background-color: #8485d6;
+    position: absolute;
+    width: 20%;
+    height: 40px;
+    margin: 14px;
+}
+
+.contact-form {
+    display: block;
+    float: left;
+    padding: 10px;
+    height: 100%;
+}
+
+.input-group  {
+    position: relative;
+    width: 100%;
+}
+ 
+i {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.container {
+    width: 650px;
+    height: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.452);
+}
+
+.image-container {
+    float: left;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    height: 200px;
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    margin-top: 90px;
+}
