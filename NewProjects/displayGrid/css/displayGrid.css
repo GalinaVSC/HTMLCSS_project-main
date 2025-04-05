@@ -1,57 +1,79 @@
+/* Основной контейнер сетки */
 .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
-    grid-template-rows: auto auto; /* Two rows */
-    gap: 10px; /* Adds space between grid items */
-    background-color: lightgray;
-    padding: 20px;
+  /* Отображение элемента как сетку */
+  display: grid;
+    /* Определение трех равных колонок */
+  grid-template-columns: 1fr 1fr 1fr;
+    /* Определение двух рядов */
+  grid-template-rows: auto auto;
+    /* Добавление пространства между элементами сетки */
+  gap: 10px;
+    /* Фоновая заливка контейнера светло-серым цветом */
+  background-color: lightgray;
+    /* Внутренние отступы контейнера */
+  padding: 20px;
 }
 
+/* Стилевые правила для каждого элемента сетки */
 .grid-item {
-    background-color: steelblue;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    font-size: 20px;
+  /* Фоновая заливка элемента синим цветом */
+  background-color: steelblue;
+    /* Цвет текста белый */
+  color: white;
+    /* Внутренние отступы элемента */
+  padding: 20px;
+    /* Выравнивание текста по центру */
+  text-align: center;
+    /* Размер шрифта */
+  font-size: 20px;
 }
 
+/* Контейнер для встраиваемой сетки */
 .inline-grid-container {
-    display: inline-grid;
-    grid-template-columns: auto auto;
-    gap: 10px;
-    background-color: lightblue;
-    padding: 10px;
+  /* Отображение элемента как встраиваемая сетка */
+  display: inline-grid;
+    /* Определение двух авто-колонок */
+  grid-template-columns: auto auto;
+    /* Добавление пространства между элементами сетки */
+  gap: 10px;
+    /* Фоновая заливка контейнера светло-синим цветом */
+  background-color: lightblue;
+    /* Внутренние отступы контейнера */
+  padding: 10px;
 }
 
+/* Правила для отдельных элементов в сетке */
 .item {
-    background-color: coral;
-    padding: 20px;
-    text-align: center;
-    font-size: 1.2em;
-    border-radius: 5px;
+  /* Фоновая заливка элемента коралловым цветом */
+  background-color: coral;
+    /* Внутренние отступы элемента */
+  padding: 20px;
+    /* Выравнивание текста по центру */
+  text-align: center;
+    /* Увеличение размера шрифта на 20% от стандартного */
+  font-size: 1.2em;
+    /* Закругление углов элемента */
+  border-radius: 5px;
 }
 
+/* Еще один контейнер для сетки */
 .grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    background-color: #f0f0f0;
-  }
-  
-  .inline-grid {
-    display: inline-grid;
-    grid-template-columns: 1fr;
-    background-color: #ccc;
-  }
+  /* Отображение элемента как сетка */
+  display: grid;
+    /* Определение одной колонки, занимающей всё пространство */
+  grid-template-columns: 1fr;
+    /* Фоновая заливка контейнера светло-серым цветом */
+  background-color: #f0f0f0;
+}
 
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    background-color: #f0f0f0;
-  }
-  
-  .inline-grid {
-    display: inline-grid;
-    grid-template-columns: 1fr;
-    background-color: #ccc;
-    width: 200px; /* Установим ширину, чтобы элементы не выходили за пределы строки */
-  }
+/* Еще один контейнер для встраиваемой сетки */
+.inline-grid {
+  /* Отображение элемента как встраиваемая сетка */
+  display: inline-grid;
+    /* Определение одной колонки, занимающей всё пространство */
+  grid-template-columns: 1fr;
+    /* Фоновая заливка контейнера серым цветом */
+  background-color: #ccc;
+    /* Ограничение ширины контейнера */
+  width: 200px;
+}
