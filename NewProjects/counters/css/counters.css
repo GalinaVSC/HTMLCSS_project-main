@@ -1,4 +1,4 @@
-/*body {
+body {
     counter-reset: section;
 }
 
@@ -14,7 +14,7 @@ h1::before {
 h2::before {
     counter-increment: subsection;
     content: counter(section) ". " counter(subsection) " ";
-}*/
+}
 
 ol {
     counter-reset: section;

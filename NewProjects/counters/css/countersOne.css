@@ -1,20 +1,18 @@
+/* Устанавливаем начальное значение счетчика на уровне всего документа */
 body {
-    counter-reset: section;
+    counter-reset: section paragraph;
 }
 
+/* Используем первый счётчик для заголовков h2 */
 h2::before {
     counter-increment: section;
-    content: "Section " counter(section) ". ";
+    content: "Раздел " counter(section) ". ";
 }
 
-p {
-    counter-reset: section; /* Reset the counter for each paragraph */
-}
-
+/* Применяем изменения для псевдокласса ::before элемента p */
 p::before {
-    counter-increment: section;
-    content:  "Кукушка "  counter(section) ". ";
+    counter-increment: paragraph;
+    content: "Кукушка " counter(paragraph) ". ";
 }
-
 
 
