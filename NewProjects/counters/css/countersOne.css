@@ -1,0 +1,20 @@
+body {
+    counter-reset: section;
+}
+
+h2::before {
+    counter-increment: section;
+    content: "Section " counter(section) ". ";
+}
+
+p {
+    counter-reset: section; /* Reset the counter for each paragraph */
+}
+
+p::before {
+    counter-increment: section;
+    content:  "Кукушка "  counter(section) ". ";
+}
+
+
+
