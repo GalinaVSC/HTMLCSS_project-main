@@ -1,0 +1,5 @@
+#borderimg {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(img/border.png) 30 round; /*30 пикселей изображения будут использованы в качестве границы.*/
+}
