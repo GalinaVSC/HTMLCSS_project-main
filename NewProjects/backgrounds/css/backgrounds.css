@@ -1,6 +1,6 @@
 #example1 {
-    background-image: url(../img/flower1.gif), url(../img/waves.jpg);
+    background-image: url(../img/sovunia.png), url(../img/waves.jpg);
     background-position: right bottom, left top;
     background-repeat: no-repeat, repeat;
-    padding: 15px;
-  }
+    padding: 30px;
+}

@@ -1,0 +1,17 @@
+#image-contaner {
+    background-image: url(../img/sova-anima.gif), url(../img/forest.jpg);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    padding: 200px;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding-top: 30px;
+}
+
+ h1 {
+    text-align: center;
+ }
