@@ -1,0 +1,29 @@
+#example1 {
+    background: url(../img/ladyWithAdog.jpg) no-repeat left; 
+    background-size: contain;
+    border: 4px solid rgb(7, 24, 177);
+    width: 30%;
+    padding: 10px;
+    
+}
+p, h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(32, 29, 223);
+    text-align: right;
+}
+
+/*#example2 {
+    background: url(../img/preciousStones.gif) no-repeat left; 
+    background-size: cover;
+    border: 4px solid rgb(126, 128, 136);
+    width: 60%;
+    padding: 10px;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    line-height: 1.5rem;
+}*/
+
