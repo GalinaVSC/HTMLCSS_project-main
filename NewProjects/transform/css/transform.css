@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    margin: 10px;
+}
+
+.box.rotate {
+    transform: rotate(45deg); /* Поворачиваем блок на 45 градусов */
+}
+
+.box.scale {
+    transform: scale(1.5); /* Увеличиваем размеры блока в 1.5 раза по обеим осям (по X и Y) */
+}
+
+.box.translate {
+    transform: translate(100px, 50px); /* Перемещение блока на 100px вправо и 50px вниз */
+}
+
+.box.skew {
+    transform: skew(20deg, 10deg); /* Наклон блока на 20 градусов по горизонтали и 10 градусов по вертикали */
+}
