@@ -1,0 +1,20 @@
+#example1 {
+    border: 10px solid black;
+    padding: 35px;
+    background: url(../img/tulips.gif);
+    background-repeat: no-repeat;
+}
+#example2 {
+    border: 10px solid black;
+    padding: 35px;
+    background: url(../img/tulips.gif);
+    background-repeat: no-repeat;
+    background-origin: border-box;
+}
+#example3 {
+    border: 10px solid black;
+    padding: 35px;
+    background: url(../img/tulips.gif);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }

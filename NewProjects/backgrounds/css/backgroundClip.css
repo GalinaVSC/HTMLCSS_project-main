@@ -1,0 +1,22 @@
+#example1 {
+    border: 10px dotted black;
+    padding: 35px;
+    /*background: rgb(0, 162, 255);*/
+    background: url(../img/fractal.gif);
+    color: white;
+    background-size: contain;
+  }
+
+  #example2 {
+    border: 10px dotted black;
+    padding: 35px;
+    background: rgb(34, 147, 223);
+    background-clip: padding-box;
+  }
+
+  #example3 {
+    border: 10px dotted black;
+    padding: 35px;
+    background: rgb(0, 255, 221);
+    background-clip: content-box;
+  }
