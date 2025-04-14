@@ -22,4 +22,12 @@ body {
     transform: scale(3);
     background-color: lightpink;
 }
+.triple2 {
+    transition: transform 0.15s;
+    background-color: lightblue;
+}
+.triple2:hover {
+    transform: scale(3);
+    background-color: lightgreen;
+}
 
