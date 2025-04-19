@@ -1,0 +1,34 @@
+{
+    "header": {
+        "title": "S$S site",
+        "color": "#333",
+        "bacground": "#f4f4f4"
+    },
+    "menu": [
+        {
+            "text": "Home",
+            "link": "index.html"
+        },
+        {
+            "text": "Page 1",
+            "link": "page1.html",
+            "submenu": [
+                {"text": "Subpage 1A", "link": "Subpage1a.html"},
+                {"text": "Subpage 1B", "link": "Subpage1b.html"}
+            ]
+        },
+        {
+            "text": "Page 2",
+            "link": "page2.html",
+            "submenu": [
+                {"text": "Subpage 2A", "link": "Subpage2a.html"},
+                {"text": "Subpage 2B", "link": "Subpage2b.html"}
+            ]
+        }
+    ],
+    "footer": {
+        "text": "&copy; 2025 Your Website - All Rights Reserved",
+        "bacground": "#333",
+        "color": "#f4f4f4"
+    }
+}
