@@ -1,0 +1,33 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+div {
+    display: flex;
+}
+
+.heart {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    animation: heartScale 5s infinite alternate both; /* Бесконечно пульсирует с возвратом */
+}
+
+@keyframes heartScale {
+    0%, 100% {
+        transform: scale(1); /* Исходный размер */
+    }
+    50% {
+        transform: scale(6); /* Максимально увеличенное состояние */
+    }
+}
+
+
