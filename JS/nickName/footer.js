@@ -6,6 +6,7 @@ fetch('config.json')
         footer.style.color = config.footer.color;
         footer.style.textAlign = 'center';
         footer.style.padding = '10px';
+        footer.style.left = '0';
         footer.textContent = config.footer.text;
         document.body.appendChild(footer);
     });

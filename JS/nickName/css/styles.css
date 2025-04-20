@@ -23,7 +23,7 @@ nav {
 
 nav ul {
     list-style: none;
-    padding: 0;
+    padding: 15px;
     display: flex;
     justify-content: flex-end;
     gap: 15px;
@@ -58,11 +58,12 @@ nav ul .dropdown {
 
 nav ul .dropdown li {
     padding: 8px 12px;
+   
 }
 
 nav ul .dropdown li a {
     color: #333;
-    transition:  color0.3s ease;
+    transition:  color 0.3s ease;
 }
 
 

@@ -1,6 +1,6 @@
 {
     "header": {
-        "title": "S$S site",
+        "title": "S&S site",
         "color": "#333",
         "bacground": "#f4f4f4"
     },
@@ -10,25 +10,25 @@
             "link": "index.html"
         },
         {
-            "text": "Page 1",
+            "text": "HTML/CSS",
             "link": "page1.html",
             "submenu": [
-                {"text": "Subpage 1A", "link": "Subpage1a.html"},
-                {"text": "Subpage 1B", "link": "Subpage1b.html"}
+                {"text": "Hobbies", "link": "Subpage1a.html"},
+                {"text": "Lecture", "link": "Subpage1b.html"}
             ]
         },
         {
-            "text": "Page 2",
+            "text": "About",
             "link": "page2.html",
             "submenu": [
-                {"text": "Subpage 2A", "link": "Subpage2a.html"},
-                {"text": "Subpage 2B", "link": "Subpage2b.html"}
+                {"text": "Нistory", "link": "Subpage2a.html"},
+                {"text": "Gallery", "link": "Subpage2b.html"}
             ]
         }
     ],
     "footer": {
-        "text": "&copy; 2025 Your Website - All Rights Reserved",
-        "bacground": "#333",
+        "text": "© 2025 Your Website - All Rights Reserved",
+        "background": "#333",
         "color": "#f4f4f4"
     }
 }
