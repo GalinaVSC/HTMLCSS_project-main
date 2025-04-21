@@ -1,0 +1,56 @@
+
+.div1 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+ 
+.div2 {
+    width: 100px;
+    height: 100px;
+    background: rgb(145, 255, 0);
+    position: relative;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+}
+
+.div3 {
+    width: 100px;
+    height: 100px;
+    background: rgb(47, 0, 255);
+    position: relative;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+}
+
+.div4 {
+    width: 100px;
+    height: 100px;
+    background: rgb(255, 0, 187);
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.div5 {
+    width: 100px;
+    height: 100px;
+    background: rgb(246, 255, 0);
+    animation: example 5s linear 2s infinite alternate;
+}
+
+@keyframes example {
+    from {width: 0%}
+    to {width: 100%}
+}
