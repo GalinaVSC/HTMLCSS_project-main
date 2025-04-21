@@ -1,0 +1,21 @@
+body {
+    width: 100%;
+    background: rgb(135, 132, 131);
+    margin-top: 100px;
+}
+
+div {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(76, 0, 255);
+    position: relative;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+  
+  @keyframes example {
+    0%   {width: 50px; height: 50px; left:0px; top:0px;}
+    50%  {width: 50px; height: 50px; background-color: red; border-radius: 50%; left:1300px; top:0px;}
+    100% {width: 50px; height: 50x; left:0px; top:0px;}
+}
