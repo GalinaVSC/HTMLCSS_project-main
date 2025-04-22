@@ -1,0 +1,29 @@
+body {
+    text-align: center;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    /*top: -5px;
+    right: 105%; /*Смещение влево от текста*/
+    top: 100%; /*позиционирует элемент так что его нижний край находится на уровне верхнего края его родительского элемента.*/
+    left: 50%;
+    margin-left: -60px; /*Используем половину ширины: 120/2*/
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
