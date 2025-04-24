@@ -1,0 +1,50 @@
+
+body {
+    margin:25px; 
+    text-align: center;
+    font-family: 'Franklin Gothic Medium',  Arial, sans-serif;
+    font: 1em sans-serif;
+    color: rgb(184, 22, 22);
+}
+
+main {
+    display: flex; 
+}
+
+div.zn  {
+    width: 40%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    margin: 10px;
+}
+
+div.ofis {
+    width: 40%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    margin: 10px;
+}
+
+div.dog {
+    width: 40%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    margin: 10px;
+}
+
+div.love {
+    width: 36%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    margin: 10px;
+}
+
+div.container {
+    text-align: center;
+    padding: 10px 20px;
+}
+
