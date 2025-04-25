@@ -1,0 +1,22 @@
+* { box-sizing: border-box; }
+
+img {
+  opacity: 0.5;
+  width: 100%; /* Заставляем картинку заполнить всю ширину её родительского блока */
+  height: auto;
+}
+
+img:hover {
+  opacity: 1;
+}
+
+figure {
+  width: calc(50% - 20px); /* Вычтем сумму отступов из общей ширины */
+  float: left; /* Расположим элементы в строку */
+  margin: 5px; /* Небольшие внешние отступы между элементами */
+  background-color: #e14444;
+  padding: 2%;
+}
+ 
+   
+   
