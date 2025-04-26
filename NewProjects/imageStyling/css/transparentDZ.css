@@ -14,7 +14,7 @@ figure {
   width: calc(50% - 20px); /* Вычтем сумму отступов из общей ширины */
   float: left; /* Расположим элементы в строку */
   margin: 5px; /* Небольшие внешние отступы между элементами */
-  background-color: #e14444;
+  background-color: #929292;
   padding: 2%;
 }
  
