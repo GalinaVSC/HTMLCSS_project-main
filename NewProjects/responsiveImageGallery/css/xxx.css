@@ -24,13 +24,19 @@ div.gallery img {
 div.desc {
     padding: 15px;
     text-align: center;
+    background-color: rgb(255, 221, 0);
+}
+div.desc {
+    max-height: 66px; /* Keep the height fixed */
+    overflow: hidden; /* Hide overflowing content */
+    font-size: calc(66px / 3); /* Dynamically adjust font size based on the height */
 }
 
 @media only screen and (max-width: 700px) {
     .responsive {
         width: 49.99999%;
         margin: 6px 0;
-}
+    }
 }
 @media only screen and (max-width: 500px) {
     .responsive {
