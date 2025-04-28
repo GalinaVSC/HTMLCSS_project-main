@@ -1,0 +1,21 @@
+#img1 {
+  clip-path: circle(50%);
+}
+
+#img2 {
+  clip-path: circle(40%);
+}
+
+#img3 {
+  clip-path: circle(60%);
+}
+body {
+  background-color: teal;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+#img4 {
+  clip-path: circle(50% at right);
+}

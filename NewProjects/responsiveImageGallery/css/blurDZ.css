@@ -1,0 +1,24 @@
+div {
+  display: flex;
+}
+
+#img1 {
+  filter: blur(2px);
+}
+  
+#img2 {
+  filter: blur(4px);
+}
+#img3 {
+  filter: blur(8px);
+}
+
+#img1:hover {
+  filter: none;
+}
+#img2:hover {
+  filter: none;
+}
+#img3:hover {
+  filter: none;
+}

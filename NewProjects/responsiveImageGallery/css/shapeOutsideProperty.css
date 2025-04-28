@@ -1,0 +1,16 @@
+body {
+  background-color: #6fa076;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+img {
+  float: left;
+  clip-path: circle(40%);
+  shape-outside: circle(45%);
+}
+
+div {
+  border: 1px solid green;
+  padding: 10px;
+}
