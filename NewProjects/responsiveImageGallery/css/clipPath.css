@@ -19,3 +19,20 @@ body {
 #img4 {
   clip-path: circle(50% at right);
 }
+
+div {
+  float: left;
+}
+
+#img5 {
+  clip-path: ellipse(50% 40%);
+}
+
+#img6 {
+  clip-path: ellipse(40% 60%);
+  float: left;
+}
+
+#img7 {
+  clip-path: ellipse(60% 30%);
+}
