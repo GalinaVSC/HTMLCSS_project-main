@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #222;
+  color: white;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.image-container {
+  width: 200px;
+  height: 150px;
+  border: 2px solid white;
+  overflow: hidden;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.fit-cover img {
+  object-fit: cover;
+}
+
+.fit-contain img {
+  object-fit: contain;
+  background: black;
+}
+.fit-fill img {
+  object-fit: fill;
+}
+
+.fit-none img {
+  object-fit: none;
+}
+.fit-scale-down img {
+  object-fit: scale-down;
+}
+
+.label {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 5px;
+}
