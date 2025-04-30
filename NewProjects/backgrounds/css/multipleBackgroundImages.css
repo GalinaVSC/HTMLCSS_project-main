@@ -1,5 +1,0 @@
-#example1 {
-    background: url(../img/img_tree.gif) left top no-repeat, url(../img/flowers.gif) right bottom no-repeat, url(../img/paper.gif) left top repeat;
-    padding: 15px;
-    background-size: 50px, 130px, auto;
-  }

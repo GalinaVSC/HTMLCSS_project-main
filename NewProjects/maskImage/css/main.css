@@ -1,0 +1,31 @@
+.mask1 {
+    -webkit-mask-image: url(../img/spot.png);
+    mask-image: url(../img/spot.png);
+    mask-repeat: no-repeat;
+}
+
+/*.mask1 {
+    -webkit-mask-image: linear-gradient(black, transparent);
+    mask-image:  linear-gradient(black, transparent);
+    float: left;
+    margin: 10px;
+}
+
+p {
+    font-size: 20px;
+    padding: 20px;
+    color: white;
+}
+
+.mask1 {
+    max-width: 600px;
+    height: 350px;
+    overflow-y: scroll;
+    background: url(../img/bit.jpg) no-repeat;
+    -webkit-mask-image: linear-gradient(black, transparent);
+    mask-image:  linear-gradient(black, transparent);
+}
+.mask1 {
+    -webkit-mask-image: linear-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+    mask-image:  linear-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+}*/
