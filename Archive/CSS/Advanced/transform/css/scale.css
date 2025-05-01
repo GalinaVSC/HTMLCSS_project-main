@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin: 50px auto;
+    width: 30%;
+    text-align: center;
+}
+
+.one {
+    background-color: rgb(159, 233, 233);
+}
+/* Увеличение первого абзаца в два раза */
+.double {
+    transform: scale(2);
+    background-color: burlywood;
+}
+
+/* Увеличение второго абзаца в три раза */
+.triple {
+    transform: scale(3);
+    background-color: lightpink;
+}
+.triple2 {
+    transition: transform 0.15s;
+    background-color: lightblue;
+}
+.triple2:hover {
+    transform: scale(3);
+    background-color: lightgreen;
+}
+
