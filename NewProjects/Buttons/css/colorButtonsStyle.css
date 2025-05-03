@@ -1,0 +1,75 @@
+.button {
+    background-color: #04aa6d;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1 {
+    background: #0B63F6;
+    box-shadow: 0 5px 0 #003CC5;
+}
+
+.button2 {
+    transition: .2s linear;
+    background: #0c3b02;
+    background-color: #0c3b02;
+}
+
+.button3 {
+    transition: .2s linear;
+    background: #f6650b;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.button4 {
+    transition: .2s linear;
+    background: #c706b7;
+}
+
+.button5 {
+    box-shadow: 0 5px 15px 0 rgb(11, 246, 97);
+    transition: 0.5s;
+}
+
+
+
+
+.button1:hover {
+    background: #003CC5;
+    box-shadow: none;
+    position: relative;
+    top: 5px;
+}
+
+.button2:hover {
+    box-shadow: 0 0 0 2px white, 0 0 0 4px #3C82F8;
+}  
+
+.button3:hover {
+    box-shadow: 2px 2px white, 4px 4px #d0c306;
+    top: -4px;
+    left: -4px;
+}       
+
+.button4:hover {
+    box-shadow: #c50052 0 0px 0px 40px inset;
+}       
+
+.button5:hover {
+    transform: translate(0,-3px);
+    box-shadow: 0 20px 40px 0 rgb(11, 246, 97);
+}       
+
+.button2:hover {
+    box-shadow: 0 0 0 2px white, 0 0 0 4px #71f83c;
+}       
