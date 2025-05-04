@@ -8,7 +8,7 @@
 body {
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
     url(../img/fon.jpg) no-repeat center center/cover; /* Градиент от черного прозрачного цвета сверху-вниз накладывается на фоновое изображение */
-    font-family: Arial, Helvetica, sans-serif;  /* Шрифт по умолчанию для текста */
+    font-family: Arial, sans-serif;  /* Шрифт по умолчанию для текста */
 }
 
 /* Контейнер для централизации содержимого */
