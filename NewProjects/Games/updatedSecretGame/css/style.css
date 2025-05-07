@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    background-image: url("bg.png");
+}
+
+.little_table.live,
+.big_table.live {
+    border: 1px rgb(21, 255, 0) solid;
+    background-color: limegreen;
+}
+
+.little_table td {
+    border: 1px black solid;
+    background-color: #F5F5F5;
+    cursor: pointer;
+    position: relative; /* Added to position markers correctly */
+}
+
+.big_table {
+    border: 1px transparent solid;
+    margin: 0 auto 20px;
+    width: 600px;
+    height: 600px;
+}
+
+.little_table {
+    border: 1px transparent solid;
+    width: 100%;
+    height: 100%;
+}
+
+td.red {
+    background-color: ;
+}
+
+td.blue {
+    background-color: #aaaaff;
+}
+
+.little_table td.filled {
+    cursor: cursor;    
+}
+
+.blue {
+    background-color: #010026;
+    color: #010021;
+}
+
+.red {
+    background-color: #800000;
+    color: #260000;
+}
+
+/* Red circle marker */
+div.marker.circle {
+    position: absolute; /* Use absolute positioning to avoid affecting cell size */
+    top: 0; /* Align to the top of the cell */
+    left: 0; /* Align to the left of the cell */
+    width: 100%; /* Match the cell's width */
+    height: 100%; /* Match the cell's height */
+    background: none; /* Transparent background */
+    border: 10px solid #800000; /* Red border */
+    border-radius: 50%; /* Circular shape */
+    box-sizing: border-box; /* Include border in dimensions */
+    pointer-events: none; /* Prevent interaction with the marker */
+}
+
+/* Black X marker */
+div.marker.x {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: none; /* Transparent background */
+}
+
+div.marker.x::before,
+div.marker.x::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 10%;
+    background-color: black; /* Black color for the "X" */
+    transform-origin: center;
+}
+
+div.marker.x::before {
+    transform: translate(-50%, -50%) rotate(45deg); /* Diagonal line 1 */
+}
+
+div.marker.x::after {
+    transform: translate(-50%, -50%) rotate(-45deg); /* Diagonal line 2 */
+}
+#turn {
+    width: 560px;
+    margin: auto;
+    box-shadow: 0 0 5px 5px #0A0A0A;
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    font-family: Arial;
+    /*text-shadow: 1px 1px 2px #ffffff;*/
+    color:#F5F5F5
+}
+
+#newGame {
+    width: 400px;
+    margin: auto;
+    font-size: 40px;
+    font-family: Arial;
+    text-shadow: 1px 1px 2px #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 5px 5px #0A0A0A;
+    background-color: #08A300;
+    color: #056900;
+    text-shadow: 1px 1px 2px #ffffff;
+    border: none;
+    display: none;
+    cursor: pointer;
+}
