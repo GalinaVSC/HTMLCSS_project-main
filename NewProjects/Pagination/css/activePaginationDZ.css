@@ -1,0 +1,32 @@
+.pagination {
+    display: inline-block; /* По умолчанию отображает список пагинации как строчно-блоковый элемент */
+}
+
+.pagination a{
+    color: rgb(145, 3, 3); /* Цвет текста ссылок черный */
+    float: left; /* Каждая ссылка выводится слева друг за другом */
+    padding: 8px 16px; /* Внутренние отступы сверху/снизу и справа/слева соответственно */
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    font-weight: 900;
+    font-size: 26px;
+}
+
+/* Подсветка при наведении мышью, кроме активных страниц */
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.azbuka {
+    padding: 15px;
+    background: lightgoldenrodyellow;
+    width: 400px;
+    box-shadow: 0 5px 15px 0 rgb(11, 101, 246);
+    margin: 20px;
+}
+
+h2, p { 
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 18px;
+    color: rgb(8, 8, 201);
+    margin: 20px;
+}
