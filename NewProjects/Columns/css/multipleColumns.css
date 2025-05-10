@@ -1,0 +1,17 @@
+/*.newspaper {
+    column-count: 4;
+    column-gap: 40px;
+    column-rule-style: solid;
+    column-rule-width: 1px;
+    column-rule-color: lightblue;
+}*/
+.newspaper {
+    column-count: 4;
+    column-gap: 40px;
+    column-rule: 1px solid lightblue;
+    column-width: 100px;
+}
+
+h2 {
+    column-span: all;
+}
