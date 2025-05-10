@@ -1,10 +1,13 @@
-
+h1, h4, h3 {
+    text-align: center;
+}
 .newspaper {
     column-count: 4;
     column-gap: 40px;
     column-rule: 1px solid black;
     column-width: 100px;
     text-align: justify;
+    margin: 10px;
 }
 
 
