@@ -9,7 +9,7 @@ function myFunction_get() {
     alert("The value of --blue is: " + rs.getPropertyValue('--blue'));
 }
 
-//Create a functiion for setting a veriable value
+//Create a function for setting a veriable value
 function myFunction_set() {
     //Set the value of variable --blue to another value (in this case "lightblue")
     r.computedStyleMap.setProperty('--blue', 'lightblue');
