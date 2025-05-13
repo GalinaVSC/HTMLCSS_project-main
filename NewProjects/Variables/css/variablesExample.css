@@ -1,0 +1,50 @@
+/*Define global CSS variables*/
+:root {
+    --primary-color: #3498db; /*Main brand color*/
+    --secondary-color: #2ecc71; /*Complementary color*/
+    --text-color: #333; /*Default text color*/
+    --font-size: 16px; /*Base font size*/
+    --padding: 10px; /*Default padding*/
+    --border-radius: 5px; /*Rounded corners for elements*/
+}
+
+/*Apply CSS variables to styles*/
+body {
+    font-size: var(--font-size);
+    color: var(--text-color);
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    padding: var(--padding);
+}
+
+/*Styling the header*/
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/*Section styles*/
+section {
+    background-color: white;
+    padding: var(--padding);
+    margin: 20px;
+    border-radius: var(--border-radius);
+}
+
+/*Button styling using variables*/
+.btn {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: var(--padding);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: var(--font-size);
+}
+
+/*button hover effect*/
+.btn:hover {
+    background-color: var(--primary-color);
+}
