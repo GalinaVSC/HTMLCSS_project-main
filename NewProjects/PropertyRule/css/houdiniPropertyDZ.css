@@ -1,0 +1,35 @@
+@property --rotate {
+syntax: "<angle>";
+inherits: false;
+initial-value: 0deg;
+}
+* {
+    box-sizing: border-box;
+}
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: red;
+}
+.box {
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/heart.jpg);
+    background-size: cover;
+    background-position: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+
+    /*Using the custom property*/
+    transform:rotate(var(--rotate));
+
+        /*Smooth animation*/
+    transition: --rotate 1s ease-in-out;
+}
+
+.box:hover {
+    --rotate: 360deg;
+}
