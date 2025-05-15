@@ -1,0 +1,44 @@
+@property --startColor {
+    syntax: "<color>";
+    initial-value: #eadedb;
+    inherits: false;
+}
+
+@property --endColor {
+    syntax: "<color>";
+    initial-value: #BC70A4;
+    inherits: false;
+}
+
+.nwsp {
+    column-count: 3;
+    column-gap: 40px;
+    column-rule: 2px solid black;
+    column-width: 100px;
+    text-align: justify;
+    margin: 10px;
+}
+
+.ex1 {
+    background: linear-gradient(var(--startColor), var(--endColor));
+    animation: gradient 3s linear infinite;
+    
+}
+
+@keyframes gradient {
+    0%,
+    100% {
+        --startColor: #2ec240;
+        --endColor: #bd2c2c;
+    }
+    50% {
+        --startColor: #6a82ee;
+        --endColor: #f5d418;
+    }
+}
+
+#grad1 {
+    height: 100%;
+    width: 100%;
+    
+}
