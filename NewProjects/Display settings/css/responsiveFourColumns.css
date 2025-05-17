@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+.column {
+    float: left;
+    width: 25%;
+    padding: 20px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (min-width: 992px) {
+    .column {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
