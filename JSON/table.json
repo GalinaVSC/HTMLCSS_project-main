@@ -1,0 +1,50 @@
+[
+    {
+        "Name": "Alice",
+        "Age": 15,
+        "Grade": 10,
+        "City": "New York"
+    },
+     {
+        "Name": "Bob",
+        "Age": 16,
+        "Grade": 11,
+        "City": "Los Angeles"
+    },
+     {
+        "Name": "Carol",
+        "Age": 14,
+        "Grade": 9,
+        "City": "Chicago"
+    },
+     {
+        "Name": "Dave",
+        "Age": 17,
+        "Grade": 12,
+        "City": "Houston"
+    },
+     {
+        "Name": "Emma",
+        "Age": 15,
+        "Grade": 10,
+        "City": "Miami"
+    },
+     {
+        "Name": "Frank",
+        "Age": 16,
+        "Grade": 11,
+        "City": "Seattle"
+    },
+     {
+        "Name": "Grace",
+        "Age": 14,
+        "Grade": 9,
+        "City": "Denver"
+    },
+     {
+        "Name": "Henry",
+        "Age": 17,
+        "Grade": 12,
+        "City": "Boston"
+    }
+]
