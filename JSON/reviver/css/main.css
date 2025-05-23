@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Monomakh&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+FR+Trad:wght@100..400&display=swap');
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 body {
     background-image: url(../img/city.jpg);
     padding: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 h2, p {
