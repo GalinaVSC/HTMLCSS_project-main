@@ -1,10 +1,18 @@
 function myFunction() {
     document.getElementById("demo").innerHTML = "Что для меня утро, это время прогулок и размышлений, время общения и позитива, время наслаждения звуками природы";
+    document.getElementById('myImage').src ='';
 }
 
 function myFunctionImg() {
+    document.getElementById("demo").innerHTML = "";
     document.getElementById('myImage').src ='img/utro.jpg';
 }
+
+function myFunctionReset() {
+    document.getElementById("demo").innerHTML = "";
+    document.getElementById('myImage').src ='';
+}
+
 
 //function myFunctionImg() {
     //const image = document.createElement('img');      // создаем элемент img

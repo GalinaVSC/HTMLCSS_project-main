@@ -8,6 +8,6 @@ button {
 
 img {
     width: 600px;
-    padding: 10px;
-    border-radius: 30px;
+    margin-left: 100px;
+    border-radius: 30px; 
 }
