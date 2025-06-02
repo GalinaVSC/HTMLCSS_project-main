@@ -7,18 +7,20 @@
 </head>
 <body>
     <h2>Перевод из градусов Цельсия в градусы Фаренгейта</h2>
-    <p>Задан параметр 25 градусов Цельсия, соответственно по Фаренгейту это будет равно:</p>
-    <p id="demo"></p>
-    <script>
-        let x, y, z;
-        x = 25;
-        y = (x * 1.8) + 32;
-        document.getElementById("demo").innerHTML = y;
-    </script>
     <form>
         <label>Введите температуру в градусах по Цельсию
-            <input type="number">
+            <input type="number" id="celsiusInput" oninput="convertTemp()">
         </label>
     </form>
+        <p>Задан параметр 25 градусов Цельсия, соответственно 
+        по Фаренгейту это будет равно:</p>
+        <p id="demo"></p>
+    <script>
+        function convertTemp() {
+            let x = document.getElementById("celsiusInput").value;
+            y = (x * 1.8) + 32;
+            document.getElementById("demo").innerHTML = y;
+        }
+    </script>
 </body>
 </html>
