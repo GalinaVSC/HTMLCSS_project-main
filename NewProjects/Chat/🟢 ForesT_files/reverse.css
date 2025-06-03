@@ -1,0 +1,25 @@
+#main_emoticon {
+	padding:0;
+	border-radius:0;
+	display: flex;
+	width: 100%;
+}
+#room_topic {
+	padding: 0;
+	height: 54px;
+}
+#show_chat ul {
+	position:absolute;
+	bottom: 0;
+	max-height:100%;
+	overflow-y: auto;
+}
+#chat_error {
+	position:absolute;
+	bottom:0;
+	margin-bottom:0;
+}
+.log1, .log2 {
+	min-height: 35px;
+	max-height: 900px;
+}

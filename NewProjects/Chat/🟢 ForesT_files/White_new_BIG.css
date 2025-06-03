@@ -1,0 +1,657 @@
+/* general colors */
+a {color: green; cursor: pointer; text-decoration: none;}
+body {color: black; font-family: 'SansNarrow', sans-serif; 	font-size:15px; background-color: transparent; background-color: black; background: linear-gradient(45deg, #4a76a873, #fff); background-repeat: round; background-size: cover;  }
+button { background-color: transparent; color: inherit; }
+
+/* background color for box element */
+.background_login { background-color: white;  border: none;  }
+.background_chat { background: transparent; }
+.background_box { border: none;}
+.background_menu_footer { background: #dce2e8; }
+.panels { background-color: #F2F2F2; }
+.input_data { background-color: #F2F2F2; }
+#chat_error { background:#4a76a8; }
+#inner_header, #header_login { background-color: #4a76a8; border: none; height: auto;  font-size: 20px; letter-spacing: 10px; text-align: center; color: white; }
+#menu_private { background-color: #4a76a8; }
+#main_emoticon { background-color: #F7F7F7; }
+
+/* chat logs switch colors */
+
+.log1 {  padding: 0; margin-bottom: 5px; }
+.log2 {  padding: 0; margin-bottom: 5px; }
+.ch_logs { display: table; max-width: 98%;  }
+
+.my_text {
+	background-color: #F9F9F9;
+	word-wrap: anywhere;
+	display: flow-root;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 5px;
+	font-size: 18px;
+	line-height: 22px;
+}
+#inside_group, #input_table, #td_group {
+	height: 70px;
+}
+.chat_avatar_wrap img, .chat_avatar_wrap2 img {
+	border-radius: 100%;
+}
+
+#sendpm {
+	border-radius: 100%;
+}
+
+#show_chat_ads img {
+	border-radius: 100%;
+}
+
+
+/* separator colors */
+.user_separator { background-color: #4a76a8;  }
+.user_option_separator { background-color: transparent;  }
+.top_separator { background-color: transparent; }
+.right_separator { border:none; }
+.bottom_separator {  background-color: transparent; }
+.top_option.bottom_separator {	background-color: #4a76a8; color: white; }
+
+/* user list drop down colors */
+.user_option_list { background-color: transparent; color: black; }
+
+/* button and element colors */
+.sub_button {  font-family: 'SansNarrow', sans-serif; background: #F7F7F7; }
+#submit_button { 
+	background: #4a76a8; 
+	color: #FFF; 
+	/*background: repeating-linear-gradient(180deg, black 3% 20%, orange 20% 42%);
+	transform: rotate(-32deg) skewX(0deg);
+	transform-origin: center;
+	margin-top: -60px;
+	margin-right: 15px;*/
+	} /* this is main button send */
+.sub_element:hover { opacity: 1; }
+.empty_element { background: #E1E1E1 none repeat scroll 0% 0%; color: #000; }
+.selected_element {  background-color: #D5DDE5;  opacity: 1;  }
+.hover_element:hover {   background-color: #D5DDE5; }
+
+/* ads background */
+#show_chat_ads { background-color: transparent; }
+
+/* special colors and sub colors */
+.error {
+	color: white;
+	background-color: #4a76a8;
+}
+.success { color:white;}
+.away { color: grey; font-family: 'SansNarrow', sans-serif; }
+.my_notice { background-color: #4a76a8; padding: 0px 10px 0px 10px; color:#fff;}
+.sub_color2 { color: #2B587A;}
+.sub_color { color: inherit; }
+.hide_private_title { color: #fff; }
+.room_userin { color: inherit; }
+
+/* private chat color message */
+
+.target_private {color: #2B587A; border-right: 5px #4a76a8 solid;}
+.hunter_private {color: #2B587A; border-left: 5px #4a76a8 solid;}
+
+
+/* inside chat color */
+.datechat { font-size: 10px }
+.me {color:white; background-color: #5e82a8; } 
+.global { color:white; background: red; }
+.private { color:white; background: #4a76a8; }
+.private_reply { color: white; background-color: #5e82a8; }
+.seen { color:black; background: #E9EDF1; }
+.global, .me, .private, .seen, .system, .public, .private_reply {  margin-bottom:5px; }
+
+/* user color and special user color */
+.system {color: #2B587A; }
+.admin{ color: dodgerblue; text-transform: capitalize; font-weight: bold; }
+.sadmin {color:deepskyblue;  text-transform: capitalize; font-weight: bold; }
+.modo  {color: darkviolet; text-transform: capitalize; font-weight: bold; }
+.vip {color: steelblue; text-transform: capitalize; font-weight: bold; }
+.user {color: green; text-transform: capitalize; font-weight: bold; }
+.guest {color: goldenrod; text-transform: capitalize; font-weight: bold; }
+
+/* user color and special user color chat */
+.chatsystem { text-transform: capitalize; background-color: #2B587A;}
+.chatbold { text-transform: capitalize; background-color: #2B587A; }
+.chatadmin { text-transform: capitalize; background-color: deepskyblue;}
+.chatsadmin { text-transform: capitalize; background-color: deepskyblue;}
+.chatmodo { text-transform: capitalize; background-color: darkviolet;}
+.chatvip { text-transform: capitalize; background-color: steelblue;}
+.chatuser { text-transform: capitalize; background-color: green;}
+.chatguest { text-transform: capitalize; background-color: goldenrod;}
+
+/* user color online */
+.systemonline {color: #2B587A; text-transform: uppercase; font-size: 15px;}
+.adminonline{ color: dodgerblue; text-transform: capitalize; font-weight: bold; }
+.sadminonline {color:deepskyblue;  text-transform: capitalize; font-weight: bold; }
+.modoonline  {color: darkviolet; text-transform: capitalize; font-weight: bold; }
+.viponline {color: steelblue; text-transform: capitalize; font-weight: bold; }
+.useronline {color: green; text-transform: capitalize; font-weight: bold; }
+.guestonline {color: goldenrod; text-transform: capitalize; font-weight: bold; }
+
+/* color picker and tools bar */
+#picker_box, #list_emoticon { background-color: #e5ebf1; } /* change the background color of box */
+.sel_item {
+	background: #4a76a8;
+	color: white;
+} /* change background of element when selected on bar */
+.pick_color, #smile_content, .wrap_picker { border-left:1px solid #222; border-bottom:1px solid #444; border-top:1px solid #222; border-right:1px solid #444; } /* change border of element and subelement */
+#smile_content { background-color: white;} /* change background of emoticon content */
+
+/* user list hover name */
+
+.usertarget:hover { opacity:1; }
+.open_user { background-color: transparent;  }
+
+/* main.css */
+
+#td_group {
+	background-color: #F7F7F7;
+}
+
+#td_input {
+	height: 100%;
+}
+
+#room_topic {
+	width: 100%;
+	font-size: 20px;
+	padding: 0px;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	background-color: #4a76a8;
+	text-decoration: none;
+}
+
+
+#priv_inside, #private_left, #private_right, #p_input, #input_private, #p_image {
+    border: none;
+}
+
+#login_welcome {
+	color: #2a5885;
+}
+
+#login_member_online {
+	box-shadow: none;
+	color: white;
+	border: none;
+	background-color: #4a76a8;
+	font-family: 'SansNarrow', sans-serif;
+}
+
+#wrap_chat {
+	background-color: transparent;
+}
+
+.fa:hover {
+	background-color: transparent;
+}
+
+#header {
+	display: none;
+}
+#my_menu {
+	color: purple;
+}
+
+.member_login {
+	padding: 5px;
+	border-radius: 10px;
+}
+#left_menu {
+	color: #45688E;
+	font-family: 'SansNarrow', sans-serif;
+}
+#player_content {
+	background: transparent;
+	color: white;
+}
+
+#container_help {
+	font-family: 'SansNarrow', sans-serif;
+}
+
+#theme_panel {
+	font-family: 'SansNarrow', sans-serif;
+}
+#container_user_room {
+	font-family: 'SansNarrow', sans-serif;
+}
+
+#profile_panel {
+	font-family: 'SansNarrow', sans-serif;
+}
+.element_name.private_view {
+	font-size:12px;
+	text-transform: capitalize;
+}
+.private_target.sub_color.private_friend {
+	color: white;
+	text-transform: capitalize;
+}
+.topic.sub_color {
+	color: white;
+}
+#submit_private {
+	background-color: #4a76a8;
+	color: white;
+}
+#private_count {
+	color: #45688E;
+}
+#logout_box {
+	background-color: #4a76a8;
+}
+#upload_box {
+    background-color: #4a76a8;
+}
+.logout_h2.centered_element {
+	color: white;
+}
+.fa.close_upload.fa-times-circle {
+	color: white;
+}
+.close_logout.fa.fa-2x.ic_sword.fa-times-circle {
+	color: white;
+}
+.addon_button.hover_element.head_li.top_separator,.logout_button.hover_element.head_li.top_separator,.menu_panels.hover_element.head_li.top_separator {  background-color: #F2F2F2; color: #2B587A;   }
+.addon_button.hover_element.head_li.top_separator:hover,.logout_button.hover_element.head_li.top_separator:hover,.menu_panels.hover_element.head_li.top_separator:hover { color: #2B587A; background-color: #E9EDF1; }
+
+.element.sub_element.selected_element {
+	border-left: 5px red solid;
+}
+.element.sub_element.hover_element {
+	border-left: 5px green solid;
+}
+
+#guest_ok {
+	background-color: #4a76a8;
+	color: white;
+}
+.fa.close_smile.fa-times-circle,.fa.lock_smile.fa-unlock {
+	color: #4a76a8;
+}
+#chat_panel {
+	border-left: solid #D9E0E7;
+}
+.fa.fa-comments-o {
+	cursor: inherit;
+}
+.sub_color2.span_private_target {
+	color: #fff;
+}
+#private_close {
+	color: white;
+}
+.fa.fa-2x.icon_priv.fa-ban.user_ignore_button,.fa.fa-2x.icon_priv.fa-user-plus.add_friend_button,.fa.fa-2x.icon_priv.fa-history.history_private_button {
+	color: white;
+}
+textarea, input{
+	font-size:14px;
+	font-family: 'SansNarrow', sans-serif;
+}
+#content {
+	font-family: 'SansNarrow', sans-serif;
+}
+.fa.close_upload.fa-times {
+	color: white;
+}
+
+.fileUpload.sub_button {
+	background-color: #4a76a8;
+}
+.fa.fa-2x.fa-close.top_icon_close.close_panel,.close_private.fa.fa-2x.fa-close.close_panel,.add_friend_button.fa.fa-2x.fa-user-plus,.close_logout.fa.fa-2x.ic_sword.fa-times {
+    color: white;
+}
+
+/* tet-a-tet */
+
+.dtable {
+	background: #4a76a8;
+	color: white;
+}
+.evenrow {
+	background: white;
+}
+.oddrow {
+	background: #edeef0;
+}
+
+.sortable .head h3 {
+	background: url(/css/TETATETIMG/sort.gif) 7px center no-repeat;
+	padding: 12px;
+}
+.sortable .desc h3 {
+	background: url(/css/TETATETIMG/desc.gif) 7px center no-repeat;
+	padding: 12px;
+}
+.sortable .asc h3 {
+	background: url(/css/TETATETIMG/asc.gif) 7px center no-repeat;
+	padding: 12px;
+}
+#perpage {
+	background-color: white;
+}
+#navigation {
+	background-color: white;
+}
+#pagelimit {
+	color: #2a5885;
+}
+#currentpage {
+	color: #2a5885;
+}
+.fa.fa-fast-backward,.fa.fa-backward,.fa.fa-forward,.fa.fa-fast-forward {
+	color: #4a76a8;
+}
+#text {
+	background-color: white;
+}
+tbody {
+	color: #2a5885;
+}
+.evenrow:hover {
+	background: #d1d9e0;
+}
+.oddrow:hover {
+	background: #d1d9e0;
+}
+#news {
+	background-color: #F7F7F7;
+	margin-bottom: 10px;
+	border-bottom: 1px #4a76a8 solid;
+	padding: 5px;
+}
+
+.girl, .boy, .sa_ico, .m_ico, .v_ico, .a_ico, .u_ico {
+	float:right;
+	margin-right:10px;
+	font-size:18px;
+}
+.avatar_top {
+	width: 46px;
+	height: 46px;
+	border: 2px #4a76a8 solid;
+}
+#content {
+	width:98%;
+	padding:0;
+	padding: 0 1%;
+	float:left;
+	font-size:20px;
+	border: none;
+}
+#history {
+	background-color: white;
+	margin-bottom: 3px;
+}
+getregion {
+	color: grey;
+	white-space: nowrap;
+}
+.fa.fa-folder-open-o.fa-border.fa-fw {
+	color: white;
+}
+#friend_container {
+	background-color: white;
+}
+#newpanel {
+	position: unset;
+	color: inherit;
+	font-size: 18px;
+	text-transform: capitalize;
+}
+#newpanel1 {
+	background-color: #4a76a8;
+	color: white;
+	font-size: 18px;
+	padding: 5px 5px 5px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+#newpanel2 {
+	color: inherit;
+	font-size: 18px;
+}
+.roombutton1 {
+	color: inherit;
+	font-size: 18px;
+	text-transform: capitalize;
+	cursor: pointer;
+}
+
+.pm.send_private, .support_profile {
+	background-color: #4a76a8;
+	padding: 5px 0px 5px;
+	color: white;
+	text-align: center;
+	cursor: pointer;
+	width: 90%;
+	margin: 0 auto;
+	border-radius: 50px;
+}
+
+.si.user_ignore_button {
+	background-color: #4a76a8;
+	padding: 5px 0px 5px;
+	color: white;
+	text-align: center;
+	cursor: pointer;
+	width: 90%;
+	margin: 0 auto;
+	border-radius: 50px;
+}
+
+.os {
+	background-color: #4a76a8;
+	padding: 5px 0px 5px;
+	color: white;
+	text-align: center;
+	cursor: pointer;
+	width: 90%;
+    margin: 0 auto;
+}
+.menu_panels.edit_profile {
+	background-color: red;
+	padding: 5px 0px 5px;
+	color: white;
+	text-align: center;
+	cursor: pointer;
+	width: 90%;
+	margin: 0 auto;
+	border-radius: 50px;
+}
+.ratchat {
+	position: absolute;
+	/*margin-left: -59px;*/
+	margin-left: 1px;
+	font-size: 10px;
+	background: #4a76a8;
+	color: white;
+	width: 58px;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	z-index: 1;
+}
+
+
+#vkgroup {
+	float: left;
+	color: white;
+	background-color: #4a76a8;
+	padding: 10px 0px 10px;
+	text-align: center;
+	width: 32%;
+	font-size: 35px;
+	border-radius: 0;
+}
+
+#androidapp {
+	float: right;
+	color: white;
+	background-color: #4a76a8;
+	padding: 10px 0px 10px;
+	text-align: center;
+	width: 33%;
+	font-size: 35px;
+	border-radius: 0;
+}
+
+#telegramchanel {
+	float: right;
+	color: white;
+	background-color: #4a76a8;
+	padding: 10px 0px 10px;
+	text-align: center;
+	width: 32%;
+	font-size: 35px;
+	border-radius: 0;
+	margin-left: 5px;
+}
+
+.top_avatar_text {
+	color: white;
+	background-color: #4a76a8;
+}
+
+#adpanel {
+	color: white;
+	background-color: #4a76a8;
+}
+
+.user_likes_button, .user_dislikes_button, .user_likes_buttonUU, .user_dislikes_buttonUU {
+	background-color: #4a76a8;
+	padding: 5px 0px 5px;
+	color: white;
+	text-align: center;
+	cursor: pointer;
+	width: 70%;
+	margin: 0 auto;
+	border-radius: 50px;
+}
+.sub_color3 {
+	background-color: #4a76a8;
+	text-align: center;
+	color: white;
+	padding: 5px 0px 5px 0px;
+}
+#iconmedia {
+	background: #4a76a8;
+	color: white;
+}
+.emopanel {
+	background: #4a76a8;
+	color: white;
+	padding: 2px 10px 2px 10px;
+	border-radius: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.saveroom, .addsaveroom {
+	background: #4a76a8;
+	color: white;
+}
+.clearsaveroom, .addsaveroom {
+	background: #4a76a8;
+	color: white;
+}
+.hashtagroom, .uir {
+	background: #4a76a8;
+	color: white;
+	padding: 5px;
+}
+#getsticker {
+	background: white;
+	color: black;
+	padding: 1px;
+	background-position: center;
+	background-repeat: round;
+	background-position-x: 100%;
+	background-size: auto 100%;
+	height: 70px;
+	width: 70px;
+	overflow: clip;
+	text-overflow: ellipsis;
+}
+#PP {
+	background-color: #4a76a8;
+	color: white;
+}
+.UP {
+	background: #4a76a8;
+	color: white;
+}
+.text_input {
+	background: #4a76a8;
+	color: white;
+}
+.usabout {
+	background: #4a76a8;
+	color: white;
+}
+.vote {
+	border: 2px #4a76a8 solid;
+}
+#scrollinfo, #scrollinfoup {
+	color: #4a76a8;
+}
+#pollcomment {
+	border-bottom: 1px #4a76a8 solid;
+	background-color: #4a76a8;
+	color: white;
+}
+.ratplace {
+	background-color: #4a76a8;
+	color: white;
+}
+#wrap_chat {
+	background-image: url(images/back.svg);
+	background-repeat: repeat;
+	background-size: contain;
+}
+
+.supw {
+	background-color: red;
+	display: block;
+	padding: 10px;
+	width: 80%;
+	margin-left: 76px;
+	border-radius: 5px;
+	color: white;
+	max-height: 85px;
+	overflow-y: auto;
+	word-wrap: break-word;
+}
+
+#upload_form {
+	background-color: white;
+}
+
+.admin, .modo, .user, .vip, .guest {
+	font-size: 20px;
+	line-height: 22px;
+}
+
+.sadmin, .system {
+	font-size: 18px;
+	line-height: 20px;
+}
+
+.vp {
+	height: 100%;
+	margin-bottom: -5px;
+	max-height: 24px;
+	max-width: 100%;
+}
+
+.cnp {
+	background-color: #4a76a8;
+}
