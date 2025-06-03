@@ -12,15 +12,24 @@
             <input type="number" id="celsiusInput" oninput="convertTemp()">
         </label>
     </form>
-        <p>Задан параметр 25 градусов Цельсия, соответственно 
-        по Фаренгейту это будет равно:</p>
-        <p id="demo"></p>
+        <p>По Фаренгейту это будет равно: <span id="demoF"></span></p>
+    <form>
+        <label>Введите температуру в градусах по Фаренгейту
+            <input type="number" id="fahrenheitInput" oninput="reConvertTemp()">
+        </label>
+    </form>
+        <p>По Цельсию это будет равно: <span id="demoC"></span></p> 
     <script>
         function convertTemp() {
             let x = document.getElementById("celsiusInput").value;
             y = (x * 1.8) + 32;
-            document.getElementById("demo").innerHTML = y;
+            document.getElementById("demoF").innerHTML = y;
         }
-    </script>
+        function reConvertTemp() {
+            let x = document.getElementById("fahrenheitInput").value;
+            y = (x - 32) / 1.8;
+            document.getElementById("demoC").innerHTML = y;
+        }
+    </script> 
 </body>
 </html>
