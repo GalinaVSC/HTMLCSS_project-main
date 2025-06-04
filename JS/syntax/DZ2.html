@@ -3,33 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Конвертер температур</title>
 </head>
 <body>
-    <h2>Перевод из градусов Цельсия в градусы Фаренгейта</h2>
+    <h2>Конвертер температур</h2>
     <form>
         <label>Введите температуру в градусах по Цельсию
-            <input type="number" id="celsiusInput" oninput="convertTemp()">
+            <input type="number" id="celsiusInput" oninput="convert2C()">
         </label>
     </form>
-        <p>По Фаренгейту это будет равно: <span id="demoF"></span></p>
+        <p>Температура по Фаренгейту равна: <span id="demoF"></span></p>
     <form>
         <label>Введите температуру в градусах по Фаренгейту
-            <input type="number" id="fahrenheitInput" oninput="reConvertTemp()">
+            <input type="number" id="fahrenheitInput" oninput="convert2F()">
         </label>
     </form>
-        <p>По Цельсию это будет равно: <span id="demoC"></span></p> 
-    <script>
-        function convertTemp() {
-            let x = document.getElementById("celsiusInput").value;
-            y = (x * 1.8) + 32;
-            document.getElementById("demoF").innerHTML = y;
-        }
-        function reConvertTemp() {
-            let x = document.getElementById("fahrenheitInput").value;
-            y = (x - 32) / 1.8;
-            document.getElementById("demoC").innerHTML = y;
-        }
-    </script> 
+        <p>Температура по Цельсию равна: <span id="demoC"></span></p> 
+    <script src="convertors.js"></script> 
 </body>
 </html>
