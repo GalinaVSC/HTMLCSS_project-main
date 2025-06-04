@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фермер</title>
+</head>
+<body>
+    <h2>Считаем поголовье</h2>
+    <form>
+        <label>Введите количество поросят
+            <input type="number" id="pigInput" oninput="addition()">
+        </label>
+        <br><br>
+        <label>Введите количество коров
+            <input type="number" id="cowtInput" oninput="addition()">
+        </label>
+    </form>
+        <p>Суммарное количество животных на подворье будет равно:<span id="demo"></span></p>
+    <script>
+        function addition() {
+            let b = Number(document.getElementById("pigInput").value);
+            let c = Number(document.getElementById("cowInput").value);
+            let a = b + c;
+            document.getElementById("demo").innerHTML = a;
+        }
+    </script> 
+</body>
+</html>  
