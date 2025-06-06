@@ -4,22 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Калькулятор</title>
+    <style>
+        input[type="number"] {
+            width: 95px; 
+        }
+    </style>
 </head>
 <body>
     <h1>Калькулятор</h1>
     <h2>Сложение</h2>
-        <input type="number" id="firstSum" placeholder="Enter first number">
-        +
-        <input type="number" id="secondSum" placeholder="Enter second number">
-        <button onclick="addition()">Sum</button>
-            <p>Результат:<span id="demoPlus"></span></p>
-    <h2>Вычитание</h2>
-        <input type="number" id="firstDiff" placeholder="Enter first number">
-        -
-        <input type="number" id="secondDiff" placeholder="Enter second number">
-        <button onclick="difference()">Difference</button>
-            <p>Результат:<span id="demoMinus"></span></p>    
-    
+        <input type="number" id="firstSum" placeholder="Enter number">
+        <b>+</b>
+        <input type="number" id="secondSum" placeholder="Enter number">
+        = <span id="demoPlus"></span> 
+            <br><br>
+            <button onclick="addition()">Sum</button>
+        <h2>Вычитание</h2>
+        <input type="number" id="firstDiff" placeholder="Enter number">
+        <b>-</b>
+        <input type="number" id="secondDiff" placeholder="Enter number">
+        = <span id="demoMinus"></span>
+            <br><br>
+            <button onclick="difference()">Difference</button>    
+    <h2>Умножение</h2>
+        <input type="number" id="firstMult" placeholder="Enter number">
+        <b>*</b>
+        <input type="number" id="secondMult" placeholder="Enter number">
+        = <span id="demoMult"></span>
+            <br><br>
+            <button onclick="multiplication()">Multiplication</button>
+            
+    <h2>Деление</h2>
+        <input type="number" id="firstDivi" placeholder="Enter number">
+        <b>:</b>
+        <input type="number" id="secondDivi" placeholder="Enter number">
+        = <span id="demoDivi"></span>
+            <br><br>
+            <button onclick="division()">Division</button>
+            
     <script src="calculator.js"></script> 
 </body>
 </html>  
