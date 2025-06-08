@@ -24,3 +24,9 @@ function division() {
     let divi= b / c;
     document.getElementById("demoDivi").innerHTML = divi;
 }
+function exponentiation() {
+    let b = Number(document.getElementById("firstExpo").value);
+    let c = Number(document.getElementById("secondExpo").value);
+    let expo= b ** c;
+    document.getElementById("demoExpo").innerHTML = expo;
+}

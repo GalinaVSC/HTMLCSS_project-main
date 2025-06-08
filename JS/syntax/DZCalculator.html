@@ -7,6 +7,13 @@
     <style>
         input[type="number"] {
             width: 95px; 
+            background-color: rgb(151, 163, 233);
+            border-radius: 5px;
+           
+        }
+        body {
+            background: rgb(0, 13, 32);
+             color: azure;
         }
     </style>
 </head>
@@ -33,7 +40,6 @@
         = <span id="demoMult"></span>
             <br><br>
             <button onclick="multiplication()">Multiplication</button>
-            
     <h2>Деление</h2>
         <input type="number" id="firstDivi" placeholder="Enter number">
         <b>:</b>
@@ -41,7 +47,13 @@
         = <span id="demoDivi"></span>
             <br><br>
             <button onclick="division()">Division</button>
-            
+    <h2>Возведение в степень</h2>
+        <input type="number" id="firstExpo" placeholder="Enter number">
+        <b>**</b>
+        <input type="number" id="secondExpo" placeholder="Enter number">
+        = <span id="demoExpo"></span>
+            <br><br>
+            <button onclick="exponentiation()">Exponentiation</button>        
     <script src="calculator.js"></script> 
 </body>
 </html>  
