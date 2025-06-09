@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>User Form</h1>
+    <form onsubmit="return validateForm()">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstname" name="firstname"><br><br>
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastname" name="lastname"><br><br>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        let firstName = document.getElementById("firstname").value;
+        let lastName = document.getElementById("lastname").value;
+        let email = document.getElementById("email").value;
+        //Проверка, являются ли все исходные данные строками (числа будут отклонены)
+        //Checking if all inputs are sttrings (numbers will be rejected)
+        if (typeof firstName !== "string" || !isNaN(firstName)) {
+            alert("First Name cannot contain numbers!");
+            return false;
+        }
+        if (typeof lastName !== "string" || !isNaN(lastName)) {
+            alert("Last Name cannot contain numbers!");
+            return false;
+        }
+    </script>
+</body>
+</html>
