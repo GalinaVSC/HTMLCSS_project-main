@@ -16,8 +16,9 @@
         <input type="text" id="email" name="email"><br><br>
         <button type="submit">Submit</button>
     </form>
-
+        <div id="output"></div>
     <script>
+        function validateForm() {
         let firstName = document.getElementById("firstname").value;
         let lastName = document.getElementById("lastname").value;
         let email = document.getElementById("email").value;
@@ -25,12 +26,24 @@
         //Checking if all inputs are sttrings (numbers will be rejected)
         if (typeof firstName !== "string" || !isNaN(firstName)) {
             alert("First Name cannot contain numbers!");
-            return false;
+            return false; 
         }
         if (typeof lastName !== "string" || !isNaN(lastName)) {
             alert("Last Name cannot contain numbers!");
             return false;
         }
+        if (typeof email !== "string" || !email.includes("@")) {
+            alert("Enter valid email!");
+            return false;
+        }
+        //Display input below the form
+        document.getElementById("output").innerHTML = `
+        <p><strong>First Name:</strong> ${firstName}</p>
+        <p><strong>Last Name:</strong> ${lastName}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        `;
+        return false; // Prevent actual form submission Предотвратить фактическую отправку формы
+    }
     </script>
 </body>
 </html>
