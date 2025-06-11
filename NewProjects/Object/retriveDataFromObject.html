@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Objects</h1>
+    <h2>There are two ways to acces a property: object.property or object["property"]</h2>
+    <p id="demo"></p>
+    <script>
+        //Create object
+        const person = {
+            firstName:"John", 
+            lastName:"Doe", 
+            id:5566
+        };
+        //Display lastname from the object:
+        document.getElementById("demo").innerHTML =
+        "The last name is " + person.lastName;
+
+    </script>
+</body>
+</html>
