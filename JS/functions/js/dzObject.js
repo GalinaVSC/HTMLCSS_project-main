@@ -4,15 +4,15 @@ function validateForm() {
         person.lastName=document.getElementById("lastname").value;
         person.email=document.getElementById("email").value;
        
-        if (typeof person.firstName !== "string" || !isNaN(firstName)) {
+        if (typeof person.firstName !== "string" || !isNaN(person.firstName)) {
            alert("First Name cannot contain numbers!");
            return false; 
         }
-        if (typeof person.lastName !== "string" || !isNaN(lastName)) {
+        if (typeof person.lastName !== "string" || !isNaN(person.lastName)) {
             alert("Last Name cannot contain numbers!");
             return false;
         }
-        if (typeof person.email !== "string" || !email.includes("@")) {
+        if (typeof person.email !== "string" || !person.email.includes("@")) {
             alert("Enter valid email!");
             return false;
         }
