@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Objects</h1>
+    <p id="demo"></p>
+    <script>
+        //Create object
+        const person = {
+        firstName: "John", 
+        lastName: "Doe", 
+        id: 5566, 
+        };
+        //Add a Method
+        person.name = function() {
+            return (this.firstName + " " + this.lastName).toUpperCase();
+        };
+        //Display Object Data
+        document.getElementById("demo").innerHTML = 
+        "My father is " + person.name();
+    </script>
+</body>
+</html>

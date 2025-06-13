@@ -12,14 +12,17 @@
     <p id="demo"></p>
     <script>
         const person = {
-        firstName:"John", 
-        lastName:"Doe", 
-        id:5566, 
-        fullName: function() {
-            return this.firstName + " " + this.lastName;
-        }
+        firstName: "John", 
+        lastName: "Doe", 
+        id: 5566, 
         };
-        document.getElementById("demo").innerHTML = person.fullName();
+        //Add a Method
+        person.name = function() {
+            return this.firstName + " " + this.lastName;
+        };
+        //Display Object Data
+        document.getElementById("demo").innerHTML = 
+        "My father is " + person.name();
     </script>
 </body>
 </html>
