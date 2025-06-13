@@ -10,8 +10,8 @@ function validateForm() {
             <p><strong>Email:</strong> ${this.email}</p>
             `;
         }
-    
-        formValidator: function() { 
+    };
+        person.formValidator = function() { 
             if (typeof person.firstName !== "string" || !isNaN(person.firstName)) {
                 alert("First Name cannot contain numbers!");
                 return false; 
