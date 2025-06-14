@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Form</title>
+    <link rel="stylesheet" href="css/dzUser.css">
+</head>
+<body>
+    <h1>User Form</h1>
+    <form onsubmit="return validateForm()">
+        <label for="country">Страна</label>
+        <input type="text" id="country" name="country"><br><br>
+        <label for="age">Возраст</label>
+        <input type="number" id="age" name="age"><br><br>
+        <label for="gender">Пол</label>
+        <input type="text" id="gender" name="gender"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+        <div id="output"></div>
+    <script src="js/dzObjectUser.js"></script>
+</body>
+</html>

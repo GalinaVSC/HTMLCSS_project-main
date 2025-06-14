@@ -1,0 +1,19 @@
+body {
+    background: lavender;
+    font-family: Verdana, Tahoma, sans-serif;
+    margin: 20px;
+    color: blue;
+}
+
+input {
+    border-radius: 10px;
+    font-family: Verdana, Tahoma, sans-serif;
+    padding: 5px;
+}
+button {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    background-color: cornflowerblue;
+    width: 80px;
+    height: 30px;
+}
