@@ -26,10 +26,9 @@ function validateForm() {
             return true;
         }
         };
-        //if (!person.formValidator()) {
-        //        return false;
-        //    }   
-        person.formValidator();
+            if (!person.formValidator()) {
+                return false;
+            }   
         document.getElementById("output").innerHTML = person.formData();
         return false;    
 }
