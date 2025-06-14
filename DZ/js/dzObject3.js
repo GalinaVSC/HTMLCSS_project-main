@@ -30,7 +30,6 @@ function validateForm() {
         }
     };
     if (!validator.formValidator()) return false;
-       
     const display = {
         formDisplay: function() {
             return document.getElementById("output").innerHTML = person.formData();
