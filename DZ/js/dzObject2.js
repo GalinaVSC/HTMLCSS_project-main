@@ -11,21 +11,21 @@ function validateForm() {
             `;
         },
         formValidator: function() { 
-            if (typeof this.firstName !== "string" || !isNaN(this.firstName)) {
+            if (!isNaN(this.firstName)) {
                 alert("First Name cannot contain numbers!");
                 return false; 
             }
-            if (typeof this.lastName !== "string" || !isNaN(this.lastName)) {
+            if (!isNaN(this.lastName)) {
                 alert("Last Name cannot contain numbers!");
                 return false;
             }
-            if (typeof this.email !== "string" || !this.email.includes("@")) {
+            if (!this.email.includes("@")) {
                 alert("Enter valid email!");
                 return false;
             }
             return true;
         }
-        };
+    };
             if (!person.formValidator()) {
                 return false;
             }   
