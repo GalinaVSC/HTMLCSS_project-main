@@ -11,24 +11,25 @@ function validateForm() {
             `;
         },
         formValidator: function() { 
-            if (typeof person.firstName !== "string" || !isNaN(person.firstName)) {
+            if (typeof this.firstName !== "string" || !isNaN(this.firstName)) {
                 alert("First Name cannot contain numbers!");
                 return false; 
             }
-            if (typeof person.lastName !== "string" || !isNaN(person.lastName)) {
+            if (typeof this.lastName !== "string" || !isNaN(this.lastName)) {
                 alert("Last Name cannot contain numbers!");
                 return false;
             }
-            if (typeof person.email !== "string" || !person.email.includes("@")) {
+            if (typeof this.email !== "string" || !this.email.includes("@")) {
                 alert("Enter valid email!");
                 return false;
             }
             return true;
         }
         };
-        if (!person.formValidator()) {
-                return false;
-            }     
+        //if (!person.formValidator()) {
+        //        return false;
+        //    }   
+        person.formValidator();
         document.getElementById("output").innerHTML = person.formData();
         return false;    
 }
