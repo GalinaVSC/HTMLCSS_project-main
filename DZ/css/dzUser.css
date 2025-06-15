@@ -9,6 +9,7 @@ input {
     border-radius: 10px;
     font-family: Verdana, Tahoma, sans-serif;
     padding: 5px;
+    border: 2px solid #ccc; /* Тонкая серая рамка вокруг поля */
 }
 button {
     border-radius: 10px;
@@ -16,4 +17,7 @@ button {
     background-color: cornflowerblue;
     width: 80px;
     height: 30px;
+}
+label {
+    margin: 15px;
 }

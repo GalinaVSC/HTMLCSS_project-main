@@ -17,10 +17,10 @@ function validateForm() {
             alert("Поле 'Страна' не должна содержать цифры!");
             return false; 
         }
-        /*if (???????(person.age)) {
+        if (isNaN(person.age)) {
             alert("Поле 'Возраст' должно содержать только цифры!");
             return false;
-        }*/
+        }
         if (!isNaN(person.gender)) {
             alert("Поле 'Пол' не должно содержать цифры!");
             return false;
