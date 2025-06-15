@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Objects</h1>
+    <h2>The object.values() Method</h2>
+    <p>Object.values() returns an array of values from an object:</p>
+    <p id="demo"></p>
+    <script>
+        //Create an object
+        const person = {
+        name: "John", 
+        age: 30, 
+        city: "New York"
+        }; 
+        //Create an array
+        const myArray = Object.values(person);
+        //Display the Array
+        document.getElementById("demo").innerHTML = myArray;
+    </script>
+</body>
+</html>

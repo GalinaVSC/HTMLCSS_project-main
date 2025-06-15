@@ -6,7 +6,7 @@ function validateForm() {
         formData: function() {
             return ` 
             <p><strong>Country:</strong> ${this.country}</p>
-            <p><strong>Age:</strong> ${2025 - this.age}</p>
+            <p><strong>Birth Year:</strong> ${2025 - this.age}</p>
             <p><strong>Gender:</strong> ${this.gender}</p>
             `;
         }
