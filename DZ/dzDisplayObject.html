@@ -21,9 +21,24 @@
             artist9: { name: "Ava Thompson", specialty: "Digital Art", country: "Canada" },
             artist10: { name: "Rajesh Mehta", specialty: "Sand Animation", country: "India" }
         };
-        //const myArray = Object.values(artists);
-        //document.getElementById("demo").innerHTML = myArray;
-        document.getElementById("demo").innerHTML = JSON.stringify(artists);
+        /*let text = "";
+        for (let y in artists) {
+            for (let x in artists[y]) {
+                text += artists[y][x] + " "; 
+            }
+            text += "<br>"; // Добавляем перенос строки после каждого художника
+        };
+        document.getElementById("demo").innerHTML = text;*/
+        
+        const myArray = Object.values(artists.artist1) + "<br>" + Object.values(artists.artist2) + 
+        "<br>" + Object.values(artists.artist3) + "<br>" + Object.values(artists.artist4) + 
+        "<br>" + Object.values(artists.artist5) + "<br>" + Object.values(artists.artist6) +
+        "<br>" + Object.values(artists.artist7) + "<br>" + Object.values(artists.artist8) +
+        "<br>" + Object.values(artists.artist9) + "<br>" + Object.values(artists.artist10);
+
+        document.getElementById("demo").innerHTML = myArray;
+        
+        //document.getElementById("demo").innerHTML = JSON.stringify(artists);
     </script>
 </body>
 </html>
