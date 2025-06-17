@@ -19,26 +19,45 @@
             artist7: { name: "Layla Haddad", specialty: "Henna Art", country: "Morocco" },
             artist8: { name: "Maxime Lefevre", specialty: "Modern Dance", country: "France" },
             artist9: { name: "Ava Thompson", specialty: "Digital Art", country: "Canada" },
-            artist10: { name: "Rajesh Mehta", specialty: "Sand Animation", country: "India" }
+            artist10: { name: "Rajesh Mehta", specialty: "Sand Animation", country: "India" },
+            
+            /*loopGet: function() {
+            let text = "";
+                for (let y in artists) {
+                    for (let x in artists[y]) {
+                        text += artists[y][x] + " "; 
+                    }
+                text += "<br>"; 
+                }
+                return text;
+            },*/
         };
-        /*let text = "";
-        for (let y in artists) {
-            for (let x in artists[y]) {
-                text += artists[y][x] + " "; 
-            }
-            text += "<br>"; // Добавляем перенос строки после каждого художника
-        };
-        document.getElementById("demo").innerHTML = text;*/
+        //document.getElementById("demo").innerHTML = artists.loopGet();
+        /*loopArray: function() {
+            let myArray = "";
+                for (let y in artists) {
+                    myArray += Object.values(artists[y]).join(" ") + "<br>";
+                }
+            return myArray;
+            }*/
+           //document.getElementById("demo").innerHTML = artists.loopArray();
         
-        const myArray = Object.values(artists.artist1) + "<br>" + Object.values(artists.artist2) + 
+        
+        let myArray = "";
+        for (let y in artists) {
+                myArray += Object.values(artists[y]).join(" ") + "<br>";
+            }
+                document.getElementById("demo").innerHTML = myArray;
+                
+        
+        
+        //document.getElementById("demo").innerHTML = JSON.stringify(artists);
+        /*const myArray = Object.values(artists.artist1) + "<br>" + Object.values(artists.artist2) + 
         "<br>" + Object.values(artists.artist3) + "<br>" + Object.values(artists.artist4) + 
         "<br>" + Object.values(artists.artist5) + "<br>" + Object.values(artists.artist6) +
         "<br>" + Object.values(artists.artist7) + "<br>" + Object.values(artists.artist8) +
-        "<br>" + Object.values(artists.artist9) + "<br>" + Object.values(artists.artist10);
-
-        document.getElementById("demo").innerHTML = myArray;
-        
-        //document.getElementById("demo").innerHTML = JSON.stringify(artists);
+        "<br>" + Object.values(artists.artist9) + "<br>" + Object.values(artists.artist10);*/
     </script>
 </body>
 </html>
+
