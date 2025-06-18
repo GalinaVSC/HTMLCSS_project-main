@@ -8,6 +8,9 @@
 <body>
     <h1>JavaScript Objects</h1>
     <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
     <script>
         const artists = {
             artist1: { name: "Lina Zhang", specialty: "Calligraphy", country: "China" },
@@ -21,38 +24,37 @@
             artist9: { name: "Ava Thompson", specialty: "Digital Art", country: "Canada" },
             artist10: { name: "Rajesh Mehta", specialty: "Sand Animation", country: "India" },
             
-            /*loopGet: function() {
+            loopGet: function() {
             let text = "";
-                for (let y in artists) {
-                    for (let x in artists[y]) {
-                        text += artists[y][x] + " "; 
+                for (let x in this) {
+                    if (x !== "loopGet") {
+                        let artist = this[x];
+                        text += `${artist.name} - ${artist.specialty} (${artist.country})<br>`; 
                     }
-                text += "<br>"; 
-                }
-                return text;
-            },*/
-        };
-        //document.getElementById("demo").innerHTML = artists.loopGet();
-        /*loopArray: function() {
+                }  
+            document.getElementById("demo").innerHTML = text;      
+        },
+            loopArray: function() {
             let myArray = "";
-                for (let y in artists) {
-                    myArray += Object.values(artists[y]).join(" ") + "<br>";
+                for (let y in this) {
+                    myArray += Object.values(this[y]).join(" ") + "<br>";
                 }
             return myArray;
-            }*/
-           //document.getElementById("demo").innerHTML = artists.loopArray();
+            }
+    };
+    artists.loopGet();
+    document.getElementById("demo2").innerHTML = artists.loopArray();
+    document.getElementById("demo4").innerHTML = JSON.stringify(artists); 
         
-        
-        let myArray = "";
+      
+    
+    /*let myArray = "";
         for (let y in artists) {
                 myArray += Object.values(artists[y]).join(" ") + "<br>";
             }
                 document.getElementById("demo").innerHTML = myArray;
-                
-        
-        
-        //document.getElementById("demo").innerHTML = JSON.stringify(artists);
-        /*const myArray = Object.values(artists.artist1) + "<br>" + Object.values(artists.artist2) + 
+       
+                /*const myArray = Object.values(artists.artist1) + "<br>" + Object.values(artists.artist2) + 
         "<br>" + Object.values(artists.artist3) + "<br>" + Object.values(artists.artist4) + 
         "<br>" + Object.values(artists.artist5) + "<br>" + Object.values(artists.artist6) +
         "<br>" + Object.values(artists.artist7) + "<br>" + Object.values(artists.artist8) +
