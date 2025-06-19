@@ -33,20 +33,32 @@
                     }
                 }  
             document.getElementById("demo").innerHTML = text;      
-        },
+            },
+
             loopArray: function() {
             let myArray = "";
                 for (let y in this) {
                     myArray += Object.values(this[y]).join(" ") + "<br>";
                 }
-            return myArray;
+            document.getElementById("demo2").innerHTML = myArray;
+            },
+
+            loopEnteries: function() {
+            let text1 = "";
+                for (let [art, value] of Object.entries(this)) {
+                    if (art !== "loopGet" && art !== "loopArray" && art !== "loopEnteries") {
+                        let artist = this[art];
+                    text1 += `<strong>${art}:</strong> ${value.name},  ${value.specialty}, ${value.country}; ` 
+                }
+            }
+            document.getElementById("demo3").innerHTML = text1;
             }
     };
     artists.loopGet();
-    document.getElementById("demo2").innerHTML = artists.loopArray();
-    document.getElementById("demo4").innerHTML = JSON.stringify(artists); 
-        
-      
+        artists.loopArray();
+             artists.loopEnteries();
+                document.getElementById("demo4").innerHTML = JSON.stringify(artists);
+               
     
     /*let myArray = "";
         for (let y in artists) {
