@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Car prices</h1>
+    <p id="carPrices"></p>
+    <h1>Car prices</h1>
+    <p id="carBrands"></p>
+    <h1>Car prices unformatted</h1>
+    <p id="carUn"></p>
+    <script>
+        const carPrices = {
+            Tesla: {model: "Model 3", price: "$42,990"},
+            BMV: {model: "3 Series", price: "$44,200"},
+            Mersedes: {model: "C-Class", price: "$146,900"},
+            getCars: function() {
+                let objectBrand = Object.keys(this);
+                let text = "";
+                    for (x in objectBrand)
+                        if (x !== "getCars") {
+                            //let brand = this[x];
+                    text += objectBrand[x] + "<br>";
+            document.getElementById("carPrices").innerHTML = text;
+                    }
+            }
+        };
+        const cars = {
+            car1: {brand: "Tesla", model: "Model 3"},
+            car2: {brand: "3 Series", model: "3 Series"},
+            car3: {brand: "C-Class", model: "C-Class"}
+        }
+        const carPricesUn = {
+            Tesla: {model: "Model 3", price: 42990},
+            BMV: {model: "3 Series", price: 44200},
+            Mersedes: {model: "C-Class", price: 146900}
+        };
+        carPrices.getCars();
+    </script>
+</body>
+</html>
