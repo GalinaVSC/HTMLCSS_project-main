@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Object.keys() example</h1>
+    <h2 id="demo"></h2>
+    <h1>Basic Example with letters</h1>
+    <h2 id="basic"></h2>
+    <h1>Array</h1>
+    <h2 id="array"></h2>
+    <h1>Array-like object</h1>
+    <h2 id="arrayLike"></h2>
+    <h1>Array-like object with random key ordering</h1>
+    <h2 id="arrayRand"></h2>
+    <h1>Non-enumerable property</h1>
+    <h2 id="foo"></h2>
+    <script>
+        const object1 = {
+            name: "Alex",
+            age: 42,
+            gender: "male"
+        };
+        let objectNames = Object.keys(object1);
+        //Display full name
+        let text = "";
+        for (x in objectNames)
+        text += objectNames[x] + "<br>";
+    document.getElementById("demo").innerHTML = text;
+    //Basic example with letters
+    const basicObject = {
+        a: "some string",
+        b: 42,
+        c: false
+    };
+    document.getElementById("basic").innerHTML = Object.keys(basicObject);
+    //Basic array
+    const arr = ["a", "b", "c"];
+    document.getElementById("array").innerHTML = (Object.keys(arr)); //['0', '1', '2']
+    //Array-like object
+    const obj = {0: "a", 1: "b", 2: "c"};
+    document.getElementById("arrayLike").innerHTML = (Object.keys(obj)); //['0', '1', '2']
+    //Array-like object with random key ordering
+    const anobj = {100: "a", 2: "b", 7: "c"};
+    document.getElementById("arrayRand").innerHTML = (Object.keys(anobj)); //['2', '7', '100']
+    //getFoo is a non-enumerable property
+    const myObj = Object.create(
+        {},
+        {
+            getFoo: {
+                value() {
+                    return this.foo;
+                },
+            },
+        },
+    );
+    myObj.foo = 1;
+    document.getElementById("foo").innerHTML = (Object.keys(myObj)); // ['foo']
+    </script>
+</body>
+</html>
