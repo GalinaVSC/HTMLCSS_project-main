@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Object Constructors</h1>
+    <p id="demo"></p>
+    <script>
+        //Constructor function for person objects
+        function Person(firstName, lastName, age, eyeColor) {
+            this.firstName = firstName; // Эта строчка говорит создай переменную firstName и в нее попадет значение которое передастся с позиции где сейчас first. 
+            this.lastName = lastName;
+            this.age = age;
+            this.eyeColor = eyeColor;
+        }
+        //Create 2 person object
+        const myMother = new Person("Sally", "Rally", 48, "green");
+        Person.prototype.changeName = function (name) {
+            this.lastName = name;
+        }
+        //Change Name
+        myMother.changeName("Doe");
+        //Display name
+        document.getElementById("demo").innerHTML = 
+        "My mother's last name is " + myMother.lastName; 
+    </script>
+</body>
+</html>
