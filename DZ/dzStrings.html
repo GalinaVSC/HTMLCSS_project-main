@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Count Letters</title>
+</head>
+<body>
+    <h1>Посчитаем буквы!</h1>
+    <form id="letterForm">
+        <label for="word">Введите слово:</label><br>
+        <input type="text" id="word"><br><br>
+        <button type="submit">Посчитать</button>
+    </form>
+    <p id="result"></p>
+
+    <script>
+        letterForm.onsubmit = function(e) {
+            e.preventDefault(); // обязателен, чтобы остановить отправку формы
+        let word = document.getElementById('word').value;
+        let length = word.length;
+        result.innerHTML = length;
+    };
+    </script>
+</body>
+</html>

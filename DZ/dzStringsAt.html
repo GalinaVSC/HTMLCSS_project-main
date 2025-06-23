@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Перевёртыш</title>
+</head>
+<body>
+    <h1>Перевёртыш слова</h1>
+    <form id="reverseForm">
+        <label for="word">Введите слово:</label><br>
+        <input type="text" id="word"><br><br>
+        <button type="submit">Посчитать</button>
+    </form>
+    <p id="result"></p>
+
+    <script>
+        reverseForm.onsubmit = function(e) {
+            e.preventDefault(); // отключаем стандартную отправку формы
+
+            // берем введённое слово
+            let word = document.getElementById('word').value;
+
+            for (var x in word) {
+                result.innerHTML += word.at(-x-1); 
+            }
+        };
+</script>
+</body>
+</html>
