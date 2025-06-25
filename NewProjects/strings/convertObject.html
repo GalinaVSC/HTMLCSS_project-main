@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Conver to Upper Case</h2>
+    <input type="text" id="word" placeholder="Введите слово">
+    <button onclick=tools.upperCase()>Convert</button>
+    <p id="result"></p>
+    <script>
+        // Объект инструментов
+        const tools = {
+            upperCase: function() {
+                result.innerHTML = word.value.toUpperCase();
+            }
+        }
+    </script>
+</body>
+</html>

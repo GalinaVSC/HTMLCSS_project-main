@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Conver to Upper Case</h2>
+    <input type="text" id="word" placeholder="Введите слово">
+    <button onclick="myTool.convertToUpper()">Convert</button>
+    <p id="result"></p>
+    <script>
+        //Функция конструктор для создания объекта 
+        // перевода текста в верхний регистр
+       /*unction Tools(word, result) {
+            this.Word = word;
+            this.Result = result;
+            this.convertToUpper = function() {
+                this.Result.innerHTML = this.Word.value.toUpperCase();
+            };
+        }
+        // Создаем новый Tools объект
+        const myTool = new Tools(word, result);*/
+        // упрощённая версия
+        function Tools() {
+            this.convertToUpper = function() {
+                result.innerHTML = word.value.toUpperCase();
+            };
+        }
+        const myTool = new Tools();
+    </script>
+</body>
+</html>
