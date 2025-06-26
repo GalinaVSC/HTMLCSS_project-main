@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript Strings</h1>
+    <h2>The slice() Method</h2>
+    <p>The sliced (extracted) part of the string is:</p>
+    <p id="demo"></p>
+    <script>
+        const cut = {
+            text:"Apple, Banana, Kiwi",
+            part: function(start, end) {
+                return this.text.slice(start, end);
+            }
+        };
+        demo.innerHTML = cut.part(7, 13);
+    </script>
+</body>
+</html>
