@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Objects</h1>
+    <h2>How to use objects</h2>
+    <input type="number" placeholder="Введите цифру" id="numberOne">
+    <input type="number" placeholder="Введите цифру" id="numberTwo">
+    <button onclick="math.addition()">Click</button>
+    <p id="demo"></p>
+    <p id="test"></p>
+    <script>
+        const math = {
+            //num1: 100,
+            //num2: 200,
+            addition: function() {
+                const num1 = Number(numberOne.value);
+                const num2 = Number(numberTwo.value);
+                    return demo.innerHTML = num1 + num2;
+            }
+        };
+    </script>
+</body>
+</html>

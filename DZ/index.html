@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link id="theme-style" rel="stylesheet" href="css/light.css">
+</head>
+<body>
+    <h1>Theme Switcher Example</h1>
+    <button onclick="themeTools.toggleTheme()">Switch Theme</button>
+    <script>
+        const themeTools = {
+            themeLink: document.getElementById("theme-style"),
+            themes: {
+                light: "css/light.css",
+                dark: "css/dark.css"
+            },
+            toggleTheme: function() {
+                //Swap CSS files
+                this.themeLink.href = (this.themeLink.href.includes(this.themes.light))
+                ? this.themes.dark
+                : this.themes.light;
+            }
+        }
+    </script>
+</body>
+</html>
