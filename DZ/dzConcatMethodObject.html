@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript Strings</h1>
+    <h2>The concat() Method</h2>
+    <p>Придумай новое слово и дай ему определение</p>
+        <input type="text" placeholder="Новое слово" id="textOne">
+        <input type="text" placeholder="Определение" id="textTwo">
+        <button onclick="newText.phrase()">Click</button>
+    <p id="demo"></p>
+    <script>
+        const newText = {
+            phrase: function() {
+                const text1 = textOne.value;
+                const text2 = textTwo.value;
+                return demo.innerHTML = text1.concat(" это ",text2);
+            }
+        }
+    </script>
+</body>
+</html>
