@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Strings</h1>
+    <h2>The trimEnd() Method using Object</h2>
+    <p id="demo"></p>
+    <script>
+        const tools = {
+            stringTrimEnd: function(text) {
+                return text.trimEnd();
+            }
+        };
+        demo.innerHTML = "Length text1 = " + ("     Hello Alex!      ").length + 
+        "<br>length text2 - " + tools.stringTrimEnd("     Hello Alex!      ").length;
+    </script>
+</body>
+</html>
