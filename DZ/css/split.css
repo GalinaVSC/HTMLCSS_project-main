@@ -1,0 +1,11 @@
+body {
+    background: blueviolet;
+}
+
+#demo {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Impact,  'Arial Narrow Bold', sans-serif;
+    margin: 30px;
+    color: rgb(255, 255, 255);
+}

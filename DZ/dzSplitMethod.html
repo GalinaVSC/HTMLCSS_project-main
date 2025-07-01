@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/split.css">
+</head>
+<body>
+    <h1>JavaScript String Methods</h1>
+    <p>Display the first array element, after a string split:</p>
+    <p id="demo"></p>
+    <script>
+        const textObject = {
+            text: "Good morning Dear Husband!",
+            letters: function() { 
+                const myArray = this.text.split(''); // Преобразование строки в массив символов
+                    for(let x in myArray) {
+                demo.innerHTML += myArray[x] + '<br>';// Проходим по массиву и добавляем каждый символ с разрывом строки
+                }
+            }
+        };
+        textObject.letters(); // Вызываем метод объекта для отображения символов
+    </script>
+</body>
+</html>
