@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript HTML as a property. Пример Б.</h1>
+    <p>How to render HTML property as code:</p>
+    <p id="demo"></p>
+    <script>
+        const htmlBlock = {
+            header: "Welcome",
+            headerOne: `<h2>${this.header}</h2>` // пример Б который не работает
+        };
+        demo.innerHTML = htmlBlock.headerOne;
+    </script>
+</body>
+</html>

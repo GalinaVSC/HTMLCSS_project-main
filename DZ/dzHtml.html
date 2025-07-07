@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript Template Strings</h1>
+    <p>Templates allow variables in strings:</p>
+    <p id="demo"></p>
+    <p>Templates are not supported in Internet Explorer.</p>
+    <script>
+        const templates = {
+        header:  "Template Strings",
+        tags: ["template strings", "javascript", "es6"],
+            displayHtml: function() {
+                let html = `<h2>${this.header}</h2><ul>`;
+                for (const x of this.tags) {
+                    html += `<li>${x}</li>`;
+                }
+                html += `</ul>`; // Закрытие тега <ul> после цикла
+                return html; // Возвращаем сгенерированный HTML
+            }
+        };
+        demo.innerHTML = templates.displayHtml();
+    </script>
+</body>
+</html>

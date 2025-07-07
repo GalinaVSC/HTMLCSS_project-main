@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript HTML as a property. Пример В.</h1>
+    <p>How to render HTML property as code:</p>
+    <p id="demo"></p>
+    <script>
+        const htmlBlock = {
+            header: "Welcome",
+            body() { //Пример В который работает, метод возвращает строку HTML это сокращение от function body() {...} работает также
+                return `<p>This is a paragraph.</p><button>Click me</button>`;
+            }
+        };
+        demo.innerHTML = htmlBlock.body();
+    </script>
+</body>
+</html>
