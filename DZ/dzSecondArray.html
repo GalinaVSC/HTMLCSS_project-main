@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Введите любые три цвета</h1>
+    <form>
+        <label for="color0">Color 1:</label>
+        <input type="text" id="color0" name="color0"><br><br>
+        <label for="color1">Color 2:</label>
+        <input type="text" id="color1" name="color1"><br><br>
+        <label for="color2">Color 3:</label>
+        <input type="text" id="color2" name="color2"><br><br>
+        <button type="button" onclick="printColors()">Print your colors</button>
+    </form>
+        <p id="demo0"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+    <script>
+        function printColors() {
+            let color0 = document.getElementById("color0").value;
+            let color1 = document.getElementById("color1").value;
+            let color2 = document.getElementById("color2").value;
+                const colors = []
+                colors[0] = `${color0}`;
+                colors[1] = `${color1}`;
+                colors[2] = `${color2}`;
+                    demo0.innerHTML =  colors[0];
+                    demo1.innerHTML =  colors[1];
+                    demo2.innerHTML =  colors[2];
+        }
+    </script>
+</body>
+</html>
