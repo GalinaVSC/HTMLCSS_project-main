@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Введите любые три цвета</h1>
+    <form>
+        <label for="color0">Color 1:</label>
+        <input type="text" id="color0" name="color0"><br><br>
+        <label for="color1">Color 2:</label>
+        <input type="text" id="color1" name="color1"><br><br>
+        <label for="color2">Color 3:</label>
+        <input type="text" id="color2" name="color2"><br><br>
+        <button type="button" onclick="printColors()">Print your colors</button>
+    </form>
+        <p id="demo"></p>
+    <script>
+        function printColors() {
+            const colors = []
+                colors[0] = color0.value;
+                colors[1] = color1.value;
+                colors[2] = color2.value;
+                let output = ' ';
+                for (i in colors) {
+                    output += `<span style = "color: ${colors[i]}">${colors[i]}</span> `;
+                }
+                demo.innerHTML = output;
+        }
+        printColors();
+    </script>
+</body>
+</html>
