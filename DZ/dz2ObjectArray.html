@@ -14,12 +14,23 @@
         <input type="text" id="color1" name="color1"><br><br>
         <label for="color2">Color 3:</label>
         <input type="text" id="color2" name="color2"><br><br>
-        <button type="submit">Print your colors</button>
+        <button type="button" onclick="colorTools.printColors()">Print your colors</button>
     </form>
         <p id="demo"></p>
     <script>
-        
-        
+        const colorTools = {
+            colors: [],
+            printColors: function() {
+                this.colors[0] = color0.value;
+                this.colors[1] = color1.value;
+                this.colors[2] = color2.value;
+                let output = "";
+                for (x in this.colors) {
+                    output += `<span style="color:${this.colors[x]}">${this.colors[x]}</span> `;
+                }
+            return demo.innerHTML = output;
+            }
+        }
     </script>
 </body>
 </html>
