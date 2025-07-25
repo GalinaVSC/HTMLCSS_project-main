@@ -12,11 +12,12 @@
     <script>
         const fruits = ["Banana", "Orange", "Apple", "Mango"];
         let text = "<ul>";
-            fruits.forEach(myFuction);
+            fruits.forEach(myFunction);
             text += "</ul>";
             demo.innerHTML = text;
-            function myFuction(value) {
-                text += "<li>" + value + "</li>"; 
+            function myFunction(fruitName) {
+                //text += "<li>" + fruitName.toUpperCase() + "</li>"; 
+                text += "<li style=color:red;font-weight:bold>" + fruitName.toLowerCase() + "</li>";
             }
     </script>
 </body>

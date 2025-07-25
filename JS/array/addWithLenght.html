@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <p>The length property an easy way to appened new elements to an array without using the push() method.</p>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+    <script>
+        const fruits = ["Banana", "Orange", "Apple"];
+        demo.innerHTML = fruits;
+        function myFunction() {
+            //fruits[fruits.length] = "Lemon";
+            fruits[5] = "Lemon";
+            demo.innerHTML = fruits;
+        }
+    </script>
+</body>
+</html>
