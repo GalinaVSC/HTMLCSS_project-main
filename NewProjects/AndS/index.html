@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cool Site</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="assets/img/favicon.ico">
+</head>
+<body>
+    <!-- Header with Burger Menu -->
+    <header>
+        <div class="logo">
+            <img src="assets/img/logo.jpg" alt="A&S Logo" style="height:60px;">
+        </div>
+        <div class="burger" id="burger">
+            <span></span><span></span><span></span>
+        </div>
+        <nav id="nav-menu" class="nav-menu">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="htmlcss.html">HTML/CSS</a></li>
+                <li><a href="javascript.html">JavaScript</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- World Clock -->
+        <section id="world-clock">
+            <h2>World Clock</h2>
+            <div id="clock">Loading...</div>
+        </section>
+
+        <!-- Calendar -->
+        <section id="calendar">
+            <h2>Calendar</h2>
+            <div class="calendar-placeholder">Calendar Widget (Placeholder)</div>
+        </section>
+
+        <!-- Homework -->
+        <section id="homework">
+            <h2>HomeWork</h2>
+            <ul>
+                <li>Task 1: Learn Flexbox</li>
+                <li>Task 2: Build a To-Do App</li>
+            </ul>
+        </section>
+
+        <!-- List -->
+        <section id="list">
+            <h2>List</h2>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </section>
+
+        <!-- Important Posts -->
+        <section id="posts">
+            <h2>Important & Helpful Posts</h2>
+            <div class="posts-grid">
+                <article>Post 1: CSS Grid Tutorial</article>
+                <article>Post 2: JavaScript ES6 Features</article>
+                <article>Post 3: Responsive Design Tips</article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 My Cool Site. All rights reserved.</p>
+        <div class="theme-toggle">
+            <button id="theme-btn">Toggle Theme</button>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
