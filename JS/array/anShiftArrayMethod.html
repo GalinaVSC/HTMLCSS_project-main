@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Arrays</h1>
+    <h2>The Shift() method</h2>
+    <p>The shift() method removes the first element of an Array 
+        (and "shifts" the other elements to the left):</p> 
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        demo1.innerHTML = fruits;
+        demo2.innerHTML = fruits.unshift("Plum"); 
+        demo3.innerHTML = fruits; // displays the modified array
+    </script>
+</body>
+</html>
