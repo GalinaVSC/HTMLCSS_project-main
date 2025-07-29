@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Arrays</h1>
+    <p id="demo"></p>
+    <script>
+        const list = {
+            mosquito: ['born', 'beautiful', 'sqeak', 'little'],  
+            woodpecker: ['knock', 'red', 'peck', 'black'],
+            bee: ['gather', 'fast', 'buzz', 'yellow'],
+            candle: ['burn', 'paraffin', 'goOut', 'wax'],
+            ear: ['hear', 'beautiful', 'receive', 'sharp'],
+            throat: ['sing', 'deep', 'sick', 'pink'],
+            beard: ['scratch', 'thick', 'cut', 'blue'],
+            village: ['build', 'new', 'sleep', 'rural'],
+            nightmare: ['scare', 'scary', 'afraid', 'long'],
+            clubSoda: ['drink', 'carbonated', 'burp', 'salty'],
+            jam: ['spread', 'apple', 'eat', 'cold'],
+            corkscrew: ['open', 'metal', 'twist', 'sharp'],
+            axe: ['split', 'sharp', 'chop', 'heavy'],
+            whip: ['whip', 'long', 'twist', 'loud'],
+            sesameSeeds: ['sprinkle', 'white', 'dry', 'sweet']
+        };
+            const myArray = list.mosquito.concat(list.woodpecker, list.bee, list.candle, 
+            list.ear, list.throat, list.beard, list.village, list.nightmare, 
+            list.clubSoda, list.jam, list.corkscrew, list.axe, list.whip, list.sesameSeeds);
+            demo.innerHTML = myArray.join(', '); 
+    </script>    
+</body>
+</html>
