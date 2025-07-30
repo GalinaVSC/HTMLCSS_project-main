@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Arrays</h2>
+    <p>The flatMap() Method.</p>
+    <p id="demo"></p>
+    <script>
+        const myObj= {
+            arr: [1, 2, 3, 4, 5, 6],
+            myArr: function() {
+                let text = this.arr.flatMap(x => [x, x * 5, x-1]);
+                demo.innerHTML = text;
+            }
+        };
+        myObj.myArr();
+    </script>
+</body>
+</html>
