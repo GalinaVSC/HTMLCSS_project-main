@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Nouns with verbs and adjectives</h1>
+    <p>Hover over the nouns to see their associated verbs and adjectives.
+        All verbs will be <span style="color: blue; font-weight: bold;"> blue</span>
+        and all adjectives will be <span style="color: green; font-weight: bold;">green</span>.</p>
+    <ul id="keyList"></ul>
+    <div id="valueDisplay"></div>
+    <script>
+        const list = {
+            mosquito: ['born', 'beautiful', 'squeak', 'little'],  
+            woodpecker: ['knock', 'red', 'peck', 'black'],
+            bee: ['gather', 'fast', 'buzz', 'yellow'],
+            candle: ['burn', 'paraffin', 'goOut', 'wax'],
+            ear: ['hear', 'beautiful', 'receive', 'sharp'],
+            throat: ['sing', 'deep', 'sick', 'pink'],
+            beard: ['scratch', 'thick', 'cut', 'blue'],
+            village: ['build', 'new', 'sleep', 'rural'],
+            nightmare: ['scare', 'scary', 'afraid', 'long'],
+            clubSoda: ['drink', 'carbonated', 'burp', 'salty'],
+            jam: ['spread', 'apple', 'eat', 'cold'],
+            corkscrew: ['open', 'metal', 'twist', 'sharp'],
+            axe: ['split', 'sharp', 'chop', 'heavy'],
+            whip: ['whip', 'long', 'twist', 'loud'],
+            sesameSeeds: ['sprinkle', 'white', 'dry', 'sweet']
+        };
+        function displayKeysAndValues(obj) {
+            const keyList = document.getElementById('keyList');
+            keyList.innerHTML = '';
+            Object.keys(obj).forEach(key => {
+                const li = document.createElement('li');
+                li.textContent = key;
+                const valueSpan = document.createElement('span');
+                valueSpan.style.marginLeft = '10px';
+                valueSpan.style.fontWeight = 'bold';
+                valueSpan.style.color = 'blue';
+                li.onmouseenter = () => {
+                    valueSpan.innerHTML = obj[key].map((val, idx) => {
+                        if (idx % 2 ===1) {
+                            return `<span style="color: green;">${val}</span>`;
+                        }
+                        return val;
+                    }).join(', ');
+                };
+                li.onmouseleave = () => {
+                    valueSpan.textContent = '';
+                };
+                li.appendChild(valueSpan);
+                keyList.appendChild(li);
+            });
+        }
+        displayKeysAndValues(list);
+    </script>    
+</body>
+</html>
