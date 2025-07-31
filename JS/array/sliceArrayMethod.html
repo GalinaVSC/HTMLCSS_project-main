@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Arrays</h1>
+    <h2>The slice() method.</h2>
+    <p>Slice out a part of an array starting from array element 1 ("Orange"):</p>
+    <p id="demo"></p>
+    <script>
+        const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+        const citrus = fruits.splice(1, 2); // Lemon,Apple,Mango
+        demo.innerHTML = fruits + "<br><br>" + citrus;
+    </script>
+</body>
+</html>

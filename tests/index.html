@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Психологический тест</title>
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1>Пройдите психологические тесты</h1>
+  <p>
+    Узнайте что вы скрываете даже от самого себя? Ответьте на несколько вопросов —
+    результат может вас удивить!
+  </p>
+  <a id="buttonOne" class="launch-button" href="#" target="_blank" rel="noopener noreferrer">
+    На самооткрытие
+  </a><br>
+   <a id="buttonTwo" class="launch-button" href="#" target="_blank" rel="noopener noreferrer">
+    На психо-устойчивость
+  </a><br>
+  <a id="buttonThree" class="launch-button" href="#" target="_blank" rel="noopener noreferrer">
+    Тест на отношения
+  </a><br><br>
+  <script>
+    // Store the URL in a variable
+    //const formUrl = "https://script.google.com/macros/s/AKfycbzlCDgVVAQmTGoAGw1mtPBNtkBilwOBRQkESqTrAxeadsiZS9rw1ED_yWMUiY9RpHeAaA/exec?page=";
+    const formUrl = "https://script.google.com/macros/s/AKfycbzWv_Jq-RyeOGD4mmxTmYj54rspr5R-QpOdIe2WMd-_PFGuHFQsGi41RKghhv7keQ1sbw/exec?page=";
+    // Assign it to the href dynamically
+    buttonOne.href = formUrl + "form"; // document.getElementById("buttonOne").href = formUrl + "form";
+    buttonTwo.href = formUrl + "psycho";
+    buttonThree.href = formUrl + "jealousy";
+  </script>
+  <footer class="modern-footer">
+    <div class="footer-content">
+      <nav class="footer-nav">
+        <a href="#">О проекте</a>
+        <a href="#">Контакты</a>
+        <a href="#">Политика конфиденциальности</a>
+        <a href="../tests/glossary.html">Глоссарий</a>
+      </nav>
+      <span>© 2025 Sensei — Все права защищены</span>
+    </div>
+  </footer>
+</body>
+</html>
