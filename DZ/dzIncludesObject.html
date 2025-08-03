@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Введите название фрукта</h2>
+    <input type="text" id="fruitInput" placeholder="Введите название фрукта">
+    <button onclick="searchFruit()">Поиск</button>
+    <p id="demo"></p>
+    <script>
+        const ashan =  { 
+            fruits: ["Яблоко", "Банан", "Персик", "Груша", "Виноград"]
+        };
+            function searchFruit() {
+            const fruitName = fruitInput.value;
+                if (ashan.fruits.includes(fruitName)) {
+                    demo.innerHTML = `Фрукт "${fruitName}" найден.`;
+                } else {
+                    demo.innerHTML = `Фрукт "${fruitName}" не найден.`;
+                }
+            };
+    </script>
+</body>
+</html>
