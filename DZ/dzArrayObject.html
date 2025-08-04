@@ -3,31 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Яблоки</title>
+    <title>Document</title>
 </head>
 <body>
     <h1>Стоимость яблок</h1>
     <p id="demo"></p>
     <script>
-        const fruits = {
-            apple1: { variety: "Слава", price: "170 руб за 1 кг", country: "Молдова" },
-            apple2: { variety: "Ред Делишес", price: "240 руб за 1 кг", country: "Молдова" },
-            apple3: { variety: "Голден", price: "220 руб за 1 кг", country: "ЮАР" },
-            apple4: { variety: "Гала", price: "280 руб за 1 кг", country: "Сербия" },
-            apple5: { variety: "Бребурн", price: "290 руб за 1 кг", country: "Молдова" },
-            
-            report: function() {
-            let text = "";
-                for (let x in this) {
-                    if (x !== "report") {
-                        let apple = this[x];
-                        text += `${apple.variety} - ${apple.price} (${apple.country})<br>`; 
-                    }
-                }  
-            demo.innerHTML = text;      
-            },
-        };
-        fruits.report();
+        const fruits = [
+            { variety: "Слава", price: 170, country: "Молдова" },
+            { variety: "Ред Делишес", price: 240, country: "Молдова" },
+            { variety: "Голден", price: 220, country: "ЮАР" },
+            { variety: "Гала", price: 280, country: "Сербия" },
+            { variety: "Бребурн", price: 290, country: "Молдова" },
+        ];
+            fruits.sort((a, b) => a.price - b.price);
+
+            const report = fruits.map(x => `${x.variety} (${x.country}) - ${x.price}`).join('<br>');
+        demo.innerHTML = report;
     </script>
 </body>
 </html>

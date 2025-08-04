@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <p id="demo"></p>
+    <script>
+        const people = [
+            {name: "Lia", age: 34},
+            {name: "Jordan", age: 21},
+            {name: "Sage", age: 45},
+            {name: "Kai", age: 29}
+    ];
+    //Compare fuction: sort ascending by age - Функция сравнения: сортировка по возрастанию возраста
+     // Сортировка по возрастанию возраста
+        people.sort((a, b) => a.age - b.age);
+
+        // Преобразование массива объектов в строку
+        const result = people.map(person => `${person.name} (${person.age})`).join('<br>');
+
+        // Вывод результата в HTML
+        demo.innerHTML = result;
+     </script>
+</body>
+</html>
