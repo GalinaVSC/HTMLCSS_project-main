@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Arrays</h1>
+    <h2>The sort() method</h2>
+    <p>Click the buttons to sort the array alphabetically or numerically:</p>
+    <p id="demo3"></p>
+    <button onclick="myFunction1()">Sort Alphabetically</button>
+    <button onclick="myFunction2()">Sort Numerically</button>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        const points = [40, 100, 1, 5, 25, 10];
+        demo3.innerHTML = points;
+        function myFunction1() {
+            points.sort();
+            demo1.innerHTML = points;
+        }
+        function myFunction2() {
+            points.sort(function(a, b){return a - b});
+            demo2.innerHTML = points;
+        }
+    </script>
+</body>
+</html>

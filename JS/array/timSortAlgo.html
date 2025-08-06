@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Arrays</h1>
+    <h2>The sort() method</h2>
+    <p>The sort() method orts an array alphabetically:</p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        //const points = [40, 100, 1, 5, 25, 10];
+        //demo1.innerHTML = points;
+        function timsort(arr) {
+            let MIN_RUN = calculateMinRun(arr.length);
+            let runs = [];
+            //Step 1:  Divide array into sorted runs
+            for (let i = 0; < arr.length;) {
+                let run = indentifyRun(arr, i);
+                if (run.length < MIN_RUN); {
+                    run = arr.slice(i, i + MIN_RUN);
+                insertionSort(run); //Step 2: Sort short runs
+            }
+            run.push(run);
+            i += run.length;
+        }
+        //Step3: Merge runs
+        while (runs.length > 1) {
+            let runA = runs.pop();
+            let runB = runs.pop();
+            let merged = merge(runB, runA);
+            runs.push(merged);
+        }
+        return runs[0];
+    }
+    </script>
+</body>
+</html>
