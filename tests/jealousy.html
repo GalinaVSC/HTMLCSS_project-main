@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base target="_top">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <?!= include('stylesheet'); ?>
+</head>
+<body>
+  <h2>Введите Ваш ник из чата:</h2>
+  <input type="text" id="nickname" placeholder="Ваш ник чатланин..." />
+  
+  <h2>Город (необязательно):</h2>
+  <input type="text" id="city" placeholder="Введите Ваш город..." />
+
+  <h2>Время в чате (необязательно):</h2>
+  <input type="text" id="time" placeholder="Сколько вы уже в чате?" />
+
+  <div id="questions">
+
+  <p>1. Часто ли вы думаете о том, что ваш партнер может быть заинтересован в ком-то другом?</p>
+  <div>
+    <input type="radio" name="q1" id="q1_no" value="0">
+    <label for="q1_no">Нет</label>
+    <input type="radio" name="q1" id="q1_yes" value="1">
+    <label for="q1_yes">Да</label>
+  </div>
+  <p>2. Испытываете ли вы дискомфорт, когда ваш партнер общается с людьми противоположного пола?</p>
+  <div>
+    <input type="radio" name="q2" id="q2_no" value="0">
+    <label for="q2_no">Нет</label>
+    <input type="radio" name="q2" id="q2_yes" value="1">
+    <label for="q2_yes">Да</label>
+  </div>
+  <p>3. Часто ли вы проверяете телефон или социальные сети вашего партнера?</p>
+  <div>
+    <input type="radio" name="q3" id="q3_no" value="0">
+    <label for="q3_no">Нет</label>
+    <input type="radio" name="q3" id="q3_yes" value="1">
+    <label for="q3_yes">Да</label>
+  </div>
+  <p>4. Чувствуете ли вы себя неуверенно, когда ваш партнер получает внимание от других людей?</p>
+  <div>
+    <input type="radio" name="q4" id="q4_no" value="0">
+    <label for="q4_no">Нет</label>
+    <input type="radio" name="q4" id="q4_yes" value="1">
+    <label for="q4_yes">Да</label>
+  </div>
+  <p>5. Испытываете ли вы трудности с доверием к вашему партнеру?</p>
+  <div>
+    <input type="radio" name="q5" id="q5_no" value="0">
+    <label for="q5_no">Нет</label>
+    <input type="radio" name="q5" id="q5_yes" value="1">
+    <label for="q5_yes">Да</label>
+  </div>
+  <p>6. Часто ли вы спрашиваете вашего партнера о его действиях и планах с целью проконтролировать?</p>
+  <div>
+    <input type="radio" name="q6" id="q6_no" value="0">
+    <label for="q6_no">Нет</label>
+    <input type="radio" name="q6" id="q6_yes" value="1">
+    <label for="q6_yes">Да</label>
+  </div>
+  <p>7. Чувствуете ли вы себя обиженно, когда ваш партнер не включает вас в свои планы?</p>
+  <div>
+    <input type="radio" name="q7" id="q7_no" value="0">
+    <label for="q7_no">Нет</label>
+    <input type="radio" name="q7" id="q7_yes" value="1">
+    <label for="q7_yes">Да</label>
+  </div>
+  <p>8. Испытываете ли вы трудности с контролем своих эмоций, когда думаете о потенциальной измене партнера?</p>
+  <div>
+    <input type="radio" name="q8" id="q8_no" value="0">
+    <label for="q8_no">Нет</label>
+    <input type="radio" name="q8" id="q8_yes" value="1">
+    <label for="q8_yes">Да</label>
+  </div>
+
+  <p><button onclick="submitAnswers()">Отправить</button></p>
+  <script>
+    function submitAnswers() {
+      const nickname = document.getElementById("nickname").value.trim();
+      const city = document.getElementById("city").value.trim();
+      const time = document.getElementById("time").value.trim();
+      if (!nickname) return alert("Введите никнейм!");
+
+    let score = 0;
+    for (let i = 1; i <= 8; i++) {
+      const selected = document.querySelector(`input[name="q${i}"]:checked`);
+      if (selected) {
+        score += parseInt(selected.value);
+      }
+    }
+
+    let feedback = "";
+    if (score <= 2) {
+      feedback = "Возможно, у вас есть некоторые признаки ревности, но они не доминируют в ваших отношениях.";
+    } else if (score <= 5) {
+      feedback = "У вас могут быть выраженные признаки ревности, которые могут влиять на ваши отношения.";
+    } else {
+      feedback = "Возможно, у вас есть выраженная ревность, которая может негативно влиять на ваши отношения и общее благополучие.";
+    }
+
+    google.script.run.recordResponseToGoogleSheet({ nickname, city, time, score },"jealousy");
+
+    document.body.innerHTML = `
+      <h3>Спасибо, ${nickname}! Ваш результат: ${score} из 8</h3>
+      <div class="result-message">${feedback}</div>
+    `;
+    }
+  </script>
+</body>
+</html>
