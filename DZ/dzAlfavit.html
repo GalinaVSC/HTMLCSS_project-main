@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Введите любые два слова</h1>
+        <input type="text" id="word00" placeholder="Введите слово"><br><br>
+        <input type="text" id="word01" placeholder="Введите слово"><br><br>
+        <button type="button" onclick="wordSort()">Print</button>
+        <p id="demo"></p>
+    <script>
+        function wordSort() {
+            const word1 = word00.value;
+            const word2 = word01.value;
+
+            const words = [word1, word2].sort();
+            demo.innerHTML = `${words.join(', ')}`;
+        }
+    </script>
+</body>
+</html>
