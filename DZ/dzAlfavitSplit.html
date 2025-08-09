@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Введите слова через запятую</h1>
+        <input type="text" id="word00" placeholder="Введите слово"><br><br>
+        <button type="button" onclick="wordSort()">Print</button>
+        <p id="demo"></p>
+    <script>
+        function wordSort() {
+            const word1 = word00.value;
+            const x = word1.split(", ")
+            const words = x.sort();
+            demo.innerHTML = `${words.join(' ')}`;
+        }
+    </script>
+</body>
+</html>
